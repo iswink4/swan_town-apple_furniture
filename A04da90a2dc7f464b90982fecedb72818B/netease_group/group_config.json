@@ -1,0 +1,376 @@
+{
+    "groups": [
+        {
+            "group_name": "itemGroup.name.generator",
+            "icon": "hys_ic:gas_generator",
+            "list": [
+                "hys_ic:gas_generator",
+                "hys_ic:oil_generator"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.electric_motor",
+            "icon": "hys_ic:oil_refine_machine",
+            "list": [
+                "hys_ic:oil_refine_machine"
+            ]
+        },
+        {
+            "group_name": "矿石",
+            "icon": "hys_ic:bronze_ore",
+            "list": [
+                "hys_ic:bronze_ore",
+                "hys_ic:iridium_ore",
+                "hys_ic:lead_ore",
+                "hys_ic:tin_ore",
+                "hys_ic:uranium_ore",
+                "hys_ic:nitrate_ore",
+                "hys_ic:sulfur_ore",
+                "hys_ic:titanium_ore"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.generator",
+            "icon": "hys_ic:thermal_power_generator",
+            "list": [
+                "hys_ic:thermal_power_generator",
+                "hys_ic:water_power_generator",
+                "hys_ic:lava_power_generator",
+                "hys_ic:wind_power_generator",
+                "hys_ic:ordinary_solar_generator",
+                "hys_ic:optimized_solar_generator",
+                "hys_ic:primary_solar_generator",
+                "hys_ic:advanced_solar_generator",
+                "hys_ic:quantum_solar_generator",
+                "hys_ic:quantum_generator",
+                "hys_ic:isotope_power_generator",
+                "hys_ic:nuclear_power_generator",
+                "hys_ic:biology_generator",
+                "hys_ic:living_animals_generator"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.mine_machine",
+            "icon": "hys_ic:bore_machine",
+            "list": [
+                "hys_ic:bore_machine",
+                "hys_ic:ordinary_mining_machine",
+                "hys_ic:advanced_mining_machine"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.electric_motor",
+            "icon": "hys_ic:chemical_plant",
+            "list": [
+                "hys_ic:chemical_plant",
+                "hys_ic:electric_furnace",
+                "hys_ic:metal_processing",
+                "hys_ic:pulverizer",
+                "hys_ic:compressor",
+                "hys_ic:can_filler",
+                "hys_ic:centrifugal_machine",
+                "hys_ic:reconstruction_machine",
+                "hys_ic:ore_washing_machine",
+                "hys_ic:industry_register",
+                "hys_ic:forge_plant",
+                "hys_ic:charging_pedestal",
+                "hys_ic:teleport_machine",
+                "hys_ic:pattern_crafter",
+                "hys_ic:weapon_workshop",
+                "hys_ic:metal_melting_furnace",
+                "hys_ic:waste_disposal_plant",
+                "hys_ic:3d_printer"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.uranium_rod",
+            "icon": "hys_ic:uranium_rod",
+            "list": [
+                "hys_ic:uranium_rod",
+                "hys_ic:uranium_rod_deplete",
+                "hys_ic:uranium_rod2",
+                "hys_ic:uranium_rod2_deplete",
+                "hys_ic:uranium_rod4",
+                "hys_ic:uranium_rod4_deplete",
+                "hys_ic:uranium_rod6",
+                "hys_ic:uranium_rod6_deplete"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.battery",
+            "icon": "hys_ic:alkaline_battery",
+            "list": [
+                "hys_ic:alkaline_battery",
+                "hys_ic:ni_mh_battery",
+                "hys_ic:lead_acid_battery",
+                "hys_ic:polymer_battery",
+                "hys_ic:lithium_ion_battery",
+                "hys_ic:lfp_battery",
+                "hys_ic:discarded_battery"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.dust",
+            "icon": "hys_ic:bronze_dust",
+            "list": [
+                "hys_ic:bronze_dust",
+                "hys_ic:carbon_dust",
+                "hys_ic:coal_ore_crushed",
+                "hys_ic:copper_dust",
+                "hys_ic:copper_ore_crushed",
+                "hys_ic:diamond_dust",
+                "hys_ic:diamond_ore_crushed",
+                "hys_ic:gold_dust",
+                "hys_ic:gold_ore_crushed",
+                "hys_ic:iridium_dust",
+                "hys_ic:iron_dust",
+                "hys_ic:iron_ore_crushed",
+                "hys_ic:lapis_lazuli_dust",
+                "hys_ic:lapis_lazuli_ore_crushed",
+                "hys_ic:lead_dust",
+                "hys_ic:lead_ore_crushed",
+                "hys_ic:tin_dust",
+                "hys_ic:tin_ore_crushed",
+                "hys_ic:uranium_ore_crushed",
+                "hys_ic:stone_powder",
+                "hys_ic:copper_dust_little_stack",
+                "hys_ic:gold_dust_little_stack",
+                "hys_ic:iron_dust_little_stack",
+                "hys_ic:lead_dust_little_stack",
+                "hys_ic:tin_dust_little_stack",
+                "hys_ic:diamond_dust_little_stack",
+                "hys_ic:lapis_lazuli_dust_little_stack",
+                "hys_ic:nitrate_ore_crushed",
+                "hys_ic:nitrate_dust",
+                "hys_ic:sulfur_ore_crushed",
+                "hys_ic:sulfur_dust",
+                "hys_ic:titanium_ore_crushed",
+                "hys_ic:titanium_alloy_dust"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.casing",
+            "icon": "hys_ic:bronze_item_casing",
+            "list": [
+                "hys_ic:bronze_item_casing",
+                "hys_ic:copper_item_casing",
+                "hys_ic:gold_item_casing",
+                "hys_ic:iron_item_casing",
+                "hys_ic:lead_item_casing",
+                "hys_ic:steel_item_casing",
+                "hys_ic:tin_item_casing",
+                "hys_ic:titanium_alloy_housing"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.plate",
+            "icon": "hys_ic:bronze_plate",
+            "list": [
+                "hys_ic:bronze_plate",
+                "hys_ic:bronze_plate_dense",
+                "hys_ic:carbon_plate_dense",
+                "hys_ic:copper_plate",
+                "hys_ic:copper_plate_dense",
+                "hys_ic:gold_plate",
+                "hys_ic:gold_plate_dense",
+                "hys_ic:iridium_alloy_glow_plate",
+                "hys_ic:iridium_alloy_plate",
+                "hys_ic:iridium_metal_plate",
+                "hys_ic:iridium_plate_dense",
+                "thaumcraft:plate_iron",
+                "hys_ic:iron_plate_dense",
+                "hys_ic:lapis_lazuli_plate",
+                "hys_ic:lapis_lazuli_plate_dense",
+                "hys_ic:lead_plate",
+                "hys_ic:lead_plate_dense",
+                "hys_ic:obsidian_plate",
+                "hys_ic:obsidian_plate_dense",
+                "hys_ic:steel_plate",
+                "hys_ic:tin_plate",
+                "hys_ic:tin_plate_dense",
+                "hys_ic:titanium_alloy_plate",
+                "hys_ic:mixed_metal_plate_dense"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.cable",
+            "icon": "hys_ic:copper_cable",
+            "list": [
+                "hys_ic:copper_cable",
+                "hys_ic:copper_cable_insulation",
+                "hys_ic:glass_cable",
+                "hys_ic:gold_cable",
+                "hys_ic:gold_cable_insulation",
+                "hys_ic:iron_cable",
+                "hys_ic:iron_cable_insulation",
+                "hys_ic:tin_cable",
+                "hys_ic:tin_cable_insulation"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.equipment",
+            "icon": "hys_ic:bronze_helmet",
+            "list": [
+                "hys_ic:bronze_helmet",
+                "hys_ic:bronze_chestplate",
+                "hys_ic:bronze_leggings",
+                "hys_ic:bronze_boots",
+                "hys_ic:night_vision_nuclear",
+                "hys_ic:nuclear_electric_jetpack",
+                "hys_ic:protective_boots",
+                "hys_ic:protective_helmet",
+                "hys_ic:protective_chestplate",
+                "hys_ic:protective_leggings",
+                "hys_ic:protective_boots_real",
+                "hys_ic:copper_helmet",
+                "hys_ic:copper_chestplate",
+                "hys_ic:copper_leggings",
+                "hys_ic:copper_boots",
+                "hys_ic:alloy_helmet",
+                "hys_ic:alloy_chestplate",
+                "hys_ic:alloy_leggings",
+                "hys_ic:alloy_boots",
+                "hys_ic:titanium_alloy_helmet",
+                "hys_ic:titanium_alloy_chestplate",
+                "hys_ic:titanium_alloy_leggings",
+                "hys_ic:titanium_alloy_boots",
+                "hys_ic:lead_helmet",
+                "hys_ic:lead_chestplate",
+                "hys_ic:lead_leggings",
+                "hys_ic:lead_boots",
+                "hys_ic:carbon_fiber_helmet",
+                "hys_ic:carbon_fiber_chestplate",
+                "hys_ic:carbon_fiber_leggings",
+                "hys_ic:carbon_fiber_boots",
+                "hys_ic:mine_detect_glasses"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.charging_socket",
+            "icon": "hys_ic:charging_base",
+            "list": [
+                "hys_ic:charging_base",
+                "hys_ic:advanced_charging_base",
+                "hys_ic:aggregate_charging_base",
+                "hys_ic:storage_tank",
+                "hys_ic:advanced_storage_tank",
+                "hys_ic:aggregate_storage_tank"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.wind_part",
+            "icon": "hys_ic:wooden_wind_rotor",
+            "list": [
+                "hys_ic:wooden_wind_rotor",
+                "hys_ic:iron_wind_rotor",
+                "hys_ic:steel_wind_rotor",
+                "hys_ic:carbon_fiber_wind_rotor",
+                "hys_ic:wooden_rotor_blades",
+                "hys_ic:iron_rotor_blades",
+                "hys_ic:steel_rotor_blades",
+                "hys_ic:carbon_fiber_blades"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.lamp",
+            "icon": "hys_ic:ceiling_light_circle",
+            "list": [
+                "hys_ic:ceiling_light_circle",
+                "hys_ic:ceiling_light_rectangle_0",
+                "hys_ic:ceiling_light_rectangle_1",
+                "hys_ic:streetlight",
+                "hys_ic:streetlight_bulb",
+                "hys_ic:traffic_signal_lights_left",
+                "hys_ic:traffic_signal_lights_right",
+                "hys_ic:traffic_signal_lights_front",
+                "hys_ic:traffic_signal_lights_turn_around",
+                "hys_ic:fluorescent_lamp",
+                "hys_ic:ultraviolet_lamp"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.thaumcraft_cluster",
+            "icon": "thaumcraft:cluster_iron",
+            "list": [
+                "thaumcraft:cluster_iron",
+                "thaumcraft:cluster_copper",
+                "thaumcraft:cluster_coal",
+                "thaumcraft:cluster_gold",
+                "thaumcraft:cluster_diamond",
+                "thaumcraft:cluster_lapis",
+                "thaumcraft:cluster_emerald",
+                "thaumcraft:cluster_redstone",
+                "thaumcraft:cluster_tin",
+                "thaumcraft:cluster_lead",
+                "thaumcraft:cluster_uranium",
+                "thaumcraft:cluster_iridium",
+                "thaumcraft:cluster_cinnabar",
+                "thaumcraft:cluster_silver",
+                "thaumcraft:cluster_quartz",
+                "thaumcraft:cluster_nitre",
+                "thaumcraft:cluster_sulfur",
+                "thaumcraft:cluster_titanium",
+                "hys_ic:ore_cluster_iron",
+                "hys_ic:ore_cluster_copper",
+                "hys_ic:ore_cluster_coal",
+                "hys_ic:ore_cluster_gold",
+                "hys_ic:ore_cluster_diamond",
+                "hys_ic:ore_cluster_lapis",
+                "hys_ic:ore_cluster_emerald",
+                "hys_ic:ore_cluster_redstone",
+                "hys_ic:ore_cluster_tin",
+                "hys_ic:ore_cluster_lead",
+                "hys_ic:ore_cluster_uranium",
+                "hys_ic:ore_cluster_nitre",
+                "hys_ic:ore_cluster_sulfur",
+                "hys_ic:ore_cluster_titanium"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.fluid_transport",
+            "icon": "hys_ic:fluid_input_interface",
+            "list": [
+                "hys_ic:fluid_input_interface",
+                "hys_ic:fluid_output_interface",
+                "hys_ic:fluid_pipeline",
+                "hys_ic:centrifugal_pump",
+                "hys_ic:double_suction_centrifugal_pump",
+                "hys_ic:liquid_storage_tank_0",
+                "hys_ic:liquid_storage_tank_1",
+                "hys_ic:liquid_storage_tank_2"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.item_transport",
+            "icon": "hys_ic:item_output_interface",
+            "list": [
+                "hys_ic:item_output_interface",
+                "hys_ic:item_input_interface",
+                "hys_ic:basic_conveyor_belt",
+                "hys_ic:high_speed_conveyor_belt",
+                "hys_ic:extreme_speed_conveyor_belt",
+                "hys_ic:industry_storage",
+                "hys_ic:double_storage",
+                "hys_ic:limited_storage"
+            ]
+        },
+        {
+            "group_name": "itemGroup.name.infrastructure",
+            "icon": "hys_ic:foundation_soils",
+            "list": [
+                "hys_ic:foundation_soils",
+                "hys_ic:foundation_soils_cypress_oil",
+                "hys_ic:foundation_soils_glass",
+                "hys_ic:foundation_soils_half",
+                "hys_ic:foundation_soils_half_cypress_oil",
+                "hys_ic:foundation_soils_half_glass",
+                "hys_ic:steep_slope",
+                "hys_ic:steep_slope_cypress_oil",
+                "hys_ic:steep_slope_glass",
+                "hys_ic:glacis",
+                "hys_ic:glacis_cypress_oil",
+                "hys_ic:glacis_glass"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "materials": {
+    "version": "1.0.0",
+    "foundation_alphatest_nocull:entity_alphatest": {
+      "+defines": ["ENABLE_FOG", "ENABLE_LIGHT", "USE_OVERLAY"],
+      "+states": ["DisableCulling"],
+      "msaaSupport": "Both"
+    }
+  }
+}

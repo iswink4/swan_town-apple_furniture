@@ -1,0 +1,64 @@
+{
+    "format_version": [
+        1,
+        1,
+        0
+    ],
+    "swan_town:apple": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:apple",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:apple"
+          }
+    },
+    "swan_town:carpet_green": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:carpet_green",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet_green"
+          }
+    },
+    "swan_town:carpet_red": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:carpet_red",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet_red"
+          }
+    },
+    "swan_town:table1": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:table1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:table1"
+          }
+    },
+    "swan_town:table2": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:table2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:table2"
+          }
+    },
+    "swan_town:table3": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:table3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:table3"
+          }
+    },
+    "swan_town:table4": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:table4",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:table4"
+          }
+    }
+    
+}

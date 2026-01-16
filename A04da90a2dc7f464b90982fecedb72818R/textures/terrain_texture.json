@@ -1,0 +1,9 @@
+{
+    "resource_pack_name": "nuclear_reloaded",
+    "texture_data": {
+        "swan_town:furniture": {
+            "textures": "textures/furniture"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}
