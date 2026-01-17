@@ -3,6 +3,11 @@
     "texture_data": {
         "swan_town:furniture": {
             "textures": "textures/furniture"
+        },
+
+        
+        "swan_town:table1_icon":{
+            "textures": "textures/icon/table1"
         }
     },
     "texture_name": "atlas.terrain"

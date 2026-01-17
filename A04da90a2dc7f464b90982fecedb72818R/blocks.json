@@ -31,7 +31,7 @@
     "swan_town:table1": {
           "sound": "glass",
           "client_entity": {
-            "block_icon": "swan_town:table1",
+            "block_icon": "swan_town:table1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:table1"
           }
@@ -58,6 +58,30 @@
             "block_icon": "swan_town:table4",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:table4"
+          }
+    },
+    "swan_town:cabinet1": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:cabinet1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:cabinet1"
+          }
+    },
+    "swan_town:cabinet2": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:cabinet2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:cabinet2"
+          }
+    },
+    "swan_town:cabinet3": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:cabinet3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:cabinet3"
           }
     },
     "swan_town:wall_cabinet1": {

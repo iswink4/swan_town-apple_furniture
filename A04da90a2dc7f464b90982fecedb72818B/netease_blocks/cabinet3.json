@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:block": {
         "description": {
-            "identifier": "swan_town:wall_cabinet2",
+            "identifier": "swan_town:cabinet3",
             "register_to_creative_menu": true,
             "category": "swan_town:apple"
         },
@@ -34,7 +34,7 @@
           "movable": false
          },
          "netease:face_directional": {
-	      "type": "direction"
+ 	      "type": "direction"
          }
         }
     }
