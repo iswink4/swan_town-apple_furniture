@@ -30,11 +30,28 @@ def change(args):
     }
     
     # 检查当前方块是否在循环映射中
+    # 桌子循环
     if block_name in table_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
         old_aux=old_block_dict['aux']
         block_dict = {
             'name': table_cycle[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+        
+    # 橱柜循环
+    cabinet_cycle = {
+        'swan_town:cabinet1': 'swan_town:cabinet2',
+        'swan_town:cabinet2': 'swan_town:cabinet3',
+        'swan_town:cabinet3': 'swan_town:cabinet1'
+    }
+    # 检查当前方块是否在橱柜循环映射中
+    if block_name in cabinet_cycle and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': cabinet_cycle[block_name],
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
