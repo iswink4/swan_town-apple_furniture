@@ -2,7 +2,7 @@
     "format_version": "1.10.0",
     "minecraft:block": {
         "description": {
-            "identifier": "swan_town:table3",
+            "identifier": "swan_town:wall_cabinet1",
             "register_to_creative_menu": true,
             "category": "swan_town:apple"
         },
