@@ -115,5 +115,45 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:wall_cabinet4"
           }
+    },
+    "swan_town:sofa": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:sofa",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:sofa"
+          }
+    },
+    "swan_town:sofa1": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:sofa1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:sofa1"
+          }
+    },
+    "swan_town:sofa2": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:sofa2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:sofa2"
+          }
+    },
+    "swan_town:sofa3": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:sofa3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:sofa3"
+          }
+    },
+    "swan_town:sofa4": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:sofa4",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:sofa4"
+          }
     }
 }

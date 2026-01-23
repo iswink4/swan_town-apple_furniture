@@ -55,3 +55,21 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+        
+    # 沙发循环
+    sofa_cycle = {
+        'swan_town:sofa1': 'swan_town:sofa2',
+        'swan_town:sofa2': 'swan_town:sofa3',
+        'swan_town:sofa3': 'swan_town:sofa4',
+        'swan_town:sofa4': 'swan_town:sofa1'
+    }
+    # 检查当前方块是否在沙发循环映射中
+    if block_name in sofa_cycle and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': sofa_cycle[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+    
