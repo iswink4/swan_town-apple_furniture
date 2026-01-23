@@ -6,6 +6,11 @@ from .QuModLibs.Util import QThrottle
 @Listen(Events.ItemUseOnAfterServerEvent)
 @QThrottle(intervalTime=0.2)
 def change(args):
+    '''
+    原版斧子改变家具样式
+    :param args: 事件参数
+    :return: None
+    '''
     item_dict=args["itemDict"]
     block_pos=args["x"],args["y"],args["z"]
     block_name=args["blockName"]
@@ -73,13 +78,13 @@ def change(args):
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
         
-    #  长凳循环
+    # 长凳循环
     stool_cycle = {
         'swan_town:stool1': 'swan_town:stool2',
         'swan_town:stool2': 'swan_town:stool3',
         'swan_town:stool3': 'swan_town:stool1',
     }
-    # 检查当前方块是否在 stool循环映射中
+    # 检查当前方块是否在长凳循环映射中
     if block_name in stool_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
         old_aux=old_block_dict['aux']
@@ -88,5 +93,19 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-        
     
+    # 画循环
+    picture_cycle = {
+        'swan_town:picture1': 'swan_town:picture2',
+        'swan_town:picture2': 'swan_town:picture3',
+        'swan_town:picture3': 'swan_town:picture1',
+    }
+    # 检查当前方块是否在画循环映射中
+    if block_name in picture_cycle and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': picture_cycle[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)

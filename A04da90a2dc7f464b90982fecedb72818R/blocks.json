@@ -187,5 +187,45 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:stool3"
           }
+    },
+    "swan_town:picture1": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:picture1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:picture1"
+          }
+    },
+    "swan_town:picture2": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:picture2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:picture2"
+          }
+    },
+    "swan_town:picture3": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:picture3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:picture3"
+          }
+    },
+    "swan_town:computer1": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:computer1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:computer1"
+          }
+    },
+    "swan_town:computer2": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:computer2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:computer2"
+          }
     }
 }
