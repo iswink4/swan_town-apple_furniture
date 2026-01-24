@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "swan_town:light2",
+      "geometry": {
+        "default": "geometry.light2"
+      },
+      "materials": {
+        "default": "foundation_alphatest_nocull"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "textures": {
+        "default": "textures/clock"
+      }
+    }
+  }
+}

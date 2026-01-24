@@ -4,6 +4,9 @@
         "swan_town:furniture": {
             "textures": "textures/furniture"
         },
+        "swan_town:clock": {
+            "textures": "textures/clock"
+        },
 
         
         "swan_town:table1_icon":{
