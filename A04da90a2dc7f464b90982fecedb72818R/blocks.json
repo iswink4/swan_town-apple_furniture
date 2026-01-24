@@ -115,5 +115,22 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:wall_cabinet4"
           }
+    },
+    "swan_town:doll1": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:doll1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:doll1"
+          }
+    },
+    "swan_town:doll2": {
+          "sound": "glass",
+          "client_entity": {
+            "block_icon": "swan_town:doll2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:doll2"
+          }
     }
+    
 }

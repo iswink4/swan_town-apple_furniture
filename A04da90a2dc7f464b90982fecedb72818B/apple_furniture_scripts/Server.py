@@ -21,12 +21,18 @@ def change(args):
         'minecraft:netherite_axe',
         'minecraft:golden_axe',
     }
-    # 桌子状态循环映射
+    # 桌子循环映射
     table_cycle = {
         'swan_town:table1': 'swan_town:table2',
         'swan_town:table2': 'swan_town:table3',
         'swan_town:table3': 'swan_town:table4',
         'swan_town:table4': 'swan_town:table1'
+    }
+    # 橱柜循环映射
+    cabinet_cycle = {
+        'swan_town:cabinet1': 'swan_town:cabinet2',
+        'swan_town:cabinet2': 'swan_town:cabinet3',
+        'swan_town:cabinet3': 'swan_town:cabinet1'
     }
     
     # 检查当前方块是否在循环映射中
@@ -39,14 +45,7 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-        
     # 橱柜循环
-    cabinet_cycle = {
-        'swan_town:cabinet1': 'swan_town:cabinet2',
-        'swan_town:cabinet2': 'swan_town:cabinet3',
-        'swan_town:cabinet3': 'swan_town:cabinet1'
-    }
-    # 检查当前方块是否在橱柜循环映射中
     if block_name in cabinet_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
         old_aux=old_block_dict['aux']
