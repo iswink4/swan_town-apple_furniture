@@ -1,5 +1,8 @@
 {
     "Addon": {
+        "EnchantSetting": {
+            "amplifier": 1
+        },
         "PackResourceSortData": {
             "16384_group_config": {
                 "createTime": 1770127095.1238053,
@@ -25,6 +28,10 @@
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
             },
+            "1_swan_town:coffe_table": {
+                "createTime": 1770140709.7693129,
+                "modifyTime": 1770140709.7693129
+            },
             "1_swan_town:computer1": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
@@ -40,6 +47,10 @@
             "1_swan_town:doll2": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
+            },
+            "1_swan_town:icebox": {
+                "createTime": 1770140709.7678015,
+                "modifyTime": 1770140709.7678015
             },
             "1_swan_town:light1": {
                 "createTime": 1770127095.1238053,
@@ -64,6 +75,10 @@
             "1_swan_town:picture3": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
+            },
+            "1_swan_town:side_table": {
+                "createTime": 1770140709.7688057,
+                "modifyTime": 1770140709.7688057
             },
             "1_swan_town:sofa": {
                 "createTime": 1770127095.1238053,
@@ -145,6 +160,10 @@
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
             },
+            "4_swan_town:coffe_table": {
+                "createTime": 1770140709.7708216,
+                "modifyTime": 1770140709.7708216
+            },
             "4_swan_town:computer1": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
@@ -160,6 +179,10 @@
             "4_swan_town:doll2": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
+            },
+            "4_swan_town:icebox": {
+                "createTime": 1770140709.7693129,
+                "modifyTime": 1770140709.7693129
             },
             "4_swan_town:light1": {
                 "createTime": 1770127095.1238053,
@@ -184,6 +207,10 @@
             "4_swan_town:picture3": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
+            },
+            "4_swan_town:side_table": {
+                "createTime": 1770140709.7703164,
+                "modifyTime": 1770140709.7703164
             },
             "4_swan_town:sofa": {
                 "createTime": 1770127095.1238053,
@@ -257,6 +284,13 @@
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
             }
-        }
+        },
+        "PlayerEffectSetting": {
+            "amplifier": 1,
+            "duration": 10
+        },
+        "PresetInstanceTreeData": [
+
+        ]
     }
 }

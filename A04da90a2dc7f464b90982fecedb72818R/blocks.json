@@ -268,5 +268,29 @@
             "identifier": "swan_town:wall_cabinet4"
         },
         "sound": "glass"
+    },
+    "swan_town:coffe_table": {
+        "client_entity": {
+            "block_icon": "swan_town:coffe_table",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:coffe_table"
+        },
+        "sound": "glass"
+    },
+    "swan_town:icebox": {
+        "client_entity": {
+            "block_icon": "swan_town:icebox",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:icebox"
+        },
+        "sound": "glass"
+    },
+    "swan_town:side_table": {
+        "client_entity": {
+            "block_icon": "swan_town:side_table",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:side_table"
+        },
+        "sound": "glass"
     }
 }

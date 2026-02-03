@@ -3,7 +3,7 @@
   "CreateVersion": "3.7.0.211586",
   "EditVersion": "3.7.0.211586",
   "OldEditCount": 0,
-  "NewEditCount": 2,
+  "NewEditCount": 3,
   "OldComponents": [],
   "Account": "m18276191250@163.com",
   "UserName": "江何1980",
@@ -31,11 +31,11 @@
   "SaveBackAddOnPath": "E:\\MCStudioDownload\\work\\m18276191250@163.com\\Cpp\\AddOn\\2ffc2773b9fc43a9bfe19bbd9765fc30",
   "ResourceIds": [],
   "EditAddOnPaths": [],
-  "NameSpace": null,
+  "NameSpace": "urokz",
   "EditMaterialPaths": [],
   "EditLogFilePath": "E:\\MCStudioDownload\\work\\editor\\edit.log",
   "ServerName": "EXPR",
-  "StudioPort": 10734,
+  "StudioPort": 10411,
   "DCWebUrl": "https://x19apigatewayexpr.nie.netease.com",
   "ShowGuide": false,
   "AssertCacheDir": "E:\\MCStudioDownload\\EngineAssert",
@@ -44,6 +44,6 @@
   "StudioTempPath": "E:\\MCStudioDownload\\temp\\editorTemp",
   "EditorResourcePackPath": "E:\\MCStudio\\data\\inner_res",
   "EditDate": 1770126651,
-  "EditDuration": 2289,
-  "TestDuration": 1766
+  "EditDuration": 2857,
+  "TestDuration": 2736
 }
