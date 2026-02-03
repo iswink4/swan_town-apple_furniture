@@ -3,6 +3,10 @@ import time
 from .QuModLibs.Server import *
 from .QuModLibs.Util import QThrottle
 
+def __init__(self,namespace,system_name):
+    ServerSystem.__init__(self,namespace,system_name)
+    self.sit=0
+
 @Listen(Events.ItemUseOnAfterServerEvent)
 @QThrottle(intervalTime=0.2)
 def change(args):
@@ -79,9 +83,10 @@ def change(args):
         
     # 长凳循环
     stool_cycle = {
+        'swan_town:stool': 'swan_town:stool1',
         'swan_town:stool1': 'swan_town:stool2',
         'swan_town:stool2': 'swan_town:stool3',
-        'swan_town:stool3': 'swan_town:stool1',
+        'swan_town:stool3': 'swan_town:stool',
     }
     # 检查当前方块是否在长凳循环映射中
     if block_name in stool_cycle and item_dict['newItemName'] in axe_name:
@@ -108,3 +113,29 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+
+@Listen(Events.ServerBlockUseEvent)
+def use(args):
+    '''
+    家具交互
+    :param args: 事件参数
+    :return: None
+    '''
+    block_name = args['blockName']
+    player_id = args['playerId']
+    x=args['x']
+    y=args['y']
+    z=args['z']
+    
+    timercomp = serverApi.GetEngineCompFactory().CreateGame(serverApi.GetLevelId())
+    commandcomp = serverApi.GetEngineCompFactory().CreateCommand(serverApi.GetLevelId())
+    playercomp = serverApi.GetEngineCompFactory().CreatePlayer(player_id)
+    
+    chair_list = [
+        'swan_town:sofa1',
+        'swan_town:sofa2',
+        'swan_town:sofa3',
+        'swan_town:sofa4',
+    ]
+    
+        

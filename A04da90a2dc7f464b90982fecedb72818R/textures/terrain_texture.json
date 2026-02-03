@@ -1,15 +1,16 @@
 {
     "resource_pack_name": "nuclear_reloaded",
     "texture_data": {
-        "swan_town:furniture": {
-            "textures": "textures/furniture"
+        "None:": {
+            "textures": ""
         },
         "swan_town:clock": {
             "textures": "textures/clock"
         },
-
-        
-        "swan_town:table1_icon":{
+        "swan_town:furniture": {
+            "textures": "textures/furniture"
+        },
+        "swan_town:table1_icon": {
             "textures": "textures/icon/table1"
         }
     },
