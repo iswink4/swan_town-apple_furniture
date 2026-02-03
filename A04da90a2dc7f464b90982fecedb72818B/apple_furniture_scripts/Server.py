@@ -57,6 +57,11 @@ def change(args):
         'swan_town:picture2': 'swan_town:picture3',
         'swan_town:picture3': 'swan_town:picture1',
     }
+    # 电视循环
+    tv_cycle = {
+        'swan_town:tv1': 'swan_town:tv2',
+        'swan_town:tv2': 'swan_town:tv1',
+    }
     # 检查当前方块是否在循环映射中
     # 桌子循环
     if block_name in table_cycle and item_dict['newItemName'] in axe_name:
@@ -67,16 +72,6 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-    # 橱柜循环
-    if block_name in cabinet_cycle and item_dict['newItemName'] in axe_name:
-        old_block_dict=comp.GetBlockNew(block_pos,dimension)
-        old_aux=old_block_dict['aux']
-        block_dict = {
-            'name': cabinet_cycle[block_name],
-            'aux': old_aux
-        }
-        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-        
     # 检查当前方块是否在沙发循环映射中
     if block_name in sofa_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
@@ -104,7 +99,16 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-
+    # 检查当前方块是否在电视循环映射中
+    if block_name in tv_cycle and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': tv_cycle[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+        
 @Listen(Events.ServerBlockUseEvent)
 def use(args):
     '''

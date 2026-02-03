@@ -340,5 +340,61 @@
             "identifier": "swan_town:bathtub2"
         },
         "sound": "glass"
+    },
+    "swan_town:tv1": {
+        "client_entity": {
+            "block_icon": "swan_town:tv1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:tv1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:tv2": {
+        "client_entity": {
+            "block_icon": "swan_town:tv2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:tv2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:desk1": {
+        "client_entity": {
+            "block_icon": "swan_town:desk3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:desk3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:desk2": {
+        "client_entity": {
+            "block_icon": "swan_town:desk2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:desk2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:desk3": {
+        "client_entity": {
+            "block_icon": "swan_town:desk3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:desk3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:dressing_table1": {
+        "client_entity": {
+            "block_icon": "swan_town:dressing_table1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:dressing_table1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:dressing_table2": {
+        "client_entity": {
+            "block_icon": "swan_town:dressing_table2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:dressing_table2"
+        },
+        "sound": "glass"
     }
 }

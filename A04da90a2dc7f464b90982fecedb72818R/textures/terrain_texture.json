@@ -13,6 +13,12 @@
         "swan_town:curtain": {
             "textures": "textures/curtain"
         },
+        "swan_town:computer": {
+            "textures": "textures/computer"
+        },
+        "swan_town:tv": {
+            "textures": "textures/tv"
+        },
         "swan_town:furniture": {
             "textures": "textures/furniture"
         },
