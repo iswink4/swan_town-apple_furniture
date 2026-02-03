@@ -37,13 +37,26 @@ def change(args):
         'swan_town:table3': 'swan_town:table4',
         'swan_town:table4': 'swan_town:table1'
     }
-    # 橱柜循环映射
-    cabinet_cycle = {
-        'swan_town:cabinet1': 'swan_town:cabinet2',
-        'swan_town:cabinet2': 'swan_town:cabinet3',
-        'swan_town:cabinet3': 'swan_town:cabinet1'
+    # 沙发循环
+    sofa_cycle = {
+        'swan_town:sofa1': 'swan_town:sofa2',
+        'swan_town:sofa2': 'swan_town:sofa3',
+        'swan_town:sofa3': 'swan_town:sofa4',
+        'swan_town:sofa4': 'swan_town:sofa1'
     }
-    
+    # 长凳循环
+    stool_cycle = {
+        'swan_town:stool': 'swan_town:stool1',
+        'swan_town:stool1': 'swan_town:stool2',
+        'swan_town:stool2': 'swan_town:stool3',
+        'swan_town:stool3': 'swan_town:stool',
+    }
+    # 画循环
+    picture_cycle = {
+        'swan_town:picture1': 'swan_town:picture2',
+        'swan_town:picture2': 'swan_town:picture3',
+        'swan_town:picture3': 'swan_town:picture1',
+    }
     # 检查当前方块是否在循环映射中
     # 桌子循环
     if block_name in table_cycle and item_dict['newItemName'] in axe_name:
@@ -64,13 +77,6 @@ def change(args):
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
         
-    # 沙发循环
-    sofa_cycle = {
-        'swan_town:sofa1': 'swan_town:sofa2',
-        'swan_town:sofa2': 'swan_town:sofa3',
-        'swan_town:sofa3': 'swan_town:sofa4',
-        'swan_town:sofa4': 'swan_town:sofa1'
-    }
     # 检查当前方块是否在沙发循环映射中
     if block_name in sofa_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
@@ -80,14 +86,6 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-        
-    # 长凳循环
-    stool_cycle = {
-        'swan_town:stool': 'swan_town:stool1',
-        'swan_town:stool1': 'swan_town:stool2',
-        'swan_town:stool2': 'swan_town:stool3',
-        'swan_town:stool3': 'swan_town:stool',
-    }
     # 检查当前方块是否在长凳循环映射中
     if block_name in stool_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
@@ -97,13 +95,6 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-    
-    # 画循环
-    picture_cycle = {
-        'swan_town:picture1': 'swan_town:picture2',
-        'swan_town:picture2': 'swan_town:picture3',
-        'swan_town:picture3': 'swan_town:picture1',
-    }
     # 检查当前方块是否在画循环映射中
     if block_name in picture_cycle and item_dict['newItemName'] in axe_name:
         old_block_dict=comp.GetBlockNew(block_pos,dimension)
