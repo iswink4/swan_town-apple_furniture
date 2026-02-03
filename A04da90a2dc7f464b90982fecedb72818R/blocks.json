@@ -292,5 +292,53 @@
             "identifier": "swan_town:side_table"
         },
         "sound": "glass"
+    },
+    "swan_town:shower_room1": {
+        "client_entity": {
+            "block_icon": "swan_town:shower_room1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:shower_room1"
+        },
+        "sound": "glass"
+    },  
+    "swan_town:shower_room2": {
+        "client_entity": {
+            "block_icon": "swan_town:shower_room2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:shower_room2"
+        },
+        "sound": "glass"
+    },  
+    "swan_town:floor_mirror1": {
+        "client_entity": {
+            "block_icon": "swan_town:floor_mirror1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:floor_mirror1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:floor_mirror2": {
+        "client_entity": {
+            "block_icon": "swan_town:floor_mirror2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:floor_mirror2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:bathtub1": {
+        "client_entity": {
+            "block_icon": "swan_town:bathtub1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:bathtub1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:bathtub2": {
+        "client_entity": {
+            "block_icon": "swan_town:bathtub2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:bathtub2"
+        },
+        "sound": "glass"
     }
 }
