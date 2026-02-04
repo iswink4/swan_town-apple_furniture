@@ -14,7 +14,7 @@
     },
     "swan_town:bathtub1": {
         "client_entity": {
-            "block_icon": "swan_town:bathtub1",
+            "block_icon": "swan_town:bathtub1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:bathtub1"
         },
@@ -135,7 +135,7 @@
     },
     "swan_town:carpet3": {
         "client_entity": {
-            "block_icon": "swan_town:carpet3_icon",
+            "block_icon": "swan_town:carpet1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:carpet3"
         },
@@ -143,7 +143,7 @@
     },
     "swan_town:carpet4": {
         "client_entity": {
-            "block_icon": "swan_town:carpet4_icon",
+            "block_icon": "swan_town:carpet2_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:carpet4"
         },
@@ -247,9 +247,9 @@
     },
     "swan_town:desk1": {
         "client_entity": {
-            "block_icon": "swan_town:desk3_icon",
+            "block_icon": "swan_town:desk1_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town:desk3"
+            "identifier": "swan_town:desk1"
         },
         "sound": "glass"
     },
@@ -431,7 +431,7 @@
     },
     "swan_town:sofa1": {
         "client_entity": {
-            "block_icon": "swan_town:sofa1_icon",
+            "block_icon": "swan_town:sofa_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:sofa1"
         },
@@ -439,7 +439,7 @@
     },
     "swan_town:sofa2": {
         "client_entity": {
-            "block_icon": "swan_town:sofa2_icon",
+            "block_icon": "swan_town:sofa_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:sofa2"
         },
@@ -447,7 +447,7 @@
     },
     "swan_town:sofa3": {
         "client_entity": {
-            "block_icon": "swan_town:sofa3_icon",
+            "block_icon": "swan_town:sofa_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:sofa3"
         },
@@ -455,7 +455,7 @@
     },
     "swan_town:sofa4": {
         "client_entity": {
-            "block_icon": "swan_town:sofa4_icon",
+            "block_icon": "swan_town:sofa_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:sofa4"
         },

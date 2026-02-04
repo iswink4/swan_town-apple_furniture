@@ -82,7 +82,7 @@
             "textures": "textures/new/bookshelf6"
         },
         "swan_town:cabinet1_icon": {
-            "textures": "textures/new/cabinet"
+            "textures": "textures/new/cabinet1"
         },
         "swan_town:cabinet2_icon": {
             "textures": "textures/new/cabinet2"
@@ -105,13 +105,13 @@
         "swan_town:clock_icon": {
             "textures": "textures/new/clock"
         },
-        "swan_town:closet1": {
+        "swan_town:closet1_icon": {
             "textures": "textures/new/closet1"
         },
-        "swan_town:closet2": {
+        "swan_town:closet2_icon": {
             "textures": "textures/new/closet2"
         },
-        "swan_town:closet3": {
+        "swan_town:closet3_icon": {
             "textures": "textures/new/closet3"
         },
         "swan_town:computer_icon": {
@@ -132,16 +132,16 @@
         "swan_town:doll2_icon": {
             "textures": "textures/new/doll2"
         },
-        "swan_town:dressing_table1": {
+        "swan_town:dressing_table1_icon": {
             "textures": "textures/new/dressing_table1"
         },
-        "swan_town:dressing_table2": {
+        "swan_town:dressing_table2_icon": {
             "textures": "textures/new/dressing_table2"
         },
-        "swan_town:floor_mirror1": {
+        "swan_town:floor_mirror1_icon": {
             "textures": "textures/new/floor_mirror1"
         },
-        "swan_town:floor_mirror2": {
+        "swan_town:floor_mirror2_icon": {
             "textures": "textures/new/floor_mirror2"
         },
         "swan_town:icebox_icon": {
