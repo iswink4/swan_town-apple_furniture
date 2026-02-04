@@ -532,5 +532,69 @@
             "identifier": "swan_town:stove"
         },
         "sound": "glass"
+    },
+    "swan_town:carpet1": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet2": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet3": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet4": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet4",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet4"
+        },
+        "sound": "glass"
+    },
+    "swan_town:bed_single": {
+        "client_entity": {
+            "block_icon": "swan_town:bed_single",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:bed_single"
+        },
+        "sound": "glass"
+    },
+    "swan_town:bed": {
+        "client_entity": {
+            "block_icon": "swan_town:bed",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:bed"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet_apple": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet_apple",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet_apple"
+        },
+        "sound": "glass"
+    },
+    "swan_town:mirror": {
+        "client_entity": {
+            "block_icon": "swan_town:mirror",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:mirror"
+        },
+        "sound": "glass"
     }
 }

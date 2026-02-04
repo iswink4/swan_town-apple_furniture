@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "swan_town:light_wall",
+      "geometry": {
+        "default": "geometry.light_wall"
+      },
+      "materials": {
+        "default": "foundation_alphatest_nocull"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "textures": {
+        "default": "textures/curtain"
+      }
+    }
+  }
+}

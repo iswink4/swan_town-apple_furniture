@@ -24,6 +24,15 @@
         },
         "swan_town:tv": {
             "textures": "textures/tv"
+        },
+        "swan_town:carpet": {
+            "textures": "textures/carpet"
+        },
+        "swan_town:bed": {
+            "textures": "textures/bed"
+        },
+        "swan_town:bed_single": {
+            "textures": "textures/bed_single"
         }
     },
     "texture_name": "atlas.terrain"
