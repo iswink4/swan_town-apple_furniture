@@ -7,23 +7,23 @@
         "swan_town:clock": {
             "textures": "textures/clock"
         },
-        "swan_town:glass": {
-            "textures": "textures/glass"
+        "swan_town:computer": {
+            "textures": "textures/computer"
         },
         "swan_town:curtain": {
             "textures": "textures/curtain"
         },
-        "swan_town:computer": {
-            "textures": "textures/computer"
-        },
-        "swan_town:tv": {
-            "textures": "textures/tv"
-        },
         "swan_town:furniture": {
             "textures": "textures/furniture"
         },
+        "swan_town:glass": {
+            "textures": "textures/glass"
+        },
         "swan_town:table1_icon": {
             "textures": "textures/icon/table1"
+        },
+        "swan_town:tv": {
+            "textures": "textures/tv"
         }
     },
     "texture_name": "atlas.terrain"

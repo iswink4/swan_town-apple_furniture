@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "swan_town:bookshelf4",
+      "geometry": {
+        "default": "geometry.bookshelf4"
+      },
+      "materials": {
+        "default": "foundation_alphatest_nocull"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "textures": {
+        "default": "textures/furniture"
+      }
+    }
+  }
+}

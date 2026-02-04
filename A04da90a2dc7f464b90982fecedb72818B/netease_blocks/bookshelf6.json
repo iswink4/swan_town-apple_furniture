@@ -2,9 +2,9 @@
     "format_version": "1.10.0",
     "minecraft:block": {
         "description": {
-            "identifier": "swan_town:tv2",
+            "identifier": "swan_town:bookshelf6",
             "register_to_creative_menu": true,
-            "category": "commands"
+            "category": "swan_town:apple"
         },
         "components": {
             "minecraft:block_light_absorption": {
