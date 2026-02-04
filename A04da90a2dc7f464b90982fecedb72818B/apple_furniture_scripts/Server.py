@@ -62,6 +62,11 @@ def change(args):
         'swan_town:tv1': 'swan_town:tv2',
         'swan_town:tv2': 'swan_town:tv1',
     }
+    # 电脑循环
+    computer_cycle = {
+        'swan_town:computer1': 'swan_town:computer2',
+        'swan_town:computer2': 'swan_town:computer1',
+    }
     # 检查当前方块是否在循环映射中
     # 桌子循环
     if block_name in table_cycle and item_dict['newItemName'] in axe_name:
@@ -108,7 +113,15 @@ def change(args):
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)
-        
+    # 检查当前方块是否在电脑循环映射中
+    if block_name in computer_cycle and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': computer_cycle[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
 @Listen(Events.ServerBlockUseEvent)
 def use(args):
     '''

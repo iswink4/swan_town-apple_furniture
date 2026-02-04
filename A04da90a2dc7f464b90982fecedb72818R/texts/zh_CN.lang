@@ -125,4 +125,11 @@ item.swan_town:bed.name=苹果床
 tile.swan_town:bed.name=苹果床
 item.swan_town:bed_single.name=苹果单人床
 tile.swan_town:bed_single.name=苹果单人床
-
+item.swan_town:block1.name=苹果地板1
+tile.swan_town:block1.name=苹果地板1
+item.swan_town:block2.name=苹果地板2
+tile.swan_town:block2.name=苹果地板2
+item.swan_town:block3.name=苹果地板3
+tile.swan_town:block3.name=苹果地板3
+item.swan_town:block4.name=苹果地板4
+tile.swan_town:block4.name=苹果地板4

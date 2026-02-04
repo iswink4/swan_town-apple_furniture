@@ -13,7 +13,7 @@
         "controller.render.default"
       ],
       "textures": {
-        "default": "textures/furniture"
+        "default": "textures/computer"
       }
     }
   }

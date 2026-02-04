@@ -13,7 +13,7 @@
         "controller.render.default"
       ],
       "textures": {
-        "default": "textures/glass"
+        "default": "textures/mirror"
       }
     }
   }

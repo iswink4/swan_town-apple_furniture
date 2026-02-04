@@ -28,6 +28,22 @@
         },
         "sound": "glass"
     },
+    "swan_town:bed": {
+        "client_entity": {
+            "block_icon": "swan_town:bed",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:bed"
+        },
+        "sound": "glass"
+    },
+    "swan_town:bed_single": {
+        "client_entity": {
+            "block_icon": "swan_town:bed_single",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:bed_single"
+        },
+        "sound": "glass"
+    },
     "swan_town:bookshelf1": {
         "client_entity": {
             "block_icon": "swan_town:bookshelf6",
@@ -101,6 +117,46 @@
         },
         "sound": "glass"
     },
+    "swan_town:carpet1": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet2": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet3": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet4": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet4",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet4"
+        },
+        "sound": "glass"
+    },
+    "swan_town:carpet_apple": {
+        "client_entity": {
+            "block_icon": "swan_town:carpet_apple",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:carpet_apple"
+        },
+        "sound": "glass"
+    },
     "swan_town:carpet_green": {
         "client_entity": {
             "block_icon": "swan_town:carpet_green",
@@ -138,6 +194,30 @@
             "block_icon": "swan_town:clock_wall",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:clock_wall"
+        },
+        "sound": "glass"
+    },
+    "swan_town:closet1": {
+        "client_entity": {
+            "block_icon": "swan_town:closet1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:closet1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:closet2": {
+        "client_entity": {
+            "block_icon": "swan_town:closet2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:closet2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:closet3": {
+        "client_entity": {
+            "block_icon": "swan_town:closet3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:closet3"
         },
         "sound": "glass"
     },
@@ -269,6 +349,14 @@
         },
         "sound": "glass"
     },
+    "swan_town:mirror": {
+        "client_entity": {
+            "block_icon": "swan_town:mirror",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:mirror"
+        },
+        "sound": "glass"
+    },
     "swan_town:picture1": {
         "client_entity": {
             "block_icon": "swan_town:picture1",
@@ -290,6 +378,22 @@
             "block_icon": "swan_town:picture3",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:picture3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:shelf1": {
+        "client_entity": {
+            "block_icon": "swan_town:shelf1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:shelf1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:shelf2": {
+        "client_entity": {
+            "block_icon": "swan_town:shelf2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:shelf2"
         },
         "sound": "glass"
     },
@@ -389,6 +493,14 @@
         },
         "sound": "glass"
     },
+    "swan_town:stove": {
+        "client_entity": {
+            "block_icon": "swan_town:stove",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:stove"
+        },
+        "sound": "glass"
+    },
     "swan_town:table1": {
         "client_entity": {
             "block_icon": "swan_town:table1_icon",
@@ -418,6 +530,14 @@
             "block_icon": "swan_town:table4",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:table4"
+        },
+        "sound": "glass"
+    },
+    "swan_town:toilet": {
+        "client_entity": {
+            "block_icon": "swan_town:toilet",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:toilet"
         },
         "sound": "glass"
     },
@@ -477,124 +597,16 @@
         },
         "sound": "glass"
     },
-    "swan_town:shelf1": {
-        "client_entity": {
-            "block_icon": "swan_town:shelf1",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:shelf1"
-        },
-        "sound": "glass"
+    "swan_town:block1": {
+        "textures": "swan_town:block1"
     },
-    "swan_town:shelf2": {
-        "client_entity": {
-            "block_icon": "swan_town:shelf2",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:shelf2"
-        },
-        "sound": "glass"
+    "swan_town:block2": {
+        "textures": "swan_town:block2"
     },
-    "swan_town:closet1": {
-        "client_entity": {
-            "block_icon": "swan_town:closet1",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:closet1"
-        },
-        "sound": "glass"
+    "swan_town:block3": {
+        "textures": "swan_town:block3"
     },
-    "swan_town:closet2": {
-        "client_entity": {
-            "block_icon": "swan_town:closet2",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:closet2"
-        },
-        "sound": "glass"
-    },
-    "swan_town:closet3": {
-        "client_entity": {
-            "block_icon": "swan_town:closet3",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:closet3"
-        },
-        "sound": "glass"
-    },
-    "swan_town:toilet": {
-        "client_entity": {
-            "block_icon": "swan_town:toilet",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:toilet"
-        },
-        "sound": "glass"
-    },
-    "swan_town:stove": {
-        "client_entity": {
-            "block_icon": "swan_town:stove",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:stove"
-        },
-        "sound": "glass"
-    },
-    "swan_town:carpet1": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet1",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet1"
-        },
-        "sound": "glass"
-    },
-    "swan_town:carpet2": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet2",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet2"
-        },
-        "sound": "glass"
-    },
-    "swan_town:carpet3": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet3",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet3"
-        },
-        "sound": "glass"
-    },
-    "swan_town:carpet4": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet4",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet4"
-        },
-        "sound": "glass"
-    },
-    "swan_town:bed_single": {
-        "client_entity": {
-            "block_icon": "swan_town:bed_single",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:bed_single"
-        },
-        "sound": "glass"
-    },
-    "swan_town:bed": {
-        "client_entity": {
-            "block_icon": "swan_town:bed",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:bed"
-        },
-        "sound": "glass"
-    },
-    "swan_town:carpet_apple": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet_apple",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet_apple"
-        },
-        "sound": "glass"
-    },
-    "swan_town:mirror": {
-        "client_entity": {
-            "block_icon": "swan_town:mirror",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:mirror"
-        },
-        "sound": "glass"
+    "swan_town:block4": {
+        "textures": "swan_town:block4"
     }
 }
