@@ -4,6 +4,9 @@
         "None:": {
             "textures": ""
         },
+        "swan_town:jiangjiang": {
+            "textures": "textures/jiangjiang"
+        },
         "swan_town:bed": {
             "textures": "textures/bed"
         },
@@ -50,7 +53,9 @@
             "textures": "textures/block4"
         },
 
-
+        "swan_town:jiangjiang_icon": {
+            "textures": "textures/new/jiangjiang"
+        },
         "swan_town:bathtub1_icon": {
             "textures": "textures/new/bathtub1"
         },

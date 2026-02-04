@@ -12,6 +12,14 @@
         },
         "sound": "glass"
     },
+    "swan_town:jiangjiang": {
+        "client_entity": {
+            "block_icon": "swan_town:jiangjiang_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:jiangjiang"
+        },
+        "sound": "glass"
+    },
     "swan_town:bathtub1": {
         "client_entity": {
             "block_icon": "swan_town:bathtub1_icon",

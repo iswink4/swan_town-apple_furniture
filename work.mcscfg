@@ -5,7 +5,7 @@
   "Versions": [],
   "JavaType": 8,
   "Name": "AppleFurniture",
-  "UpdateTime": "2026-02-04T21:46:09.6250911+08:00",
+  "UpdateTime": "2026-02-05T00:21:45.0384378+08:00",
   "IconName": null,
   "Md5": null,
   "CloudMd5": null,
@@ -52,7 +52,7 @@
   "TestExperimentalModding": false,
   "TestStartWithMap": false,
   "SelectComponents": [
-    "b01269774a2747559250b18cc40cbf2b",
+    "b6d17d5b9fbb4d93995d9133d467640c",
     "2ffc2773b9fc43a9bfe19bbd9765fc30"
   ],
   "isSlim": false,
