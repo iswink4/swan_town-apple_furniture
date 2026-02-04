@@ -468,5 +468,69 @@
             "identifier": "swan_town:wall_cabinet4"
         },
         "sound": "glass"
+    },
+    "swan_town:wardrobe": {
+        "client_entity": {
+            "block_icon": "swan_town:wardrobe",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:wardrobe"
+        },
+        "sound": "glass"
+    },
+    "swan_town:shelf1": {
+        "client_entity": {
+            "block_icon": "swan_town:shelf1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:shelf1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:shelf2": {
+        "client_entity": {
+            "block_icon": "swan_town:shelf2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:shelf2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:closet1": {
+        "client_entity": {
+            "block_icon": "swan_town:closet1",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:closet1"
+        },
+        "sound": "glass"
+    },
+    "swan_town:closet2": {
+        "client_entity": {
+            "block_icon": "swan_town:closet2",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:closet2"
+        },
+        "sound": "glass"
+    },
+    "swan_town:closet3": {
+        "client_entity": {
+            "block_icon": "swan_town:closet3",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:closet3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:toilet": {
+        "client_entity": {
+            "block_icon": "swan_town:toilet",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:toilet"
+        },
+        "sound": "glass"
+    },
+    "swan_town:stove": {
+        "client_entity": {
+            "block_icon": "swan_town:stove",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:stove"
+        },
+        "sound": "glass"
     }
 }
