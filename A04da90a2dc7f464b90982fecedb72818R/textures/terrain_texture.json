@@ -4,41 +4,23 @@
         "None:": {
             "textures": ""
         },
-        "swan_town:jiangjiang": {
-            "textures": "textures/jiangjiang"
+        "swan_town:bathtub1_icon": {
+            "textures": "textures/new/bathtub1"
+        },
+        "swan_town:bathtub2_icon": {
+            "textures": "textures/new/bathtub2"
         },
         "swan_town:bed": {
             "textures": "textures/bed"
         },
+        "swan_town:bed_icon": {
+            "textures": "textures/new/bed"
+        },
         "swan_town:bed_single": {
             "textures": "textures/bed_single"
         },
-        "swan_town:carpet": {
-            "textures": "textures/carpet"
-        },
-        "swan_town:clock": {
-            "textures": "textures/clock"
-        },
-        "swan_town:computer": {
-            "textures": "textures/computer"
-        },
-        "swan_town:curtain": {
-            "textures": "textures/curtain"
-        },
-        "swan_town:furniture": {
-            "textures": "textures/furniture"
-        },
-        "swan_town:glass": {
-            "textures": "textures/glass"
-        },
-        "swan_town:mirror": {
-            "textures": "textures/mirror"
-        },
-        "swan_town:table1_icon": {
-            "textures": "textures/icon/table1"
-        },
-        "swan_town:tv": {
-            "textures": "textures/tv"
+        "swan_town:bed_single_icon": {
+            "textures": "textures/new/bed_single"
         },
         "swan_town:block1": {
             "textures": "textures/block1"
@@ -51,22 +33,6 @@
         },
         "swan_town:block4": {
             "textures": "textures/block4"
-        },
-
-        "swan_town:jiangjiang_icon": {
-            "textures": "textures/new/jiangjiang"
-        },
-        "swan_town:bathtub1_icon": {
-            "textures": "textures/new/bathtub1"
-        },
-        "swan_town:bathtub2_icon": {
-            "textures": "textures/new/bathtub2"
-        },
-        "swan_town:bed_icon": {
-            "textures": "textures/new/bed"
-        },
-        "swan_town:bed_single_icon": {
-            "textures": "textures/new/bed_single"
         },
         "swan_town:bookshelf1_icon": {
             "textures": "textures/new/bookshelf1"
@@ -95,8 +61,8 @@
         "swan_town:cabinet3_icon": {
             "textures": "textures/new/cabinet3"
         },
-        "swan_town:carpet_apple_icon": {
-            "textures": "textures/new/carpet_apple"
+        "swan_town:carpet": {
+            "textures": "textures/carpet"
         },
         "swan_town:carpet1_icon": {
             "textures": "textures/new/carpet1"
@@ -104,8 +70,14 @@
         "swan_town:carpet2_icon": {
             "textures": "textures/new/carpet2"
         },
+        "swan_town:carpet_apple_icon": {
+            "textures": "textures/new/carpet_apple"
+        },
         "swan_town:chair_icon": {
             "textures": "textures/new/chair"
+        },
+        "swan_town:clock": {
+            "textures": "textures/clock"
         },
         "swan_town:clock_icon": {
             "textures": "textures/new/clock"
@@ -119,8 +91,14 @@
         "swan_town:closet3_icon": {
             "textures": "textures/new/closet3"
         },
+        "swan_town:computer": {
+            "textures": "textures/computer"
+        },
         "swan_town:computer_icon": {
             "textures": "textures/new/computer"
+        },
+        "swan_town:curtain": {
+            "textures": "textures/curtain"
         },
         "swan_town:desk1_icon": {
             "textures": "textures/new/desk1"
@@ -149,8 +127,20 @@
         "swan_town:floor_mirror2_icon": {
             "textures": "textures/new/floor_mirror2"
         },
+        "swan_town:furniture": {
+            "textures": "textures/furniture"
+        },
+        "swan_town:glass": {
+            "textures": "textures/glass"
+        },
         "swan_town:icebox_icon": {
             "textures": "textures/new/icebox"
+        },
+        "swan_town:jiangjiang": {
+            "textures": "textures/jiangjiang"
+        },
+        "swan_town:jiangjiang_icon": {
+            "textures": "textures/new/jiangjiang"
         },
         "swan_town:light1_icon": {
             "textures": "textures/new/light1"
@@ -160,6 +150,9 @@
         },
         "swan_town:light3_icon": {
             "textures": "textures/new/light3"
+        },
+        "swan_town:mirror": {
+            "textures": "textures/mirror"
         },
         "swan_town:mirror_icon": {
             "textures": "textures/new/mirror"
@@ -197,8 +190,14 @@
         "swan_town:stove_icon": {
             "textures": "textures/new/stove"
         },
+        "swan_town:table1_icon": {
+            "textures": "textures/icon/table1"
+        },
         "swan_town:toilet_icon": {
             "textures": "textures/new/toilet"
+        },
+        "swan_town:tv": {
+            "textures": "textures/tv"
         },
         "swan_town:tv_icon": {
             "textures": "textures/new/tv"

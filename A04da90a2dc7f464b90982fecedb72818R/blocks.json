@@ -12,14 +12,6 @@
         },
         "sound": "glass"
     },
-    "swan_town:jiangjiang": {
-        "client_entity": {
-            "block_icon": "swan_town:jiangjiang_icon",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:jiangjiang"
-        },
-        "sound": "glass"
-    },
     "swan_town:bathtub1": {
         "client_entity": {
             "block_icon": "swan_town:bathtub1_icon",
@@ -51,6 +43,18 @@
             "identifier": "swan_town:bed_single"
         },
         "sound": "glass"
+    },
+    "swan_town:block1": {
+        "textures": "swan_town:block1"
+    },
+    "swan_town:block2": {
+        "textures": "swan_town:block2"
+    },
+    "swan_town:block3": {
+        "textures": "swan_town:block3"
+    },
+    "swan_town:block4": {
+        "textures": "swan_town:block4"
     },
     "swan_town:bookshelf1": {
         "client_entity": {
@@ -333,6 +337,14 @@
         },
         "sound": "glass"
     },
+    "swan_town:jiangjiang": {
+        "client_entity": {
+            "block_icon": "swan_town:jiangjiang_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:jiangjiang"
+        },
+        "sound": "glass"
+    },
     "swan_town:light1": {
         "client_entity": {
             "block_icon": "swan_town:light1_icon",
@@ -604,17 +616,5 @@
             "identifier": "swan_town:wardrobe"
         },
         "sound": "glass"
-    },
-    "swan_town:block1": {
-        "textures": "swan_town:block1"
-    },
-    "swan_town:block2": {
-        "textures": "swan_town:block2"
-    },
-    "swan_town:block3": {
-        "textures": "swan_town:block3"
-    },
-    "swan_town:block4": {
-        "textures": "swan_town:block4"
     }
 }
