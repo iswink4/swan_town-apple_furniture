@@ -48,6 +48,170 @@
         },
         "swan_town:block4": {
             "textures": "textures/block4"
+        },
+
+
+        "swan_town:bathtub1_icon": {
+            "textures": "textures/new/bathtub1"
+        },
+        "swan_town:bathtub2_icon": {
+            "textures": "textures/new/bathtub2"
+        },
+        "swan_town:bed_icon": {
+            "textures": "textures/new/bed"
+        },
+        "swan_town:bed_single_icon": {
+            "textures": "textures/new/bed_single"
+        },
+        "swan_town:bookshelf1_icon": {
+            "textures": "textures/new/bookshelf1"
+        },
+        "swan_town:bookshelf2_icon": {
+            "textures": "textures/new/bookshelf2"
+        },
+        "swan_town:bookshelf3_icon": {
+            "textures": "textures/new/bookshelf3"
+        },
+        "swan_town:bookshelf4_icon": {
+            "textures": "textures/new/bookshelf4"
+        },
+        "swan_town:bookshelf5_icon": {
+            "textures": "textures/new/bookshelf5"
+        },
+        "swan_town:bookshelf6_icon": {
+            "textures": "textures/new/bookshelf6"
+        },
+        "swan_town:cabinet1_icon": {
+            "textures": "textures/new/cabinet"
+        },
+        "swan_town:cabinet2_icon": {
+            "textures": "textures/new/cabinet2"
+        },
+        "swan_town:cabinet3_icon": {
+            "textures": "textures/new/cabinet3"
+        },
+        "swan_town:carpet_apple_icon": {
+            "textures": "textures/new/carpet_apple"
+        },
+        "swan_town:carpet1_icon": {
+            "textures": "textures/new/carpet1"
+        },
+        "swan_town:carpet2_icon": {
+            "textures": "textures/new/carpet2"
+        },
+        "swan_town:chair_icon": {
+            "textures": "textures/new/chair"
+        },
+        "swan_town:clock_icon": {
+            "textures": "textures/new/clock"
+        },
+        "swan_town:closet1": {
+            "textures": "textures/new/closet1"
+        },
+        "swan_town:closet2": {
+            "textures": "textures/new/closet2"
+        },
+        "swan_town:closet3": {
+            "textures": "textures/new/closet3"
+        },
+        "swan_town:computer_icon": {
+            "textures": "textures/new/computer"
+        },
+        "swan_town:desk1_icon": {
+            "textures": "textures/new/desk1"
+        },
+        "swan_town:desk2_icon": {
+            "textures": "textures/new/desk2"
+        },
+        "swan_town:desk3_icon": {
+            "textures": "textures/new/desk3"
+        },
+        "swan_town:doll1_icon": {
+            "textures": "textures/new/doll1"
+        },
+        "swan_town:doll2_icon": {
+            "textures": "textures/new/doll2"
+        },
+        "swan_town:dressing_table1": {
+            "textures": "textures/new/dressing_table1"
+        },
+        "swan_town:dressing_table2": {
+            "textures": "textures/new/dressing_table2"
+        },
+        "swan_town:floor_mirror1": {
+            "textures": "textures/new/floor_mirror1"
+        },
+        "swan_town:floor_mirror2": {
+            "textures": "textures/new/floor_mirror2"
+        },
+        "swan_town:icebox_icon": {
+            "textures": "textures/new/icebox"
+        },
+        "swan_town:light1_icon": {
+            "textures": "textures/new/light1"
+        },
+        "swan_town:light2_icon": {
+            "textures": "textures/new/light2"
+        },
+        "swan_town:light3_icon": {
+            "textures": "textures/new/light3"
+        },
+        "swan_town:mirror_icon": {
+            "textures": "textures/new/mirror"
+        },
+        "swan_town:picture1_icon": {
+            "textures": "textures/new/picture1"
+        },
+        "swan_town:picture2_icon": {
+            "textures": "textures/new/picture2"
+        },
+        "swan_town:picture3_icon": {
+            "textures": "textures/new/picture3"
+        },
+        "swan_town:shelf1_icon": {
+            "textures": "textures/new/shelf1"
+        },
+        "swan_town:shelf2_icon": {
+            "textures": "textures/new/shelf2"
+        },
+        "swan_town:shower_room1_icon": {
+            "textures": "textures/new/shower_room1"
+        },
+        "swan_town:shower_room2_icon": {
+            "textures": "textures/new/shower_room2"
+        },
+        "swan_town:side_table_icon": {
+            "textures": "textures/new/side_table"
+        },
+        "swan_town:sofa_icon": {
+            "textures": "textures/new/sofa"
+        },
+        "swan_town:stool_icon": {
+            "textures": "textures/new/stool"
+        },
+        "swan_town:stove_icon": {
+            "textures": "textures/new/stove"
+        },
+        "swan_town:toilet_icon": {
+            "textures": "textures/new/toilet"
+        },
+        "swan_town:tv_icon": {
+            "textures": "textures/new/tv"
+        },
+        "swan_town:wall_cabinet1_icon": {
+            "textures": "textures/new/wall_cabinet1"
+        },
+        "swan_town:wall_cabinet2_icon": {
+            "textures": "textures/new/wall_cabinet2"
+        },
+        "swan_town:wall_cabinet3_icon": {
+            "textures": "textures/new/wall_cabinet3"
+        },
+        "swan_town:wall_cabinet4_icon": {
+            "textures": "textures/new/wall_cabinet4"
+        },
+        "swan_town:wardrobe_icon": {
+            "textures": "textures/new/wardrobe"
         }
     },
     "texture_name": "atlas.terrain"
