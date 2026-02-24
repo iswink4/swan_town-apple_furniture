@@ -2,7 +2,7 @@
     "format_version": "1.20.10",
     "minecraft:recipe_shapeless": {
         "description": {
-            "identifier": "swan_town:stove_recipe"
+            "identifier": "swan_town:recipe39"
         },
         "ingredients": [
             {
@@ -14,7 +14,7 @@
         "result": {
             "count": 1,
             "data": 0,
-            "item": "swan_town:stove"
+            "item": "swan_town:bookshelf1"
         },
         "tags": [
             "stonecutter"

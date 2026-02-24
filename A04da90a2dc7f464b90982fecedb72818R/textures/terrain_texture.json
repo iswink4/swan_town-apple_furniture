@@ -100,6 +100,12 @@
         "swan_town:curtain": {
             "textures": "textures/curtain"
         },
+        "swan_town:curtain11_icon": {
+            "textures": "textures/new/curtain11"
+        },
+        "swan_town:curtain21_icon": {
+            "textures": "textures/new/curtain21"
+        },
         "swan_town:desk1_icon": {
             "textures": "textures/new/desk1"
         },
@@ -217,11 +223,8 @@
         "swan_town:wardrobe_icon": {
             "textures": "textures/new/wardrobe"
         },
-        "swan_town:curtain11_icon": {
-            "textures": "textures/new/curtain11"
-        },
-        "swan_town:curtain21_icon": {
-            "textures": "textures/new/curtain21"
+        "urokz:": {
+            "textures": ""
         }
     },
     "texture_name": "atlas.terrain"
