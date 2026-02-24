@@ -616,5 +616,93 @@
             "identifier": "swan_town:wardrobe"
         },
         "sound": "glass"
+    },
+    "swan_town:curtain11": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain11",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain11"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain12": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain12",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain12"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain13": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain13",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain13"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain14": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain14",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain14" 
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain15": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain15",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain15"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain16": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain16",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain16"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain17": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain17",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain17"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain21": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain21",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain21"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain22": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain22",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain22"
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain23": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain23",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain23" 
+        },
+        "sound": "glass"
+    },
+    "swan_town:curtain24": {
+        "client_entity": {
+            "block_icon": "swan_town:curtain24",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:curtain24"
+        },
+        "sound": "glass"
     }
 }

@@ -67,6 +67,23 @@ def change(args):
         'swan_town:computer1': 'swan_town:computer2',
         'swan_town:computer2': 'swan_town:computer1',
     }
+    # 窗帘循环1
+    curtain_cycle1 = {
+        'swan_town:curtain11': 'swan_town:curtain12',
+        'swan_town:curtain12': 'swan_town:curtain13',
+        'swan_town:curtain13': 'swan_town:curtain14',
+        'swan_town:curtain14': 'swan_town:curtain15',
+        'swan_town:curtain15': 'swan_town:curtain16',
+        'swan_town:curtain16': 'swan_town:curtain17',
+        'swan_town:curtain17': 'swan_town:curtain11',
+    }
+    # 窗帘循环2
+    curtain_cycle2 = {
+        'swan_town:curtain21': 'swan_town:curtain22',
+        'swan_town:curtain22': 'swan_town:curtain23',
+        'swan_town:curtain23': 'swan_town:curtain24',
+        'swan_town:curtain24': 'swan_town:curtain21',
+    }
     # 检查当前方块是否在循环映射中
     # 桌子循环
     if block_name in table_cycle and item_dict['newItemName'] in axe_name:
@@ -119,6 +136,24 @@ def change(args):
         old_aux=old_block_dict['aux']
         block_dict = {
             'name': computer_cycle[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+    # 检查当前方块是否在窗帘循环1映射中
+    if block_name in curtain_cycle1 and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': curtain_cycle1[block_name],
+            'aux': old_aux
+        }
+        comp.SetBlockNew((block_pos), block_dict, 0, dimension)
+    # 检查当前方块是否在窗帘循环2映射中
+    if block_name in curtain_cycle2 and item_dict['newItemName'] in axe_name:
+        old_block_dict=comp.GetBlockNew(block_pos,dimension)
+        old_aux=old_block_dict['aux']
+        block_dict = {
+            'name': curtain_cycle2[block_name],
             'aux': old_aux
         }
         comp.SetBlockNew((block_pos), block_dict, 0, dimension)

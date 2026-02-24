@@ -1,0 +1,66 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.curtain23",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "group",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-16, 0, 15.5],
+							"size": [16, 16, 0.5],
+							"uv": {
+								"north": {"uv": [4, 0], "uv_size": [4, 4]},
+								"east": {"uv": [4, 0], "uv_size": [4, 4]},
+								"south": {"uv": [4, 0], "uv_size": [4, 4]},
+								"west": {"uv": [4, 0], "uv_size": [4, 4]},
+								"up": {"uv": [8, 4], "uv_size": [-4, -4]},
+								"down": {"uv": [8, 4], "uv_size": [-4, -4]}
+							}
+						}
+					]
+				}
+			],
+			"item_display_transforms": {
+				"firstperson_righthand": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.2, 0.2, 0.2],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"firstperson_lefthand": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.2, 0.2, 0.2],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"ground": {
+					"rotation": [0, 0, 0],
+					"translation": [0, 0, 0],
+					"scale": [0.3, 0.3, 0.3],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0]
+				},
+				"gui": {
+					"rotation": [30, -135, 0],
+					"translation": [4, 0, 0],
+					"scale": [0.625, 0.625, 0.625],
+					"rotation_pivot": [0, 0, 0],
+					"scale_pivot": [0, 0, 0],
+					"fit_to_frame": false
+				}
+			}
+		}
+	]
+}

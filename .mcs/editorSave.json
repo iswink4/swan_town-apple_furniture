@@ -310,7 +310,7 @@
             },
             "4_swan_town:bathtub1": {
                 "createTime": 1770192603.2111974,
-                "modifyTime": 1770222548.514776
+                "modifyTime": 1770224102.4827988
             },
             "4_swan_town:bathtub2": {
                 "createTime": 1770192603.2127075,
@@ -514,7 +514,7 @@
             },
             "4_swan_town:shower_room1": {
                 "createTime": 1770192603.2127075,
-                "modifyTime": 1770192603.2127075
+                "modifyTime": 1770224537.8582153
             },
             "4_swan_town:shower_room2": {
                 "createTime": 1770192603.2117062,
@@ -623,6 +623,10 @@
             "8192_category_config": {
                 "createTime": 1770127095.1238053,
                 "modifyTime": 1770127095.1238053
+            },
+            "8_swan_town:stove_recipe": {
+                "createTime": 1770224060.965932,
+                "modifyTime": 1770224060.965932
             },
             "8_urokz:recipe": {
                 "createTime": 1770222612.8361683,

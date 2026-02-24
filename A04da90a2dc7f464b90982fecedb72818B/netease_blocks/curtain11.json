@@ -1,0 +1,45 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": {
+                "value": 0.3
+            },
+            "minecraft:explosion_resistance": {
+                "value": 0.3
+            },
+            "netease:aabb": {
+                "clip": [
+                    {
+                        "max": [1,1,1],
+                        "min": [0,0,0.9]
+                    }
+                ],
+                "collision": [
+                    {
+                        "max": [0,0,0],
+                        "min": [0,0,0]
+                    }
+                ]
+            },
+            "netease:block_entity": {
+                "movable": false,
+                "tick": false
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            }
+        },
+        "description": {
+            "category": "swan_town:apple",
+            "identifier": "swan_town:curtain11",
+            "register_to_creative_menu": true
+        }
+    }
+}
