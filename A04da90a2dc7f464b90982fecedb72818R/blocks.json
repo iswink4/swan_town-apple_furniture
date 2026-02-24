@@ -140,27 +140,11 @@
         },
         "sound": "cloth"
     },
-    "swan_town:carpet2": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet2_icon",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet2"
-        },
-        "sound": "cloth"
-    },
     "swan_town:carpet3": {
         "client_entity": {
             "block_icon": "swan_town:carpet1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:carpet3"
-        },
-        "sound": "cloth"
-    },
-    "swan_town:carpet4": {
-        "client_entity": {
-            "block_icon": "swan_town:carpet2_icon",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:carpet4"
         },
         "sound": "cloth"
     },
