@@ -619,7 +619,7 @@
     },
     "swan_town:curtain11": {
         "client_entity": {
-            "block_icon": "swan_town:curtain11",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain11"
         },
@@ -675,7 +675,7 @@
     },
     "swan_town:curtain21": {
         "client_entity": {
-            "block_icon": "swan_town:curtain21",
+            "block_icon": "swan_town:curtain21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain21"
         },

@@ -39,7 +39,7 @@
         "description": {
             "category": "swan_town:apple",
             "identifier": "swan_town:curtain23",
-            "register_to_creative_menu": true
+            "register_to_creative_menu": false
         }
     }
 }

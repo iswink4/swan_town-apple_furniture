@@ -134,3 +134,7 @@ item.swan_town:block3.name=苹果地板3
 tile.swan_town:block3.name=苹果地板3
 item.swan_town:block4.name=苹果地板4
 tile.swan_town:block4.name=苹果地板4
+item.swan_town:curtain11.name=苹果窗帘1
+tile.swan_town:curtain11.name=苹果窗帘1
+item.swan_town:curtain21.name=苹果窗帘2
+tile.swan_town:curtain21.name=苹果窗帘2

@@ -216,6 +216,12 @@
         },
         "swan_town:wardrobe_icon": {
             "textures": "textures/new/wardrobe"
+        },
+        "swan_town:curtain11_icon": {
+            "textures": "textures/new/curtain11"
+        },
+        "swan_town:curtain21_icon": {
+            "textures": "textures/new/curtain21"
         }
     },
     "texture_name": "atlas.terrain"
