@@ -14,14 +14,30 @@
             "netease:aabb": {
                 "clip": [
                     {
-                        "max": [2,3,1],
-                        "min": [0,0,0]
+                        "max": [
+                            2,
+                            3,
+                            1
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
                     }
                 ],
                 "collision": [
                     {
-                        "max": [0,0,0],
-                        "min": [0,0,0]
+                        "max": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
                     }
                 ]
             },
@@ -41,5 +57,5 @@
             "identifier": "swan_town:shower_room2",
             "register_to_creative_menu": true
         }
-    }   
+    }
 }

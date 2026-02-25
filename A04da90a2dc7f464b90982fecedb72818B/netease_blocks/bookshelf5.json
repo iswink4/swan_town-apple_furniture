@@ -1,11 +1,6 @@
 {
     "format_version": "1.10.0",
     "minecraft:block": {
-        "description": {
-            "identifier": "swan_town:bookshelf5",
-            "register_to_creative_menu": true,
-            "category": "swan_town:apple"
-        },
         "components": {
             "minecraft:block_light_absorption": {
                 "value": 0
@@ -16,30 +11,51 @@
             "minecraft:explosion_resistance": {
                 "value": 0.3
             },
-          "netease:aabb": {
+            "netease:aabb": {
                 "clip": [
                     {
-                        "max": [2,3,1],
-                        "min": [0,0,0]
+                        "max": [
+                            2,
+                            3,
+                            1
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
                     }
                 ],
                 "collision": [
                     {
-                        "max": [2,3,1],
-                        "min": [0,0,0]
+                        "max": [
+                            2,
+                            3,
+                            1
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
                     }
                 ]
             },
-          "netease:render_layer": {
-             "value": "alpha"
-          },
-         "netease:block_entity": {
-          "tick": false,
-          "movable": false
-         },
-         "netease:face_directional": {
-	      "type": "direction"
-         }
+            "netease:block_entity": {
+                "movable": false,
+                "tick": false
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            }
+        },
+        "description": {
+            "category": "swan_town:apple",
+            "identifier": "swan_town:bookshelf5",
+            "register_to_creative_menu": true
         }
     }
 }
