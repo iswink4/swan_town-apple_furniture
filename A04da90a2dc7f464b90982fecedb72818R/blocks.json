@@ -605,14 +605,6 @@
         },
         "sound": "metal"
     },
-    "swan_town:wall_cabinet1": {
-        "client_entity": {
-            "block_icon": "swan_town:wall_cabinet1_icon",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:wall_cabinet1"
-        },
-        "sound": "wood"
-    },
     "swan_town:wall_cabinet2": {
         "client_entity": {
             "block_icon": "swan_town:wall_cabinet2_icon",
@@ -644,5 +636,61 @@
             "identifier": "swan_town:wardrobe"
         },
         "sound": "wood"
+    },
+    "swan_town:plant": {
+        "client_entity": {
+            "block_icon": "swan_town:plant_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:plant"
+        },
+        "sound": "glass"
+    },
+    "swan_town:apple_plant": {
+        "client_entity": {
+            "block_icon": "swan_town:apple_plant_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:apple_plant"
+        },
+        "sound": "glass"
+    },
+    "swan_town:wall_cabinet1_left": {
+        "client_entity": {
+            "block_icon": "swan_town:wall_cabinet1_left_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:wall_cabinet1_left"
+        },
+        "sound": "wood"
+    },
+    "swan_town:wall_cabinet1_right": {
+        "client_entity": {
+            "block_icon": "swan_town:wall_cabinet1_right_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:wall_cabinet1_right"
+        },
+        "sound": "wood"
+    },
+    "swan_town:books": {
+        "client_entity": {
+            "block_icon": "swan_town:books_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:books"
+        },
+        "sound": "cloth"
+    },
+    "swan_town:wall_light": {
+        "client_entity": {
+            "block_icon": "swan_town:wall_light_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:wall_light"
+        },
+        "sound": "glass"
+    },
+    "swan_town:microwave_oven": {
+        "client_entity": {
+            "block_icon": "swan_town:microwave_oven_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:microwave_oven"
+        },
+        "sound": "metal"
     }
 }

@@ -14,28 +14,30 @@
             "netease:aabb": {
                 "clip": {
                     "max": [
-                        1,
-                        1,
-                        1
+                        1.0,
+                        1.0,
+                        1.0
                     ],
                     "min": [
-                        0,
-                        0,
-                        0
+                        0.0,
+                        0.0,
+                        0.0
                     ]
                 },
-                "collision": {
-                    "max": [
-                        1,
-                        1,
-                        1
-                    ],
-                    "min": [
-                        0,
-                        0,
-                        0
-                    ]
-                }
+                "collision": [
+                    {
+                        "max": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
             },
             "netease:block_entity": {
                 "movable": false,
@@ -50,7 +52,7 @@
         },
         "description": {
             "category": "swan_town:apple",
-            "identifier": "swan_town:side_table",
+            "identifier": "swan_town:apple_plant",
             "register_to_creative_menu": true
         }
     }

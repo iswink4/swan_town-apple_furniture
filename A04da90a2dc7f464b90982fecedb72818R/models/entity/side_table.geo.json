@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.12.20",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -23,7 +23,7 @@
 								"east": {"uv": [8, 4], "uv_size": [4, 4]},
 								"south": {"uv": [8, 4], "uv_size": [4, 4]},
 								"west": {"uv": [8, 4], "uv_size": [4, 4]},
-								"up": {"uv": [11, 10], "uv_size": [-3, -2], "uv_rotation": 180},
+								"up": {"uv": [11, 12], "uv_size": [-3, -2]},
 								"down": {"uv": [12, 8], "uv_size": [-4, -4]}
 							}
 						},

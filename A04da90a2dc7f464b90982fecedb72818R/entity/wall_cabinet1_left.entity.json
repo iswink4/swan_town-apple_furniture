@@ -2,9 +2,9 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "swan_town:carpet_red",
+      "identifier": "swan_town:wall_cabinet1_left",
       "geometry": {
-        "default": "geometry.carpet_red"
+        "default": "geometry.wall_cabinet1_left"
       },
       "materials": {
         "default": "foundation_alphatest_nocull"
@@ -13,8 +13,8 @@
         "controller.render.default"
       ],
       "textures": {
-        "default": "textures/apple_red"
+        "default": "textures/furniture"
       }
     }
-  }
+  } 
 }

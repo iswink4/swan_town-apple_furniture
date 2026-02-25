@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.wall_cabinet2",
+				"identifier": "geometry.wall_cabinet1_left",
 				"texture_width": 64,
 				"texture_height": 64,
 				"visible_bounds_width": 3,
@@ -13,7 +13,7 @@
 			"bones": [
 				{
 					"name": "group2",
-					"pivot": [0, 0, 14],
+					"pivot": [0, 0, 13],
 					"cubes": [
 						{
 							"origin": [-16, 0, 2],
@@ -29,9 +29,9 @@
 						},
 						{
 							"origin": [-14, 2, 1],
-							"size": [12, 12, 1],
+							"size": [14, 12, 1],
 							"uv": {
-								"north": {"uv": [37, 4], "uv_size": [8, 9]},
+								"north": {"uv": [34, 2], "uv_size": [12, 13]},
 								"east": {"uv": [51, 34], "uv_size": [1, 10]},
 								"south": {"uv": [16, 10], "uv_size": [12, 10]},
 								"west": {"uv": [57, 36], "uv_size": [1, 10]},
@@ -40,7 +40,7 @@
 							}
 						},
 						{
-							"origin": [-5, 5, 0.9],
+							"origin": [-3, 5, 0.9],
 							"size": [1, 6, 0.1],
 							"uv": {
 								"north": {"uv": [51, 34], "uv_size": [1, 10]},
@@ -52,10 +52,6 @@
 							}
 						}
 					]
-				},
-				{
-					"name": "group",
-					"pivot": [0, 0, 14]
 				}
 			],
 			"item_display_transforms": {
@@ -82,7 +78,7 @@
 				},
 				"gui": {
 					"rotation": [24, 149, 0],
-					"translation": [0, 0, 0],
+					"translation": [-3, 0, 0],
 					"scale": [0.4, 0.4, 0.4],
 					"rotation_pivot": [0, 0, 0],
 					"scale_pivot": [0, 0, 0],

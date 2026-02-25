@@ -1,11 +1,11 @@
 {
-  "UID": "2ffc2773b9fc43a9bfe19bbd9765fc30",
+  "UID": "73b8c8ac53da4705b7d1c12505fb7a9a",
   "Language": 0,
   "Type": 7,
   "Versions": [],
   "JavaType": 8,
-  "Name": "AppleFurniture",
-  "UpdateTime": "2026-02-25T21:33:15.3859107+08:00",
+  "Name": "apple",
+  "UpdateTime": "2026-02-26T02:43:51.603354+08:00",
   "IconName": null,
   "Md5": null,
   "CloudMd5": null,
@@ -52,8 +52,8 @@
   "TestExperimentalModding": false,
   "TestStartWithMap": false,
   "SelectComponents": [
-    "1b895981bbd74ecea0959665f4995ec3",
-    "2ffc2773b9fc43a9bfe19bbd9765fc30"
+    "c5c7ef213cf447c7af8105db0d08f6f3",
+    "73b8c8ac53da4705b7d1c12505fb7a9a"
   ],
   "isSlim": false,
   "UseLegacyEditor": null,

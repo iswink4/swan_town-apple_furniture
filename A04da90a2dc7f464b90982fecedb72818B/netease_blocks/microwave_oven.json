@@ -14,28 +14,30 @@
             "netease:aabb": {
                 "clip": {
                     "max": [
-                        1,
-                        1,
-                        1
+                        1.0,
+                        1.0,
+                        1.0
                     ],
                     "min": [
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "collision": {
-                    "max": [
                         0.0,
                         0.0,
                         0.0
-                    ],
-                    "min": [
-                        0,
-                        0,
-                        0
                     ]
-                }
+                },
+                "collision": [
+                    {
+                        "max": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
             },
             "netease:block_entity": {
                 "movable": false,
@@ -50,7 +52,7 @@
         },
         "description": {
             "category": "swan_town:apple",
-            "identifier": "swan_town:wall_cabinet1",
+            "identifier": "swan_town:microwave_oven",
             "register_to_creative_menu": true
         }
     }

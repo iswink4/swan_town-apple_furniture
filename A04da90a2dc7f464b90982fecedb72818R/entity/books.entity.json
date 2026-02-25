@@ -2,9 +2,9 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "swan_town:wall_cabinet1",
+      "identifier": "swan_town:books",
       "geometry": {
-        "default": "geometry.wall_cabinet1"
+        "default": "geometry.books"
       },
       "materials": {
         "default": "foundation_alphatest_nocull"
@@ -13,7 +13,7 @@
         "controller.render.default"
       ],
       "textures": {
-        "default": "textures/furniture"
+        "default": "textures/curtain"
       }
     }
   }

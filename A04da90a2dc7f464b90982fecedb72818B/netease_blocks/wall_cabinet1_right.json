@@ -29,9 +29,9 @@
                 "collision": [
                     {
                         "max": [
-                            0,
-                            0,
-                            0
+                            1,
+                            1,
+                            1
                         ],
                         "min": [
                             0,
@@ -54,7 +54,7 @@
         },
         "description": {
             "category": "swan_town:apple",
-            "identifier": "swan_town:bathtub2",
+            "identifier": "swan_town:wall_cabinet1_right",
             "register_to_creative_menu": true
         }
     }

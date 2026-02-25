@@ -219,6 +219,27 @@
         },
         "swan_town:wardrobe_icon": {
             "textures": "textures/new/wardrobe"
+        },
+        "swan_town:wall_light_icon": {
+            "textures": "textures/new/wall_light"
+        },
+        "swan_town:apple_plant_icon": {
+            "textures": "textures/new/apple_plant"
+        },
+        "swan_town:books_icon": {
+            "textures": "textures/new/books"
+        },
+        "swan_town:microwave_oven_icon": {
+            "textures": "textures/new/microwave_oven"
+        },
+        "swan_town:plant_icon":{
+            "textures": "textures/new/plant"
+        },
+        "swan_town:wall_cabinet1_left_icon": {
+            "textures": "textures/new/wall_cabinet1_left"
+        },
+        "swan_town:wall_cabinet1_right_icon": {
+            "textures": "textures/new/wall_cabinet1_right"
         }
     },
     "texture_name": "atlas.terrain"
