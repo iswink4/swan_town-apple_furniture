@@ -206,7 +206,7 @@
     },
     "swan_town:curtain12": {
         "client_entity": {
-            "block_icon": "swan_town:curtain12",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain12"
         },
@@ -214,7 +214,7 @@
     },
     "swan_town:curtain13": {
         "client_entity": {
-            "block_icon": "swan_town:curtain13",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain13"
         },
@@ -222,7 +222,7 @@
     },
     "swan_town:curtain14": {
         "client_entity": {
-            "block_icon": "swan_town:curtain14",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain14"
         },
@@ -230,7 +230,7 @@
     },
     "swan_town:curtain15": {
         "client_entity": {
-            "block_icon": "swan_town:curtain15",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain15"
         },
@@ -238,7 +238,7 @@
     },
     "swan_town:curtain16": {
         "client_entity": {
-            "block_icon": "swan_town:curtain16",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain16"
         },
@@ -246,7 +246,7 @@
     },
     "swan_town:curtain17": {
         "client_entity": {
-            "block_icon": "swan_town:curtain17",
+            "block_icon": "swan_town:curtain11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain17"
         },
@@ -263,7 +263,7 @@
     },
     "swan_town:curtain22": {
         "client_entity": {
-            "block_icon": "swan_town:curtain22",
+            "block_icon": "swan_town:curtain21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain22"
         },
@@ -271,7 +271,7 @@
     },
     "swan_town:curtain23": {
         "client_entity": {
-            "block_icon": "swan_town:curtain23",
+            "block_icon": "swan_town:curtain21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain23"
         },
@@ -279,7 +279,7 @@
     },
     "swan_town:curtain24": {
         "client_entity": {
-            "block_icon": "swan_town:curtain24",
+            "block_icon": "swan_town:curtain21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:curtain24"
         },
@@ -519,7 +519,7 @@
     },
     "swan_town:stool1": {
         "client_entity": {
-            "block_icon": "swan_town:stool1_icon",
+            "block_icon": "swan_town:stool_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:stool1"
         },
@@ -527,7 +527,7 @@
     },
     "swan_town:stool2": {
         "client_entity": {
-            "block_icon": "swan_town:stool2_icon",
+            "block_icon": "swan_town:stool_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:stool2"
         },
@@ -535,7 +535,7 @@
     },
     "swan_town:stool3": {
         "client_entity": {
-            "block_icon": "swan_town:stool3_icon",
+            "block_icon": "swan_town:stool_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:stool3"
         },
@@ -559,7 +559,7 @@
     },
     "swan_town:table2": {
         "client_entity": {
-            "block_icon": "swan_town:table2_icon",
+            "block_icon": "swan_town:table1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:table2"
         },
@@ -567,7 +567,7 @@
     },
     "swan_town:table3": {
         "client_entity": {
-            "block_icon": "swan_town:table3_icon",
+            "block_icon": "swan_town:table1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:table3"
         },
@@ -575,7 +575,7 @@
     },
     "swan_town:table4": {
         "client_entity": {
-            "block_icon": "swan_town:table4_icon",
+            "block_icon": "swan_town:table1_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:table4"
         },
