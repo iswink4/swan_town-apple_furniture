@@ -17,7 +17,7 @@
             "item": "swan_town:plant"
         },
         "tags": [
-            "crafting_table"
+            "stonecutter"
         ],
         "unlock": {
             "context": "AlwaysUnlocked"

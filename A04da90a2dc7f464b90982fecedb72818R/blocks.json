@@ -621,14 +621,6 @@
         },
         "sound": "wood"
     },
-    "swan_town:wall_cabinet4": {
-        "client_entity": {
-            "block_icon": "swan_town:wall_cabinet4_icon",
-            "hand_model_use_client_entity": true,
-            "identifier": "swan_town:wall_cabinet4"
-        },
-        "sound": "wood"
-    },
     "swan_town:wardrobe": {
         "client_entity": {
             "block_icon": "swan_town:wardrobe_icon",
