@@ -352,6 +352,10 @@
                 "createTime": 1770196416.5220757,
                 "modifyTime": 1770196416.5220757
             },
+            "32_loot": {
+                "createTime": 1771955440.9396384,
+                "modifyTime": 1771956014.6032143
+            },
             "4_swan_town:bathtub1": {
                 "createTime": 1770192603.2111974,
                 "modifyTime": 1770224102.4827988
@@ -470,7 +474,7 @@
             },
             "4_swan_town:computer1": {
                 "createTime": 1770127095.1238053,
-                "modifyTime": 1771949586.6251476
+                "modifyTime": 1772010325.2236423
             },
             "4_swan_town:computer2": {
                 "createTime": 1770127095.1238053,
@@ -478,11 +482,11 @@
             },
             "4_swan_town:curtain11": {
                 "createTime": 1771948946.5731838,
-                "modifyTime": 1771949328.580541
+                "modifyTime": 1772010347.7045515
             },
             "4_swan_town:curtain12": {
                 "createTime": 1771948946.5716846,
-                "modifyTime": 1771949332.810239
+                "modifyTime": 1771955635.1305387
             },
             "4_swan_town:curtain13": {
                 "createTime": 1771948946.5716846,
@@ -506,7 +510,7 @@
             },
             "4_swan_town:curtain21": {
                 "createTime": 1771948946.5731838,
-                "modifyTime": 1771949355.1348698
+                "modifyTime": 1772010362.2622404
             },
             "4_swan_town:curtain22": {
                 "createTime": 1771948946.5731838,
@@ -618,7 +622,7 @@
             },
             "4_swan_town:sofa1": {
                 "createTime": 1770127095.1238053,
-                "modifyTime": 1771949475.5967944
+                "modifyTime": 1772010392.693467
             },
             "4_swan_town:sofa2": {
                 "createTime": 1770127095.1238053,
@@ -634,7 +638,7 @@
             },
             "4_swan_town:stool": {
                 "createTime": 1770127095.1238053,
-                "modifyTime": 1771949503.033486
+                "modifyTime": 1772010409.3360863
             },
             "4_swan_town:stool1": {
                 "createTime": 1770127095.1238053,
@@ -654,7 +658,7 @@
             },
             "4_swan_town:table1": {
                 "createTime": 1770127095.1238053,
-                "modifyTime": 1771949516.0960662
+                "modifyTime": 1772010421.9307287
             },
             "4_swan_town:table2": {
                 "createTime": 1770127095.1238053,
@@ -674,7 +678,7 @@
             },
             "4_swan_town:tv1": {
                 "createTime": 1770192603.2096753,
-                "modifyTime": 1771949554.2447674
+                "modifyTime": 1772010432.617171
             },
             "4_swan_town:tv2": {
                 "createTime": 1770192603.2096753,

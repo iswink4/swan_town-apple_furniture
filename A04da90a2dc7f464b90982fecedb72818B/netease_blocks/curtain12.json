@@ -11,6 +11,9 @@
             "minecraft:explosion_resistance": {
                 "value": 0.3
             },
+            "minecraft:loot": {
+                "table": "loot_tables/loot.json"
+            },
             "netease:aabb": {
                 "clip": [
                     {

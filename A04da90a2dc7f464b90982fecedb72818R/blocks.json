@@ -92,7 +92,6 @@
         },
         "sound": "wood"
     },
-
     "swan_town:cabinet1": {
         "client_entity": {
             "block_icon": "swan_town:cabinet1_icon",

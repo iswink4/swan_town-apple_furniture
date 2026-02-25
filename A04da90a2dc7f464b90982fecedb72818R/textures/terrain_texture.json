@@ -1,9 +1,6 @@
 {
     "resource_pack_name": "nuclear_reloaded",
     "texture_data": {
-        "None:": {
-            "textures": ""
-        },
         "swan_town:bathtub1_icon": {
             "textures": "textures/new/bathtub1"
         },
@@ -222,9 +219,6 @@
         },
         "swan_town:wardrobe_icon": {
             "textures": "textures/new/wardrobe"
-        },
-        "urokz:": {
-            "textures": ""
         }
     },
     "texture_name": "atlas.terrain"

@@ -1,3 +1,4 @@
+craftingScreen.tab.swan_town_apple=天鹅小镇：苹果系列
 tile.swan_town:jiangjiang.name=江江
 item.swan_town:jiangjiang.name=江江
 tile.swan_town:table1.name=苹果桌子
@@ -134,7 +135,7 @@ item.swan_town:block3.name=苹果地板3
 tile.swan_town:block3.name=苹果地板3
 item.swan_town:block4.name=苹果地板4
 tile.swan_town:block4.name=苹果地板4
-item.swan_town:curtain11.name=苹果窗帘1
-tile.swan_town:curtain11.name=苹果窗帘1
-item.swan_town:curtain21.name=苹果窗帘2
-tile.swan_town:curtain21.name=苹果窗帘2
+item.swan_town:curtain11.name=绿格子窗帘1
+tile.swan_town:curtain11.name=绿格子窗帘1
+item.swan_town:curtain21.name=绿格子窗帘2
+tile.swan_town:curtain21.name=绿格子窗帘2
