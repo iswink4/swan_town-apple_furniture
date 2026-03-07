@@ -5,29 +5,51 @@ from .QuModLibs.Util import QThrottle
 from .config import AXE_NAMES, ALL_BLOCK_CYCLES, CHAIR_LIST, SIT_ANIMATION_NAME, SEAT_HEIGHT
 
 sitting_players = {}
-last_click_time = {}
+last_sit_time = {}
+
+def _cycle_block(comp, block_pos, block_name, dimension):
+    old_block_dict = comp.GetBlockNew(block_pos, dimension)
+    old_aux = old_block_dict['aux']
+    block_dict = {
+        'name': ALL_BLOCK_CYCLES[block_name],
+        'aux': old_aux
+    }
+    comp.SetBlockNew(block_pos, block_dict, 0, dimension)
+
+@Listen(Events.ItemUseOnAfterServerEvent)
+@QThrottle(intervalTime=0.2)
+def on_item_use(args):
+    item_dict = args["itemDict"]
+    block_pos = args["x"], args["y"], args["z"]
+    block_name = args["blockName"]
+    dimension = args["dimensionId"]
+    
+    if item_dict.get('newItemName', '') in AXE_NAMES and block_name in ALL_BLOCK_CYCLES:
+        comp = serverApi.GetEngineCompFactory().CreateBlockInfo(serverApi.GetLevelId)
+        _cycle_block(comp, block_pos, block_name, dimension)
 
 @Listen(Events.ServerBlockUseEvent)
-def use(args):
+def on_block_use(args):
     block_name = args['blockName']
     player_id = args['playerId']
     x, y, z = args['x'], args['y'], args['z']
+    
+    comp = serverApi.GetEngineCompFactory()
+    item_comp = comp.CreateItem(player_id)
+    hand_item = item_comp.GetPlayerItem(2, 0, False)
+    item_name = hand_item.get('newItemName', '') if hand_item else ''
+    
+    if item_name in AXE_NAMES and block_name in ALL_BLOCK_CYCLES:
+        return
     
     if block_name not in CHAIR_LIST:
         return
     
     now = time.time()
-    last_time = last_click_time.get(player_id, 0)
+    last_time = last_sit_time.get(player_id, 0)
     if now - last_time < 0.3:
         return
-    last_click_time[player_id] = now
-    
-    comp = serverApi.GetEngineCompFactory()
-    item_comp = comp.CreateItem(player_id)
-    hand_item = item_comp.GetPlayerItem(0, 0, False)
-    
-    if hand_item and hand_item.get('newItemName') in AXE_NAMES:
-        return
+    last_sit_time[player_id] = now
     
     if player_id in sitting_players:
         stand_up(player_id)
