@@ -1,11 +1,11 @@
 {
-  "UID": "73b8c8ac53da4705b7d1c12505fb7a9a",
+  "UID": "708b2de594c749ef9b4119d8c79a802c",
   "Language": 0,
   "Type": 7,
   "Versions": [],
   "JavaType": 8,
-  "Name": "apple",
-  "UpdateTime": "2026-02-26T03:25:22.5543359+08:00",
+  "Name": "bug",
+  "UpdateTime": "2026-03-08T00:43:19.1491506+08:00",
   "IconName": null,
   "Md5": null,
   "CloudMd5": null,
@@ -52,8 +52,8 @@
   "TestExperimentalModding": false,
   "TestStartWithMap": false,
   "SelectComponents": [
-    "c5c7ef213cf447c7af8105db0d08f6f3",
-    "73b8c8ac53da4705b7d1c12505fb7a9a"
+    "4fe490b69ffc4ca8a6214dfb4bf9cc59",
+    "708b2de594c749ef9b4119d8c79a802c"
   ],
   "isSlim": false,
   "UseLegacyEditor": null,

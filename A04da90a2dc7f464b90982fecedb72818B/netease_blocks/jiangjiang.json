@@ -37,7 +37,7 @@
                     ]
                 }
             },
-            "netease:block_entity": {
+"netease:block_entity": {
                 "movable": false,
                 "tick": false
             },

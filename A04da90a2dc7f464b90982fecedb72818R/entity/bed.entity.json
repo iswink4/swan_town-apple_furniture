@@ -4,7 +4,7 @@
     "description": {
       "identifier": "swan_town:bed",
       "geometry": {
-        "default": "geometry.bed"
+        "default": "geometry.swan_town_bed"
       },
       "materials": {
         "default": "foundation_alphatest_nocull"
