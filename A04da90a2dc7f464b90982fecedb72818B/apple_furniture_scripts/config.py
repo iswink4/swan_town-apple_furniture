@@ -73,10 +73,21 @@ ALL_BLOCK_CYCLES = {}
 for cycle_dict in BLOCK_CYCLES.values():
     ALL_BLOCK_CYCLES.update(cycle_dict)
 
-# 椅子列表
+# 椅子列表（可坐下的方块）
 CHAIR_LIST = [
     'swan_town:sofa1',
     'swan_town:sofa2',
     'swan_town:sofa3',
     'swan_town:sofa4',
+    'swan_town:chair',
+    'swan_town:stool',
+    'swan_town:stool1',
+    'swan_town:stool2',
+    'swan_town:stool3',
 ]
+
+# 坐下动画名称
+SIT_ANIMATION_NAME = "animation.sit_chair"
+
+# 座位高度偏移
+SEAT_HEIGHT = 0.5

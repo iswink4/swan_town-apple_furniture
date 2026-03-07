@@ -2,60 +2,70 @@
 import time
 from .QuModLibs.Server import *
 from .QuModLibs.Util import QThrottle
-from .config import AXE_NAMES, ALL_BLOCK_CYCLES, CHAIR_LIST
+from .config import AXE_NAMES, ALL_BLOCK_CYCLES, CHAIR_LIST, SIT_ANIMATION_NAME, SEAT_HEIGHT
 
-def __init__(self,namespace,system_name):
-    ServerSystem.__init__(self,namespace,system_name)
-    self.sit=0
-
-def _cycle_block(comp, block_pos, block_name, dimension):
-    '''
-    循环切换方块类型
-    :param comp: 方块信息组件
-    :param block_pos: 方块位置
-    :param block_name: 当前方块名称
-    :param dimension: 维度ID
-    :return: None
-    '''
-    old_block_dict = comp.GetBlockNew(block_pos, dimension)
-    old_aux = old_block_dict['aux']
-    block_dict = {
-        'name': ALL_BLOCK_CYCLES[block_name],
-        'aux': old_aux
-    }
-    comp.SetBlockNew(block_pos, block_dict, 0, dimension)
-
-@Listen(Events.ItemUseOnAfterServerEvent)
-@QThrottle(intervalTime=0.2)
-def change(args):
-    '''
-    原版斧子改变家具样式
-    :param args: 事件参数
-    :return: None
-    '''
-    item_dict = args["itemDict"]
-    block_pos = args["x"], args["y"], args["z"]
-    block_name = args["blockName"]
-    dimension = args["dimensionId"]
-    comp = serverApi.GetEngineCompFactory().CreateBlockInfo(serverApi.GetLevelId)
-    
-    # 检查当前方块是否在循环映射中，且使用的是斧子
-    if item_dict['newItemName'] in AXE_NAMES and block_name in ALL_BLOCK_CYCLES:
-        _cycle_block(comp, block_pos, block_name, dimension)
+sitting_players = {}
+last_click_time = {}
 
 @Listen(Events.ServerBlockUseEvent)
 def use(args):
-    '''
-    家具交互
-    :param args: 事件参数
-    :return: None
-    '''
     block_name = args['blockName']
     player_id = args['playerId']
-    x = args['x']
-    y = args['y']
-    z = args['z']
+    x, y, z = args['x'], args['y'], args['z']
     
-    timercomp = serverApi.GetEngineCompFactory().CreateGame(serverApi.GetLevelId())
-    commandcomp = serverApi.GetEngineCompFactory().CreateCommand(serverApi.GetLevelId())
-    playercomp = serverApi.GetEngineCompFactory().CreatePlayer(player_id)
+    if block_name not in CHAIR_LIST:
+        return
+    
+    now = time.time()
+    last_time = last_click_time.get(player_id, 0)
+    if now - last_time < 0.3:
+        return
+    last_click_time[player_id] = now
+    
+    comp = serverApi.GetEngineCompFactory()
+    item_comp = comp.CreateItem(player_id)
+    hand_item = item_comp.GetPlayerItem(0, 0, False)
+    
+    if hand_item and hand_item.get('newItemName') in AXE_NAMES:
+        return
+    
+    if player_id in sitting_players:
+        stand_up(player_id)
+    else:
+        sit_down(player_id, x, y, z)
+
+def sit_down(player_id, x, y, z):
+    comp = serverApi.GetEngineCompFactory()
+    seat_pos = (x + 0.5, y + SEAT_HEIGHT, z + 0.5)
+    
+    pos_comp = comp.CreatePos(player_id)
+    pos_comp.SetFootPos(seat_pos)
+    
+    sitting_players[player_id] = {"pos": (x, y, z), "seat_pos": seat_pos}
+    Call(player_id, "PlaySitAnim")
+
+def stand_up(player_id):
+    if player_id not in sitting_players:
+        return
+    del sitting_players[player_id]
+    Call(player_id, "StopSitAnim")
+
+@Listen(Events.OnScriptTickServer)
+def on_tick():
+    comp = serverApi.GetEngineCompFactory()
+    for player_id, data in list(sitting_players.items()):
+        pos_comp = comp.CreatePos(player_id)
+        current_pos = pos_comp.GetFootPos()
+        if current_pos:
+            dx = current_pos[0] - data["seat_pos"][0]
+            dy = current_pos[1] - data["seat_pos"][1]
+            dz = current_pos[2] - data["seat_pos"][2]
+            if dx*dx + dy*dy + dz*dz > 0.3:
+                stand_up(player_id)
+
+@Listen(Events.DestroyBlockEvent)
+def on_block_destroy(args):
+    pos = (args['x'], args['y'], args['z'])
+    for pid, data in list(sitting_players.items()):
+        if data["pos"] == pos:
+            stand_up(pid)
