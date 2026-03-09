@@ -138,7 +138,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town:chair"
         },
-        "sound": "glass"
+        "sound": "wood"
     },
     "swan_town:clock_table": {
         "client_entity": {

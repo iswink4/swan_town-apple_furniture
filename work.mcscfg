@@ -1,11 +1,11 @@
 {
-  "UID": "4126a859beb940378ac6864e1df3c3d3",
+  "UID": "77c4a0bec6344a2c9b78dae7f4170729",
   "Language": 0,
   "Type": 7,
   "Versions": [],
   "JavaType": 8,
-  "Name": "坐",
-  "UpdateTime": "2026-03-08T02:51:31.0874972+08:00",
+  "Name": "苹果重置",
+  "UpdateTime": "2026-03-10T00:49:55.515232+08:00",
   "IconName": null,
   "Md5": null,
   "CloudMd5": null,
@@ -52,9 +52,10 @@
   "TestExperimentalModding": false,
   "TestStartWithMap": false,
   "SelectComponents": [
-    "4fe490b69ffc4ca8a6214dfb4bf9cc59",
+    "df0022eef7f84edaa49375213e425709",
     "708b2de594c749ef9b4119d8c79a802c",
-    "4126a859beb940378ac6864e1df3c3d3"
+    "4126a859beb940378ac6864e1df3c3d3",
+    "77c4a0bec6344a2c9b78dae7f4170729"
   ],
   "isSlim": false,
   "UseLegacyEditor": null,
