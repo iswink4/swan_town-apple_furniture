@@ -5,6 +5,10 @@
       "+defines": ["ENABLE_FOG", "ENABLE_LIGHT", "USE_OVERLAY"],
       "+states": ["DisableCulling"],
       "msaaSupport": "Both"
+    },
+    "tms_alpha_light:entity_static":{
+      "+defines":["USE_UV_ANIM","ALPHA_TEST","USE_EMISSIVE"],
+      "+states":["Blending","DisableCulling"]
     }
   }
 }

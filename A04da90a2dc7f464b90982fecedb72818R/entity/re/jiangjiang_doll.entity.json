@@ -1,0 +1,20 @@
+{
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.jiangjiang_doll"
+            }, 
+            "render_controllers": [
+                "controller.render.default"
+            ], 
+            "identifier": "swan_town_apple:jiangjiang_doll", 
+            "textures": {
+                "default": "textures/jiangjiang"
+            }, 
+            "materials": {
+                "default": "foundation_alphatest_nocull"
+            }
+        }
+    }, 
+    "format_version": "1.10.0"
+}

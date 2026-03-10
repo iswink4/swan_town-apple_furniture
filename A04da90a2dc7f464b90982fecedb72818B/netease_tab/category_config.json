@@ -4,6 +4,11 @@
       "name": "swan_town:apple",
       "labelText": "craftingScreen.tab.swan_town_apple",
       "icon": "textures/new/jiangjiang"
+    },
+    {
+      "name": "swan_town_apple:apple",
+      "labelText": "craftingScreen.tab.swan_town_apple_re",
+      "icon": "textures/new/jiangjiang"
     }
   ]
 }

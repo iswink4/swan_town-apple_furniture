@@ -1,0 +1,20 @@
+{
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.painting_13"
+            }, 
+            "render_controllers": [
+                "controller.render.default"
+            ], 
+            "identifier": "swan_town_apple:painting_13", 
+            "textures": {
+                "default": "textures/re/red_apple"
+            }, 
+            "materials": {
+                "default": "foundation_alphatest_nocull"
+            }
+        }
+    }, 
+    "format_version": "1.10.0"
+}

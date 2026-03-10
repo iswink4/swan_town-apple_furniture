@@ -240,6 +240,20 @@
         },
         "swan_town:wall_cabinet1_right_icon": {
             "textures": "textures/new/wall_cabinet1_right"
+        },
+
+
+        "swan_town_apple:red_apple":{
+            "textures": "textures/re/red_apple"
+        },
+        "swan_town_apple:red_other":{
+            "textures": "textures/re/red_other"
+        },
+        "swan_town_apple:green_apple":{
+            "textures": "textures/re/green_apple"
+        },
+        "swan_town_apple:green_other":{
+            "textures": "textures/re/green_other"
         }
     },
     "texture_name": "atlas.terrain"
