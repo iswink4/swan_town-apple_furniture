@@ -1,4 +1,4 @@
-{
+﻿{
     "resource_pack_name": "nuclear_reloaded",
     "texture_data": {
         "swan_town:bathtub1_icon": {
@@ -254,6 +254,379 @@
         },
         "swan_town_apple:green_other":{
             "textures": "textures/re/green_other"
+        },
+
+        "swan_town_apple:bathtub_11_icon": {
+            "textures": "textures/re/icon/bathtub_11"
+        },
+        "swan_town_apple:bathtub_21_icon": {
+            "textures": "textures/re/icon/bathtub_21"
+        },
+        "swan_town_apple:bed_11_icon": {
+            "textures": "textures/re/icon/bed_11"
+        },
+        "swan_town_apple:bed_12_icon": {
+            "textures": "textures/re/icon/bed_12"
+        },
+        "swan_town_apple:bookshelf_11_icon": {
+            "textures": "textures/re/icon/bookshelf_11"
+        },
+        "swan_town_apple:bookshelf_12_icon": {
+            "textures": "textures/re/icon/bookshelf_12"
+        },
+        "swan_town_apple:bookshelf_13_icon": {
+            "textures": "textures/re/icon/bookshelf_13"
+        },
+        "swan_town_apple:bookshelf_14_icon": {
+            "textures": "textures/re/icon/bookshelf_14"
+        },
+        "swan_town_apple:bookshelf_15_icon": {
+            "textures": "textures/re/icon/bookshelf_15"
+        },
+        "swan_town_apple:cabinet_11_icon": {
+            "textures": "textures/re/icon/cabinet_11"
+        },
+        "swan_town_apple:cabinet_12_icon": {
+            "textures": "textures/re/icon/cabinet_12"
+        },
+        "swan_town_apple:cabinet_13_icon": {
+            "textures": "textures/re/icon/cabinet_13"
+        },
+        "swan_town_apple:cabinet_14_icon": {
+            "textures": "textures/re/icon/cabinet_14"
+        },
+        "swan_town_apple:cabinet_15_icon": {
+            "textures": "textures/re/icon/cabinet_15"
+        },
+        "swan_town_apple:candle_11_icon": {
+            "textures": "textures/re/icon/candle_11"
+        },
+        "swan_town_apple:chair_11_icon": {
+            "textures": "textures/re/icon/chair_11"
+        },
+        "swan_town_apple:chair_12_icon": {
+            "textures": "textures/re/icon/chair_12"
+        },
+        "swan_town_apple:chair_13_icon": {
+            "textures": "textures/re/icon/chair_13"
+        },
+        "swan_town_apple:chair_14_icon": {
+            "textures": "textures/re/icon/chair_14"
+        },
+        "swan_town_apple:closet_11_icon": {
+            "textures": "textures/re/icon/closet_11"
+        },
+        "swan_town_apple:closet_12_icon": {
+            "textures": "textures/re/icon/closet_12"
+        },
+        "swan_town_apple:closet_13_icon": {
+            "textures": "textures/re/icon/closet_13"
+        },
+        "swan_town_apple:closet_14_icon": {
+            "textures": "textures/re/icon/closet_14"
+        },
+        "swan_town_apple:closet_15_icon": {
+            "textures": "textures/re/icon/closet_15"
+        },
+        "swan_town_apple:closet_16_icon": {
+            "textures": "textures/re/icon/closet_16"
+        },
+        "swan_town_apple:closet_21_icon": {
+            "textures": "textures/re/icon/closet_21"
+        },
+        "swan_town_apple:closet_22_icon": {
+            "textures": "textures/re/icon/closet_22"
+        },
+        "swan_town_apple:closet_23_icon": {
+            "textures": "textures/re/icon/closet_23"
+        },
+        "swan_town_apple:closet_24_icon": {
+            "textures": "textures/re/icon/closet_24"
+        },
+        "swan_town_apple:closet_25_icon": {
+            "textures": "textures/re/icon/closet_25"
+        },
+        "swan_town_apple:closet_26_icon": {
+            "textures": "textures/re/icon/closet_26"
+        },
+        "swan_town_apple:coffee_table_11_icon": {
+            "textures": "textures/re/icon/coffee_table_11"
+        },
+        "swan_town_apple:coffee_table_12_icon": {
+            "textures": "textures/re/icon/coffee_table_12"
+        },
+        "swan_town_apple:computer_11_icon": {
+            "textures": "textures/re/icon/computer_11"
+        },
+        "swan_town_apple:computer_12_icon": {
+            "textures": "textures/re/icon/computer_12"
+        },
+        "swan_town_apple:computer_22_icon": {
+            "textures": "textures/re/icon/computer_22"
+        },
+        "swan_town_apple:counter_11_icon": {
+            "textures": "textures/re/icon/counter_11"
+        },
+        "swan_town_apple:counter_12_icon": {
+            "textures": "textures/re/icon/counter_12"
+        },
+        "swan_town_apple:counter_13_icon": {
+            "textures": "textures/re/icon/counter_13"
+        },
+        "swan_town_apple:counter_14_icon": {
+            "textures": "textures/re/icon/counter_14"
+        },
+        "swan_town_apple:counter_15_icon": {
+            "textures": "textures/re/icon/counter_15"
+        },
+        "swan_town_apple:counter_16_icon": {
+            "textures": "textures/re/icon/counter_16"
+        },
+        "swan_town_apple:counter_17_icon": {
+            "textures": "textures/re/icon/counter_17"
+        },
+        "swan_town_apple:cupboard_11_icon": {
+            "textures": "textures/re/icon/cupboard_11"
+        },
+        "swan_town_apple:cupboard_12_icon": {
+            "textures": "textures/re/icon/cupboard_12"
+        },
+        "swan_town_apple:decoration_11_icon": {
+            "textures": "textures/re/icon/decoration_11"
+        },
+        "swan_town_apple:decoration_13_icon": {
+            "textures": "textures/re/icon/decoration_13"
+        },
+        "swan_town_apple:decoration_14_icon": {
+            "textures": "textures/re/icon/decoration_14"
+        },
+        "swan_town_apple:decoration_15_icon": {
+            "textures": "textures/re/icon/decoration_15"
+        },
+        "swan_town_apple:decoration_16_icon": {
+            "textures": "textures/re/icon/decoration_16"
+        },
+        "swan_town_apple:decoration_17_icon": {
+            "textures": "textures/re/icon/decoration_17"
+        },
+        "swan_town_apple:decoration_18_icon": {
+            "textures": "textures/re/icon/decoration_18"
+        },
+        "swan_town_apple:decoration_19_icon": {
+            "textures": "textures/re/icon/decoration_19"
+        },
+        "swan_town_apple:decoration_20_icon": {
+            "textures": "textures/re/icon/decoration_20"
+        },
+        "swan_town_apple:decoration_21_icon": {
+            "textures": "textures/re/icon/decoration_21"
+        },
+        "swan_town_apple:decoration_22_icon": {
+            "textures": "textures/re/icon/decoration_22"
+        },
+        "swan_town_apple:desk_11_icon": {
+            "textures": "textures/re/icon/desk_11"
+        },
+        "swan_town_apple:desk_12_icon": {
+            "textures": "textures/re/icon/desk_12"
+        },
+        "swan_town_apple:desk_13_icon": {
+            "textures": "textures/re/icon/desk_13"
+        },
+        "swan_town_apple:desk_14_icon": {
+            "textures": "textures/re/icon/desk_14"
+        },
+        "swan_town_apple:lamp_11_icon": {
+            "textures": "textures/re/icon/lamp_11"
+        },
+        "swan_town_apple:lamp_12_icon": {
+            "textures": "textures/re/icon/lamp_12"
+        },
+        "swan_town_apple:lamp_13_icon": {
+            "textures": "textures/re/icon/lamp_13"
+        },
+        "swan_town_apple:lamp_14_icon": {
+            "textures": "textures/re/icon/lamp_14"
+        },
+        "swan_town_apple:lamp_15_icon": {
+            "textures": "textures/re/icon/lamp_15"
+        },
+        "swan_town_apple:lamp_16_icon": {
+            "textures": "textures/re/icon/lamp_16"
+        },
+        "swan_town_apple:lamp_17_icon": {
+            "textures": "textures/re/icon/lamp_17"
+        },
+        "swan_town_apple:lamp_172_icon": {
+            "textures": "textures/re/icon/lamp_172"
+        },
+        "swan_town_apple:lamp_173_icon": {
+            "textures": "textures/re/icon/lamp_173"
+        },
+        "swan_town_apple:laundry_basket_icon": {
+            "textures": "textures/re/icon/laundry_basket"
+        },
+        "swan_town_apple:microwave_icon": {
+            "textures": "textures/re/icon/microwave"
+        },
+        "swan_town_apple:mirror_11_icon": {
+            "textures": "textures/re/icon/mirror_11"
+        },
+        "swan_town_apple:mirror_12_icon": {
+            "textures": "textures/re/icon/mirror_12"
+        },
+        "swan_town_apple:mirror_13_icon": {
+            "textures": "textures/re/icon/mirror_13"
+        },
+        "swan_town_apple:painting_11_icon": {
+            "textures": "textures/re/icon/painting_11"
+        },
+        "swan_town_apple:painting_12_icon": {
+            "textures": "textures/re/icon/painting_12"
+        },
+        "swan_town_apple:painting_13_icon": {
+            "textures": "textures/re/icon/painting_13"
+        },
+        "swan_town_apple:painting_14_icon": {
+            "textures": "textures/re/icon/painting_14"
+        },
+        "swan_town_apple:painting_15_icon": {
+            "textures": "textures/re/icon/painting_15"
+        },
+        "swan_town_apple:painting_16_icon": {
+            "textures": "textures/re/icon/painting_16"
+        },
+        "swan_town_apple:painting_17_icon": {
+            "textures": "textures/re/icon/painting_17"
+        },
+        "swan_town_apple:plant_11_icon": {
+            "textures": "textures/re/icon/plant_11"
+        },
+        "swan_town_apple:plant_12_icon": {
+            "textures": "textures/re/icon/plant_12"
+        },
+        "swan_town_apple:plant_13_icon": {
+            "textures": "textures/re/icon/plant_13"
+        },
+        "swan_town_apple:plant_14_icon": {
+            "textures": "textures/re/icon/plant_14"
+        },
+        "swan_town_apple:plant_15_icon": {
+            "textures": "textures/re/icon/plant_15"
+        },
+        "swan_town_apple:refrigerator_11_icon": {
+            "textures": "textures/re/icon/refrigerator_11"
+        },
+        "swan_town_apple:refrigerator_12_icon": {
+            "textures": "textures/re/icon/refrigerator_12"
+        },
+        "swan_town_apple:rug_11_icon": {
+            "textures": "textures/re/icon/rug_11"
+        },
+        "swan_town_apple:rug_12_icon": {
+            "textures": "textures/re/icon/rug_12"
+        },
+        "swan_town_apple:rug_13_icon": {
+            "textures": "textures/re/icon/rug_13"
+        },
+        "swan_town_apple:rug_14_icon": {
+            "textures": "textures/re/icon/rug_14"
+        },
+        "swan_town_apple:shower_11_icon": {
+            "textures": "textures/re/icon/shower_11"
+        },
+        "swan_town_apple:shower_12_icon": {
+            "textures": "textures/re/icon/shower_12"
+        },
+        "swan_town_apple:shower_13_icon": {
+            "textures": "textures/re/icon/shower_13"
+        },
+        "swan_town_apple:side_table_11_icon": {
+            "textures": "textures/re/icon/side_table_11"
+        },
+        "swan_town_apple:side_table_12_icon": {
+            "textures": "textures/re/icon/side_table_12"
+        },
+        "swan_town_apple:side_table_13_icon": {
+            "textures": "textures/re/icon/side_table_13"
+        },
+        "swan_town_apple:sink_11_icon": {
+            "textures": "textures/re/icon/sink_11"
+        },
+        "swan_town_apple:sink_12_icon": {
+            "textures": "textures/re/icon/sink_12"
+        },
+        "swan_town_apple:sofa_11_icon": {
+            "textures": "textures/re/icon/sofa_11"
+        },
+        "swan_town_apple:sofa_21_icon": {
+            "textures": "textures/re/icon/sofa_21"
+        },
+        "swan_town_apple:stool_11_icon": {
+            "textures": "textures/re/icon/stool_11"
+        },
+        "swan_town_apple:stove_icon": {
+            "textures": "textures/re/icon/stove"
+        },
+        "swan_town_apple:succulent_11_icon": {
+            "textures": "textures/re/icon/succulent_11"
+        },
+        "swan_town_apple:succulent_12_icon": {
+            "textures": "textures/re/icon/succulent_12"
+        },
+        "swan_town_apple:table_11_icon": {
+            "textures": "textures/re/icon/table_11"
+        },
+        "swan_town_apple:table_21_icon": {
+            "textures": "textures/re/icon/table_21"
+        },
+        "swan_town_apple:table_31_icon": {
+            "textures": "textures/re/icon/table_31"
+        },
+        "swan_town_apple:table_41_icon": {
+            "textures": "textures/re/icon/table_41"
+        },
+        "swan_town_apple:table_51_icon": {
+            "textures": "textures/re/icon/table_51"
+        },
+        "swan_town_apple:toilet_icon": {
+            "textures": "textures/re/icon/toilet"
+        },
+        "swan_town_apple:tv_12_icon": {
+            "textures": "textures/re/icon/tv_12"
+        },
+        "swan_town_apple:tv_22_icon": {
+            "textures": "textures/re/icon/tv_22"
+        },
+        "swan_town_apple:vase_11_icon": {
+            "textures": "textures/re/icon/vase_11"
+        },
+        "swan_town_apple:vase_12_icon": {
+            "textures": "textures/re/icon/vase_12"
+        },
+        "swan_town_apple:vase_13_icon": {
+            "textures": "textures/re/icon/vase_13"
+        },
+        "swan_town_apple:vase_14_icon": {
+            "textures": "textures/re/icon/vase_14"
+        },
+        "swan_town_apple:vase_15_icon": {
+            "textures": "textures/re/icon/vase_15"
+        },
+        "swan_town_apple:vase_16_icon": {
+            "textures": "textures/re/icon/vase_16"
+        },
+        "swan_town_apple:wardrobe_11_icon": {
+            "textures": "textures/re/icon/wardrobe_11"
+        },
+        "swan_town_apple:wardrobe_12_icon": {
+            "textures": "textures/re/icon/wardrobe_12"
+        },
+        "swan_town_apple:wardrobe_13_icon": {
+            "textures": "textures/re/icon/wardrobe_13"
+        },
+        "swan_town_apple:washing_machine_icon": {
+            "textures": "textures/re/icon/washing_machine"
         }
     },
     "texture_name": "atlas.terrain"

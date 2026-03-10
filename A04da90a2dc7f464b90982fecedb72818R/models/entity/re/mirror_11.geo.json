@@ -1,12 +1,12 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
 				"identifier": "geometry.mirror_11",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 4.5,
 				"visible_bounds_offset": [0, 1.75, 0]
 			},
@@ -41,7 +41,7 @@
 						},
 						{
 							"origin": [-15, 32, 12.8],
-							"size": [3, 7, 0],
+							"size": [3, 7, 0.01],
 							"uv": {
 								"north": {"uv": [7.6, 12.8], "uv_size": [1, 2.2]},
 								"east": {"uv": [7.6, 12.8], "uv_size": [1, 2.2]},
@@ -53,7 +53,7 @@
 						},
 						{
 							"origin": [-13, 39, 12.8],
-							"size": [3, 3, 0],
+							"size": [3, 3, 0.01],
 							"pivot": [-11.5, 40.5, 12.8],
 							"rotation": [0, 0, 22.5],
 							"uv": {
@@ -67,7 +67,7 @@
 						},
 						{
 							"origin": [-4, 2, 12.8],
-							"size": [3, 3, 0],
+							"size": [3, 3, 0.01],
 							"pivot": [-2.5, 3.5, 12.8],
 							"rotation": [0, 0, 22.5],
 							"uv": {

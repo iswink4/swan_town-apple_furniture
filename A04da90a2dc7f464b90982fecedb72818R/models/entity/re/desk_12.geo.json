@@ -1,5 +1,5 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
@@ -41,7 +41,7 @@
 						},
 						{
 							"origin": [-5, 27, 3.9],
-							"size": [3.9, 4, 0],
+							"size": [3.9, 4, 0.01],
 							"pivot": [-3.05, 29, 3.9],
 							"rotation": [0, 0, 22.5],
 							"uv": {
@@ -55,7 +55,7 @@
 						},
 						{
 							"origin": [-10, 27.5, 3.9],
-							"size": [3.9, 4, 0],
+							"size": [3.9, 4, 0.01],
 							"uv": {
 								"north": {"uv": [7.4, 15], "uv_size": [1.2, 1]},
 								"east": {"uv": [7.4, 15], "uv_size": [1.2, 1]},

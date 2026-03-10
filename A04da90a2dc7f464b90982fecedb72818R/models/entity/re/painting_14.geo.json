@@ -1,12 +1,12 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
 				"identifier": "geometry.painting_14",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
@@ -17,16 +17,11 @@
 					"cubes": [
 						{
 							"origin": [-12, 2, 15],
-							"size": [7, 12, 0],
+							"size": [7, 12, 0.01],
 							"pivot": [-8.5, 8, 15],
 							"rotation": [0, 0, 22.5],
 							"uv": {
-								"north": {"uv": [5.33333, 0], "uv_size": [4.33334, 8.66667]},
-								"east": {"uv": [5.33333, 0], "uv_size": [4.33334, 8.66667]},
-								"south": {"uv": [5.33333, 0], "uv_size": [4.33334, 8.66667]},
-								"west": {"uv": [5.33333, 0], "uv_size": [4.33334, 8.66667]},
-								"up": {"uv": [9.66667, 8.66667], "uv_size": [-4.33334, -8.66667]},
-								"down": {"uv": [9.66667, 8.66667], "uv_size": [-4.33334, -8.66667]}
+								"south": {"uv": [5.33333, 0], "uv_size": [4.33334, 8.66667]}
 							}
 						},
 						{

@@ -1,12 +1,12 @@
 {
-	"format_version": "1.12.0",
+	"format_version": "1.21.20",
 	"minecraft:geometry": [
 		{
 			"description": {
 				"identifier": "geometry.closet_11",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 3,
+				"visible_bounds_width": 4,
 				"visible_bounds_height": 2.5,
 				"visible_bounds_offset": [0, 0.75, 0]
 			},
@@ -41,7 +41,7 @@
 						},
 						{
 							"origin": [-16, 10, 0.25],
-							"size": [16, 5, 0],
+							"size": [16, 5, 0.01],
 							"uv": {
 								"north": {"uv": [9.6, 6.6], "uv_size": [3.2, 1.4]},
 								"east": {"uv": [9.6, 6.4], "uv_size": [6.4, 1.6]},

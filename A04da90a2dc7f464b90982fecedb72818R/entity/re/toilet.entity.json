@@ -2,7 +2,7 @@
     "minecraft:client_entity": {
         "description": {
             "geometry": {
-                "default": "geometry.toilet"
+                "default": "geometry.toilet_re"
             }, 
             "render_controllers": [
                 "controller.render.default"
