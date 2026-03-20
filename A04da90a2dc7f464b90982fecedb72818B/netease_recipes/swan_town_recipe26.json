@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "swan_town:recipe26"
+        },
+        "ingredients": [
+            {
+                "count": 1,
+                "item": "swan_town:jiangjiang"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "swan_town:table1"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "unlock": {
+            "context": "AlwaysUnlocked"
+        }
+    }
+}

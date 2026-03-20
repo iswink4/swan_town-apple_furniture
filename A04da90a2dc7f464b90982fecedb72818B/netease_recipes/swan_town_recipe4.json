@@ -1,0 +1,33 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "swan_town:recipe4"
+        },
+        "key": {
+            "E": {
+                "data": 0,
+                "item": "minecraft:apple"
+            },
+            "I": {
+                "data": 0,
+                "item": "minecraft:jungle_planks"
+            }
+        },
+        "pattern": [
+            "III",
+            "IEI",
+            "III"
+        ],
+        "result": {
+            "count": 8,
+            "item": "swan_town:jiangjiang"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "unlock": {
+            "context": "AlwaysUnlocked"
+        }
+    }
+}

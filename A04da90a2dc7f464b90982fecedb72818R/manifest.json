@@ -1,0 +1,24 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "",
+    "name": "天鹅小镇：苹果系列",
+    "uuid": "032ba747-104a-4709-9d5b-7094d3d19bc1",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 18, 0]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "resources",
+      "uuid": "c78395bd-f612-43f5-9a3e-ba9856da0e0d",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "55e0d514-05d9-4ad1-94bf-cedd614c55b1",
+      "version": [1, 0, 0]
+    }
+  ]
+}

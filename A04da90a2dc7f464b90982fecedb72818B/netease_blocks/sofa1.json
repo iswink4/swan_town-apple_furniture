@@ -1,0 +1,60 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": {
+                "value": 0.3
+            },
+            "minecraft:explosion_resistance": {
+                "value": 0.3
+            },
+            "netease:aabb": {
+                "clip": {
+                    "max": [
+                        1,
+                        0.5,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "collision": {
+                    "max": [
+                        1,
+                        0.5,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            "netease:block_entity": {
+                "movable": false,
+                "tick": false
+            },
+            "netease:custom_tips": {
+                "value": "任意斧子右击可改变样式"
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            }
+        },
+        "description": {
+            "category": "swan_town:apple",
+            "identifier": "swan_town:sofa1",
+            "register_to_creative_menu": true
+        }
+    }
+}

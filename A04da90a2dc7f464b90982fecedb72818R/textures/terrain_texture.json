@@ -1,0 +1,246 @@
+{
+    "resource_pack_name": "nuclear_reloaded",
+    "texture_data": {
+        "swan_town:bathtub1_icon": {
+            "textures": "textures/new/bathtub1"
+        },
+        "swan_town:bathtub2_icon": {
+            "textures": "textures/new/bathtub2"
+        },
+        "swan_town:bed": {
+            "textures": "textures/bed"
+        },
+        "swan_town:bed_icon": {
+            "textures": "textures/new/bed"
+        },
+        "swan_town:bed_single": {
+            "textures": "textures/bed_single"
+        },
+        "swan_town:bed_single_icon": {
+            "textures": "textures/new/bed_single"
+        },
+        "swan_town:block1": {
+            "textures": "textures/block1"
+        },
+        "swan_town:block2": {
+            "textures": "textures/block2"
+        },
+        "swan_town:block3": {
+            "textures": "textures/block3"
+        },
+        "swan_town:block4": {
+            "textures": "textures/block4"
+        },
+        "swan_town:bookshelf1_icon": {
+            "textures": "textures/new/bookshelf1"
+        },
+        "swan_town:bookshelf2_icon": {
+            "textures": "textures/new/bookshelf2"
+        },
+        "swan_town:bookshelf3_icon": {
+            "textures": "textures/new/bookshelf3"
+        },
+        "swan_town:bookshelf4_icon": {
+            "textures": "textures/new/bookshelf4"
+        },
+        "swan_town:bookshelf5_icon": {
+            "textures": "textures/new/bookshelf5"
+        },
+        "swan_town:bookshelf6_icon": {
+            "textures": "textures/new/bookshelf6"
+        },
+        "swan_town:cabinet1_icon": {
+            "textures": "textures/new/cabinet1"
+        },
+        "swan_town:cabinet2_icon": {
+            "textures": "textures/new/cabinet2"
+        },
+        "swan_town:cabinet3_icon": {
+            "textures": "textures/new/cabinet3"
+        },
+        "swan_town:carpet": {
+            "textures": "textures/carpet"
+        },
+        "swan_town:carpet1_icon": {
+            "textures": "textures/new/carpet1"
+        },
+        "swan_town:carpet2_icon": {
+            "textures": "textures/new/carpet2"
+        },
+        "swan_town:carpet_apple_icon": {
+            "textures": "textures/new/carpet_apple"
+        },
+        "swan_town:chair_icon": {
+            "textures": "textures/new/chair"
+        },
+        "swan_town:clock": {
+            "textures": "textures/clock"
+        },
+        "swan_town:clock_icon": {
+            "textures": "textures/new/clock"
+        },
+        "swan_town:closet1_icon": {
+            "textures": "textures/new/closet1"
+        },
+        "swan_town:closet2_icon": {
+            "textures": "textures/new/closet2"
+        },
+        "swan_town:closet3_icon": {
+            "textures": "textures/new/closet3"
+        },
+        "swan_town:computer": {
+            "textures": "textures/computer"
+        },
+        "swan_town:computer_icon": {
+            "textures": "textures/new/computer"
+        },
+        "swan_town:curtain": {
+            "textures": "textures/curtain"
+        },
+        "swan_town:curtain11_icon": {
+            "textures": "textures/new/curtain11"
+        },
+        "swan_town:curtain21_icon": {
+            "textures": "textures/new/curtain21"
+        },
+        "swan_town:desk1_icon": {
+            "textures": "textures/new/desk1"
+        },
+        "swan_town:desk2_icon": {
+            "textures": "textures/new/desk2"
+        },
+        "swan_town:desk3_icon": {
+            "textures": "textures/new/desk3"
+        },
+        "swan_town:doll1_icon": {
+            "textures": "textures/new/doll1"
+        },
+        "swan_town:doll2_icon": {
+            "textures": "textures/new/doll2"
+        },
+        "swan_town:dressing_table1_icon": {
+            "textures": "textures/new/dressing_table1"
+        },
+        "swan_town:dressing_table2_icon": {
+            "textures": "textures/new/dressing_table2"
+        },
+        "swan_town:floor_mirror1_icon": {
+            "textures": "textures/new/floor_mirror1"
+        },
+        "swan_town:floor_mirror2_icon": {
+            "textures": "textures/new/floor_mirror2"
+        },
+        "swan_town:furniture": {
+            "textures": "textures/furniture"
+        },
+        "swan_town:glass": {
+            "textures": "textures/glass"
+        },
+        "swan_town:icebox_icon": {
+            "textures": "textures/new/icebox"
+        },
+        "swan_town:jiangjiang": {
+            "textures": "textures/jiangjiang"
+        },
+        "swan_town:jiangjiang_icon": {
+            "textures": "textures/new/jiangjiang"
+        },
+        "swan_town:light1_icon": {
+            "textures": "textures/new/light1"
+        },
+        "swan_town:light2_icon": {
+            "textures": "textures/new/light2"
+        },
+        "swan_town:light3_icon": {
+            "textures": "textures/new/light3"
+        },
+        "swan_town:mirror": {
+            "textures": "textures/mirror"
+        },
+        "swan_town:mirror_icon": {
+            "textures": "textures/new/mirror"
+        },
+        "swan_town:picture1_icon": {
+            "textures": "textures/new/picture1"
+        },
+        "swan_town:picture2_icon": {
+            "textures": "textures/new/picture2"
+        },
+        "swan_town:picture3_icon": {
+            "textures": "textures/new/picture3"
+        },
+        "swan_town:shelf1_icon": {
+            "textures": "textures/new/shelf1"
+        },
+        "swan_town:shelf2_icon": {
+            "textures": "textures/new/shelf2"
+        },
+        "swan_town:shower_room1_icon": {
+            "textures": "textures/new/shower_room1"
+        },
+        "swan_town:shower_room2_icon": {
+            "textures": "textures/new/shower_room2"
+        },
+        "swan_town:side_table_icon": {
+            "textures": "textures/new/side_table"
+        },
+        "swan_town:sofa_icon": {
+            "textures": "textures/new/sofa"
+        },
+        "swan_town:stool_icon": {
+            "textures": "textures/new/stool"
+        },
+        "swan_town:stove_icon": {
+            "textures": "textures/new/stove"
+        },
+        "swan_town:table1_icon": {
+            "textures": "textures/icon/table1"
+        },
+        "swan_town:toilet_icon": {
+            "textures": "textures/new/toilet"
+        },
+        "swan_town:tv": {
+            "textures": "textures/tv"
+        },
+        "swan_town:tv_icon": {
+            "textures": "textures/new/tv"
+        },
+        "swan_town:wall_cabinet1_icon": {
+            "textures": "textures/new/wall_cabinet1"
+        },
+        "swan_town:wall_cabinet2_icon": {
+            "textures": "textures/new/wall_cabinet2"
+        },
+        "swan_town:wall_cabinet3_icon": {
+            "textures": "textures/new/wall_cabinet3"
+        },
+        "swan_town:wall_cabinet4_icon": {
+            "textures": "textures/new/wall_cabinet4"
+        },
+        "swan_town:wardrobe_icon": {
+            "textures": "textures/new/wardrobe"
+        },
+        "swan_town:wall_light_icon": {
+            "textures": "textures/new/wall_light"
+        },
+        "swan_town:apple_plant_icon": {
+            "textures": "textures/new/apple_plant"
+        },
+        "swan_town:books_icon": {
+            "textures": "textures/new/books"
+        },
+        "swan_town:microwave_oven_icon": {
+            "textures": "textures/new/microwave_oven"
+        },
+        "swan_town:plant_icon":{
+            "textures": "textures/new/plant"
+        },
+        "swan_town:wall_cabinet1_left_icon": {
+            "textures": "textures/new/wall_cabinet1_left"
+        },
+        "swan_town:wall_cabinet1_right_icon": {
+            "textures": "textures/new/wall_cabinet1_right"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

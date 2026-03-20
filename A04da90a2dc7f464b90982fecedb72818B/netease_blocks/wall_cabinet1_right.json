@@ -1,0 +1,67 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "minecraft:destroy_time": {
+                "value": 0.3
+            },
+            "minecraft:explosion_resistance": {
+                "value": 0.3
+            },
+            "netease:aabb": {
+                "clip": [
+                    {
+                        "max": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ],
+                "collision": [
+                    {
+                        "max": [
+                            1,
+                            1,
+                            1
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
+            },
+            "netease:block_entity": {
+                "movable": false,
+                "tick": false
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            },
+            "netease:block_container": {
+				"custom_description": "壁柜",
+				"screen_name": "netease_container.netease_custom_container_screen", 
+				"container_size": 27 
+			}
+        },
+        "description": {
+            "base_block": "netease_container",
+            "category": "swan_town:apple",
+            "identifier": "swan_town:wall_cabinet1_right",
+            "register_to_creative_menu": true
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.player.sit_chair": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"transitions": [
+						{ "sitting": "query.mod.sitting" }
+					]
+				},
+				"sitting": {
+					"animations": [ "sit_chair" ],
+					"transitions": [
+						{ "default": "!query.mod.sitting" }
+					]
+				}
+			}
+		}
+	}
+}

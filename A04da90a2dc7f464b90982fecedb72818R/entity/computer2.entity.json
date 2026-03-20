@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "swan_town:computer2",
+      "geometry": {
+        "default": "geometry.computer2"
+      },
+      "materials": {
+        "default": "foundation_alphatest_nocull"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "textures": {
+        "default": "textures/computer"
+      }
+    }
+  }
+}

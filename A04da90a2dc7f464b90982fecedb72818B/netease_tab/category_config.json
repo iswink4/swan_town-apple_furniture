@@ -1,0 +1,9 @@
+{
+  "category": [
+    {
+      "name": "swan_town:apple",
+      "labelText": "craftingScreen.tab.swan_town_apple",
+      "icon": "textures/new/jiangjiang"
+    }
+  ]
+}
