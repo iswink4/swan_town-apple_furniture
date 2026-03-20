@@ -91,3 +91,57 @@ SIT_ANIMATION_NAME = "animation.sit_chair"
 
 # 座位高度偏移
 SEAT_HEIGHT = 0.5
+
+# ============================================================
+# 床功能配置
+# ============================================================
+
+# 床方块列表
+BED_BLOCKS = ['swan_town:bed', 'swan_town:bed_single']
+
+# 双人床（2格宽）
+DOUBLE_BED = 'swan_town:bed'
+
+# 单人床
+SINGLE_BED = 'swan_town:bed_single'
+
+# 维度ID
+DIMENSION_OVERWORLD = 0
+DIMENSION_NETHER = 1
+DIMENSION_END = 2
+
+# 敌对生物类型列表（用于检测）
+HOSTILE_MOBS = [
+    'minecraft:zombie',
+    'minecraft:skeleton',
+    'minecraft:creeper',
+    'minecraft:spider',
+    'minecraft:enderman',
+    'minecraft:witch',
+    'minecraft:husk',
+    'minecraft:stray',
+    'minecraft:drowned',
+    'minecraft:phantom',
+    'minecraft:slime',
+    'minecraft:ghast',
+    'minecraft:magma_cube',
+    'minecraft:blaze',
+    'minecraft:piglin',
+    'minecraft:piglin_brute',
+    'minecraft:hoglin',
+    'minecraft:zoglin',
+    'minecraft:zombified_piglin',
+    'minecraft:wither_skeleton',
+]
+
+# 夜晚开始时间（12500 = 18:45）
+NIGHT_START_TIME = 12500
+
+# 睡觉传送高度偏移
+SLEEP_HEIGHT_OFFSET = 0.6
+
+# 怪物检测范围（格）
+MONSTER_CHECK_RADIUS = 8
+
+# 床上方需要空旷的格数
+BED_CLEARANCE_HEIGHT = 2

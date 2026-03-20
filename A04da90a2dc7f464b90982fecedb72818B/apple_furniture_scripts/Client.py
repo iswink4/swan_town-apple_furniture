@@ -84,3 +84,112 @@ def StopSitAnim():
     playerId = clientApi.GetLocalPlayerId()
     comp = clientApi.GetEngineCompFactory().CreateQueryVariable(playerId)
     comp.Set("query.mod.sitting", 0.0)
+
+# ============================================================
+# 睡觉功能客户端
+# ============================================================
+
+# 睡觉状态
+_is_sleeping = False
+_original_camera_locked = False
+
+def set_sleep_blur():
+    """
+    设置睡觉模糊效果（使用原版睡觉效果）
+    通过设置玩家的视野距离来模拟黑屏
+    """
+    playerId = clientApi.GetLocalPlayerId()
+    comp = clientApi.GetEngineCompFactory()
+    
+    # 使用雾效创建一个近处的"墙"来实现黑屏效果
+    # 设置雾的起始距离为0，结束距离为0.1，这样所有物体都会被雾遮挡
+    fog_comp = comp.CreateFog(playerId)
+    fog_comp.SetFogColor((0.05, 0.05, 0.05, 1.0))  # 深灰色，不是纯黑
+    fog_comp.SetFogLength(0.0, 0.5)  # 很近的雾
+
+def restore_normal_view():
+    """
+    恢复正常视野
+    """
+    playerId = clientApi.GetLocalPlayerId()
+    comp = clientApi.GetEngineCompFactory()
+    
+    # 重置雾效
+    fog_comp = comp.CreateFog(playerId)
+    fog_comp.ResetFogColor()
+    fog_comp.ResetFogLength()
+
+def lock_view_to_sky():
+    """
+    锁定视角朝向天空
+    """
+    playerId = clientApi.GetLocalPlayerId()
+    comp = clientApi.GetEngineCompFactory()
+    camera_comp = comp.CreateCamera(playerId)
+    
+    # 获取当前相机位置
+    current_pos = camera_comp.GetPosition()
+    
+    # 设置相机朝向天空 (pitch=-90 朝天, yaw=0)
+    # 注意：在MC中，-90是垂直向上看
+    camera_comp.SetCameraRot((-90.0, 0.0))
+    
+    # 使用 LockCamera 全面锁定相机
+    # LockCamera(pos, rot) - pos是位置（不移动），rot是角度
+    camera_comp.LockCamera(current_pos, (-90.0, 0.0))
+
+def unlock_view():
+    """
+    解除视角锁定
+    """
+    playerId = clientApi.GetLocalPlayerId()
+    comp = clientApi.GetEngineCompFactory()
+    camera_comp = comp.CreateCamera(playerId)
+    
+    # 解除相机锁定
+    camera_comp.UnLockCamera()
+
+@CallBackKey("StartSleep")
+def StartSleep():
+    """
+    开始睡觉
+    由服务端通过 Call(playerId, "StartSleep") 调用
+    """
+    global _is_sleeping
+    _is_sleeping = True
+    
+    # 注册资源（复用坐下动画）
+    RegisterSitResources()
+    
+    # 播放睡觉动画（复用坐下动画）
+    playerId = clientApi.GetLocalPlayerId()
+    comp = clientApi.GetEngineCompFactory()
+    query_comp = comp.CreateQueryVariable(playerId)
+    query_comp.Set("query.mod.sitting", 1.0)
+    
+    # 黑屏效果
+    set_sleep_blur()
+    
+    # 锁定视角朝向天空
+    lock_view_to_sky()
+
+@CallBackKey("StopSleep")
+def StopSleep():
+    """
+    停止睡觉
+    由服务端通过 Call(playerId, "StopSleep") 调用
+    """
+    global _is_sleeping
+    _is_sleeping = False
+    
+    # 停止动画
+    playerId = clientApi.GetLocalPlayerId()
+    comp = clientApi.GetEngineCompFactory()
+    query_comp = comp.CreateQueryVariable(playerId)
+    query_comp.Set("query.mod.sitting", 0.0)
+    
+    # 恢复视野
+    restore_normal_view()
+    
+    # 解除视角锁定
+    unlock_view()
