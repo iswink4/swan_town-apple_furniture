@@ -149,7 +149,7 @@
             },
             {
                 "requires": "$pocket_screen",
-                "$screen_content": "netease_container_pocket.netease_custom_container_panel"
+                "$screen_content": "netease_container.netease_custom_container_panel"
             }
         ]
     }
