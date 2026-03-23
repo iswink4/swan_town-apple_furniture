@@ -72,6 +72,8 @@ sleeping_players = {}
 last_bed_use_time = {}
 
 
+
+
 # ============================================================
 # 核心功能
 # ============================================================
@@ -400,16 +402,26 @@ def on_bed_use(args):
         return
     
     comp = serverApi.GetEngineCompFactory()
-    
-    # 设置重生点（立即执行）
     player_comp = comp.CreatePlayer(player_id)
-    player_comp.SetPlayerRespawnPos((x, y, z), dimension)
-    
-    # 发送提示
     game_comp = comp.CreateGame(serverApi.GetLevelId)
-    game_comp.SetOneTipMessage(player_id, "已设置重生点")
     
-    # 检查睡觉条件
+    current_pos = (x, y, z)
+    
+    # 检查该床是否是玩家实际的重生点（使用引擎数据）
+    actual_respawn = player_comp.GetPlayerRespawnPos()
+    is_current_spawn = (
+        actual_respawn and
+        actual_respawn.get("pos") == current_pos and
+        actual_respawn.get("dimensionId") == dimension
+    )
+    
+    if not is_current_spawn:
+        # 设置重生点并发送提示
+        game_comp.SetOneTipMessage(player_id, "已设置重生点")
+        player_comp.SetPlayerRespawnPos(current_pos, dimension)
+        return  # 本次点击不检查睡眠条件
+    
+    # 该床已是重生点，检查睡觉条件
     can_sleep, reason = check_sleep_conditions(x, y, z, dimension)
     if not can_sleep:
         game_comp.SetOneTipMessage(player_id, reason)
@@ -493,22 +505,43 @@ def on_sleep_tick():
 @Listen(Events.DestroyBlockEvent)
 def on_bed_destroy(args):
     """
-    床被破坏事件 - 正在睡觉的玩家起床
+    床被破坏事件 - 正在睡觉的玩家起床，重置重生点
     
-    当床方块被破坏时触发，强制正在使用该床的玩家起床。
+    当床方块被破坏时触发：
+    - 强制正在使用该床的玩家起床
+    - 将该床设为重生点的玩家重置到世界出生点
     
     Args:
         args: 事件参数字典，包含:
             - x, y, z: 被破坏的方块坐标
+            - dimensionId: 维度ID
     
     Returns:
         None
-    
-    Note:
-        遍历 sleeping_players，匹配 bed_pos 坐标，匹配则调用 wake_up
     """
     pos = (args['x'], args['y'], args['z'])
+    dimension = args['dimensionId']
     
+    comp = serverApi.GetEngineCompFactory()
+    game_comp = comp.CreateGame(serverApi.GetLevelId)
+    
+    # 获取世界出生点
+    world_spawn_pos = game_comp.GetSpawnPosition()
+    world_spawn_dim = game_comp.GetSpawnDimension()
+    
+    # 遍历所有在线玩家，检查重生点是否在这个床上
+    for player_id in serverApi.GetPlayerList():
+        player_comp = comp.CreatePlayer(player_id)
+        actual_respawn = player_comp.GetPlayerRespawnPos()
+        
+        if actual_respawn:
+            respawn_pos = actual_respawn.get("pos")
+            respawn_dim = actual_respawn.get("dimensionId")
+            
+            if respawn_pos == pos and respawn_dim == dimension:
+                player_comp.SetPlayerRespawnPos(world_spawn_pos, world_spawn_dim)
+    
+    # 睡觉玩家起床逻辑
     for player_id, data in list(sleeping_players.items()):
         if data["bed_pos"] == pos:
             wake_up(player_id, "destroy")
