@@ -3,7 +3,7 @@
     "minecraft:block": {
         "description": {
             "identifier": "swan_town:light1_off",
-            "register_to_creative_menu": true,
+            "register_to_creative_menu": false,
             "category": "swan_town:apple"
         },
         "components": {

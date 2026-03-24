@@ -162,7 +162,14 @@ BUCKET_INTERACT_COOLDOWN = 0.3
 
 # 空手点击方块循环映射配置（与斧子分开）
 HAND_BLOCK_CYCLES = {
-    # 在此添加空手循环的方块映射
+    'light': {
+        'swan_town:light1': 'swan_town:light1_off',
+        'swan_town:light1_off': 'swan_town:light1',
+        'swan_town:light2': 'swan_town:light2_off',
+        'swan_town:light2_off': 'swan_town:light2',
+        'swan_town:light3': 'swan_town:light3_off',
+        'swan_town:light3_off': 'swan_town:light3',
+    }
 }
 
 # 合并所有空手方块循环映射

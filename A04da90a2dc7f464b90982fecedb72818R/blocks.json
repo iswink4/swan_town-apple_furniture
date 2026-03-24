@@ -381,6 +381,14 @@
         },
         "sound": "glass"
     },
+    "swan_town:light1_off": {
+        "client_entity": {
+            "block_icon": "swan_town:light1_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:light1"
+        },
+        "sound": "glass"
+    },
     "swan_town:light2": {
         "client_entity": {
             "block_icon": "swan_town:light2_icon",
@@ -389,7 +397,23 @@
         },
         "sound": "glass"
     },
+    "swan_town:light2_off": {
+        "client_entity": {
+            "block_icon": "swan_town:light2_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:light2"
+        },
+        "sound": "glass"
+    },
     "swan_town:light3": {
+        "client_entity": {
+            "block_icon": "swan_town:light3_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town:light3"
+        },
+        "sound": "glass"
+    },
+    "swan_town:light3_off": {
         "client_entity": {
             "block_icon": "swan_town:light3_icon",
             "hand_model_use_client_entity": true,

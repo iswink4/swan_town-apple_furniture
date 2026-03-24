@@ -57,6 +57,9 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:custom_tips": {
+                "value": "点击可开关"
             }
         }
     }
