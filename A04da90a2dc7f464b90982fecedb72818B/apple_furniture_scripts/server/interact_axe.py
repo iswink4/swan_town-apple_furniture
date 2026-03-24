@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-模块名称: interact_block.py
-功能描述: 处理方块交互逻辑，包括斧子右键循环切换家具样式
+模块名称: interact_axe.py
+功能描述: 处理斧子交互逻辑，包括斧子点击循环切换家具样式
 
 事件监听:
 - ItemUseOnAfterServerEvent: 玩家使用物品点击方块后触发
@@ -13,7 +13,7 @@
 
 实现逻辑:
 1. 监听物品使用事件
-2. 检查是否是斧子右键点击可循环方块
+2. 检查是否是斧子点击可循环方块
 3. 调用 _cycle_block 执行样式切换
 4. 使用 QThrottle 限流（0.2秒间隔），防止tick级连续触发
 
@@ -61,7 +61,7 @@ def on_item_use(args):
     """
     物品使用事件处理 - 斧子改变家具样式
     
-    当玩家使用斧子右键点击支持样式循环的方块时，触发样式切换。
+    当玩家使用斧子点击支持样式循环的方块时，触发样式切换。
     使用 QThrottle 装饰器进行0.2秒限流，防止连续快速点击导致的问题。
     
     Args:
@@ -82,7 +82,7 @@ def on_item_use(args):
     block_name = args["blockName"]
     dimension = args["dimensionId"]
     
-    # 检查是否是斧子右键可循环方块
+    # 检查是否是斧子点击可循环方块
     if item_dict.get('newItemName', '') in AXE_NAMES and block_name in ALL_BLOCK_CYCLES:
         comp = serverApi.GetEngineCompFactory().CreateBlockInfo(serverApi.GetLevelId)
         _cycle_block(comp, block_pos, block_name, dimension)

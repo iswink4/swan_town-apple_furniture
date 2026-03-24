@@ -155,3 +155,20 @@ WATER_TANK_BLOCKS = ['swan_town:cabinet3']
 
 # 桶交互冷却时间（秒）
 BUCKET_INTERACT_COOLDOWN = 0.3
+
+# ============================================================
+# 空手交互配置
+# ============================================================
+
+# 空手点击方块循环映射配置（与斧子分开）
+HAND_BLOCK_CYCLES = {
+    # 在此添加空手循环的方块映射
+}
+
+# 合并所有空手方块循环映射
+ALL_HAND_BLOCK_CYCLES = {}
+for cycle_dict in HAND_BLOCK_CYCLES.values():
+    ALL_HAND_BLOCK_CYCLES.update(cycle_dict)
+
+# 空手交互冷却时间（秒）
+HAND_INTERACT_COOLDOWN = 0.2
