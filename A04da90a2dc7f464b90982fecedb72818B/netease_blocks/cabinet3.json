@@ -49,6 +49,9 @@
             },
             "netease:custom_tips": {
                 "value": "可用空桶接水和倒水"
+            },
+            "netease:solid": {
+                "value": false
             }
         },
         "description": {

@@ -46,6 +46,9 @@
             },
             "netease:render_layer": {
                 "value": "alpha"
+            },
+            "netease:solid": {
+                "value": false
             }
         },
         "description": {

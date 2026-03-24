@@ -17,33 +17,52 @@
             "minecraft:explosion_resistance": {
                 "value": 0.3
             },
-          "netease:aabb": {
+            "netease:aabb": {
                 "collision": {
-                    "min": [0, 0, 0],
-                    "max": [1, 1, 1]
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "max": [
+                        1,
+                        1,
+                        1
+                    ]
                 },
                 "clip": {
-                    "min": [0, 0, 0],
-                    "max": [1, 1, 1]
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "max": [
+                        1,
+                        1,
+                        1
+                    ]
                 }
             },
-          "netease:render_layer": {
-             "value": "alpha"
-          },
-         "netease:block_entity": {
-          "tick": false,
-          "movable": false
-         },
-         "netease:face_directional": {
-	      "type": "direction"
-         },
-         "netease:block_container": {
-				"custom_description": "橱柜",
-				"screen_name": "netease_container.netease_custom_container_screen", 
-				"container_size": 27 
-			},
+            "netease:render_layer": {
+                "value": "alpha"
+            },
+            "netease:block_entity": {
+                "tick": false,
+                "movable": false
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "netease:block_container": {
+                "custom_description": "橱柜",
+                "screen_name": "netease_container.netease_custom_container_screen",
+                "container_size": 27
+            },
             "netease:custom_tips": {
                 "value": "可存储物品"
+            },
+            "netease:solid": {
+                "value": false
             }
         }
     }

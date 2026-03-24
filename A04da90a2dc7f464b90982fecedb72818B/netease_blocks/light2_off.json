@@ -1,6 +1,11 @@
 {
     "format_version": "1.10.0",
     "minecraft:block": {
+        "description": {
+            "identifier": "swan_town:light2_off",
+            "register_to_creative_menu": true,
+            "category": "swan_town:apple"
+        },
         "components": {
             "minecraft:block_light_absorption": {
                 "value": 0
@@ -12,49 +17,44 @@
                 "value": 0.3
             },
             "netease:aabb": {
-                "clip": {
-                    "max": [
-                        1,
-                        1,
-                        1
-                    ],
+                "collision": {
                     "min": [
+                        0.3,
                         0,
-                        0,
-                        0
+                        0.3
+                    ],
+                    "max": [
+                        0.7,
+                        0.5,
+                        0.7
                     ]
                 },
-                "collision": {
-                    "max": [
-                        0.0,
-                        0.0,
-                        0.0
-                    ],
+                "clip": {
                     "min": [
+                        0.3,
                         0,
-                        0,
-                        0
+                        0.3
+                    ],
+                    "max": [
+                        0.7,
+                        0.5,
+                        0.7
                     ]
                 }
-            },
-            "netease:block_entity": {
-                "movable": false,
-                "tick": false
-            },
-            "netease:face_directional": {
-                "type": "direction"
             },
             "netease:render_layer": {
                 "value": "alpha"
             },
+            "netease:block_entity": {
+                "tick": false,
+                "movable": false
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
             "netease:solid": {
                 "value": false
             }
-        },
-        "description": {
-            "category": "swan_town:apple",
-            "identifier": "swan_town:shelf1",
-            "register_to_creative_menu": true
         }
     }
 }

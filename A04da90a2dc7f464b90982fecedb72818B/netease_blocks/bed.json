@@ -53,6 +53,9 @@
             },
             "netease:custom_tips": {
                 "value": "点击可睡觉和重设出生点"
+            },
+            "netease:solid": {
+                "value": false
             }
         },
         "description": {

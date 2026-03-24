@@ -47,10 +47,13 @@
                 "type": "direction"
             },
             "minecraft:block_light_emission": {
-            "emission": 1.0
+                "emission": 1.0
             },
             "netease:render_layer": {
                 "value": "alpha"
+            },
+            "netease:solid": {
+                "value": false
             }
         },
         "description": {
