@@ -179,3 +179,25 @@ for cycle_dict in HAND_BLOCK_CYCLES.values():
 
 # 空手交互冷却时间（秒）
 HAND_INTERACT_COOLDOWN = 0.2
+
+# ============================================================
+# 占位方块配置
+# ============================================================
+
+# 占位方块标识符
+PLACEHOLDER_BLOCK = 'swan_town:placeholder'
+
+# 家具占位配置
+# 格式: {家具方块名: [(相对x, 相对y, 相对z), ...]}
+# 相对位置基于家具方块的 aux 值（朝向）自动转换
+# aux: 0=北(-Z), 1=东(+X), 2=南(+Z), 3=西(-X)
+# 示例:
+#   'swan_town:wardrobe': [(0, 0, 1), (0, 0, 2)]  # 衣柜背后2格
+#   'swan_town:big_sofa': [(1, 0, 0)]             # 大沙发侧面1格
+PLACEHOLDER_CONFIG = {
+    # 在此添加需要占位的家具配置
+    'swan_town:bed':[(1,0,1)]
+}
+
+# 所有需要占位的家具集合（自动生成）
+PLACEHOLDER_FURNITURES = set(PLACEHOLDER_CONFIG.keys())

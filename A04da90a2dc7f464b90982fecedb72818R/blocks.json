@@ -708,5 +708,8 @@
             "identifier": "swan_town:microwave_oven"
         },
         "sound": "metal"
+    },
+    "swan_town:placeholder": {
+        "sound": "stone"
     }
 }
