@@ -9,6 +9,7 @@
 - server.interact_block: 方块交互（斧子切换家具样式）
 - server.interact_seat: 座椅交互（椅子/沙发坐下站起）
 - server.interact_bed: 床交互（睡觉功能，含双人床同步）
+- server.interact_water: 水桶交互（空桶装水、水桶倒水）
 
 使用方法:
     在服务端脚本中导入此模块即可启用所有功能：
@@ -20,3 +21,4 @@
 from .server import interact_block
 from .server import interact_seat
 from .server import interact_bed
+from .server import interact_water
