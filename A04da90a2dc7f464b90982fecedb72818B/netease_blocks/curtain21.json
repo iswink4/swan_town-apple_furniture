@@ -46,7 +46,7 @@
                 "tick": false
             },
             "netease:custom_tips": {
-                "value": "任意斧子右击可改变样式"
+                "value": "任意斧子点击可改变样式"
             },
             "netease:face_directional": {
                 "type": "direction"
