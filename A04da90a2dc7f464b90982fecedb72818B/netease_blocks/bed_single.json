@@ -50,6 +50,9 @@
             },
             "netease:render_layer": {
                 "value": "alpha"
+            },
+            "netease:custom_tips": {
+                "value": "点击可睡觉和重设出生点"
             }
         },
         "description": {

@@ -46,6 +46,9 @@
             },
             "netease:render_layer": {
                 "value": "alpha"
+            },
+            "netease:custom_tips": {
+                "value": "可用空桶接水和倒水"
             }
         },
         "description": {
