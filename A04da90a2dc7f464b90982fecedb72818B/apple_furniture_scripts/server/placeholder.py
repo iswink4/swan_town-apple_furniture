@@ -128,7 +128,7 @@ def place_placeholders(x, y, z, dimension, furniture_name, aux):
     return placed_positions
 
 
-def destroy_furniture_group(x, y, z, dimension, is_placeholder=False):
+def destroy_furniture_group(x, y, z, dimension, is_placeholder=False, spawn_loot=False):
     """销毁家具组"""
     comp = serverApi.GetEngineCompFactory()
     block_comp = comp.CreateBlockInfo(serverApi.GetLevelId)
@@ -139,6 +139,7 @@ def destroy_furniture_group(x, y, z, dimension, is_placeholder=False):
         if placeholder_data:
             main_pos = safe_get(placeholder_data, 'main_block')
             all_placeholders = safe_get(placeholder_data, 'all_placeholders', [])
+            furniture_name = safe_get(placeholder_data, 'furniture')
             
             if main_pos:
                 main_pos = tuple(main_pos)
@@ -148,6 +149,9 @@ def destroy_furniture_group(x, y, z, dimension, is_placeholder=False):
                 for pos in all_placeholders:
                     if pos != current_pos:
                         block_comp.SetBlockNew(pos, {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
+                
+                if spawn_loot and furniture_name:
+                    block_comp.SpawnResourcesSilkTouched(furniture_name, main_pos, 0, dimension)
                 
                 block_comp.SetBlockNew(main_pos, {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
     else:
@@ -270,9 +274,32 @@ def on_try_destroy_block(args):
     dimension = args.get('dimensionId', 0)
     
     if block_name in ALL_PLACEHOLDER_BLOCKS:
-        destroy_furniture_group(x, y, z, dimension, is_placeholder=True)
+        args['cancel'] = True
+        
+        placeholder_data = get_block_entity_data(dimension, (x, y, z))
+        if placeholder_data:
+            main_pos = safe_get(placeholder_data, 'main_block')
+            all_placeholders = safe_get(placeholder_data, 'all_placeholders', [])
+            furniture_name = safe_get(placeholder_data, 'furniture')
+            
+            if main_pos:
+                main_pos = tuple(main_pos)
+                all_placeholders = [tuple(p) for p in all_placeholders]
+                
+                comp = serverApi.GetEngineCompFactory()
+                block_comp = comp.CreateBlockInfo(serverApi.GetLevelId)
+                
+                for pos in all_placeholders:
+                    if pos != (x, y, z):
+                        block_comp.SetBlockNew(pos, {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
+                
+                if furniture_name:
+                    block_comp.SpawnResourcesSilkTouched(furniture_name, main_pos, 0, dimension)
+                
+                block_comp.SetBlockNew(main_pos, {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
+                block_comp.SetBlockNew((x, y, z), {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
     elif block_name in PLACEHOLDER_FURNITURES:
-        destroy_furniture_group(x, y, z, dimension, is_placeholder=False)
+        destroy_furniture_group(x, y, z, dimension, is_placeholder=False, spawn_loot=False)
 
 
 @Listen(Events.ServerBlockUseEvent)
