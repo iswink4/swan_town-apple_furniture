@@ -5,7 +5,7 @@
 
 数据存储: 使用 BlockEntityData 持久化存储
 - 家具方块: {'placeholders': [(x,y,z), ...]}
-- 占位方块: {'main_block': (x,y,z), 'furniture': str}
+- 占位方块: {'main_block': (x,y,z), 'furniture': str, 'placeholder_type': str}
 
 事件监听:
 - EntityPlaceBlockAfterServerEvent: 放置家具时同步放置占位方块
@@ -14,7 +14,7 @@
 - ItemUseOnAfterServerEvent: 斧子交互转发
 """
 from ..QuModLibs.Server import *
-from ..config import PLACEHOLDER_BLOCK, PLACEHOLDER_CONFIG, PLACEHOLDER_FURNITURES
+from ..config import PLACEHOLDER_TYPES, PLACEHOLDER_DEFAULT_TYPE, PLACEHOLDER_CONFIG, PLACEHOLDER_FURNITURES, ALL_PLACEHOLDER_BLOCKS
 from ..config import ALL_BLOCK_CYCLES, AXE_NAMES, ALL_HAND_BLOCK_CYCLES, CHAIR_LIST, BED_BLOCKS
 from ..config import DIMENSION_NETHER, DIMENSION_END
 
@@ -63,7 +63,11 @@ def place_placeholders(x, y, z, dimension, furniture_name, aux):
     if furniture_name not in PLACEHOLDER_CONFIG:
         return []
     
-    offsets = PLACEHOLDER_CONFIG[furniture_name]
+    config = PLACEHOLDER_CONFIG[furniture_name]
+    offsets = config.get('offsets', [])
+    placeholder_type = config.get('type', PLACEHOLDER_DEFAULT_TYPE)
+    placeholder_block = PLACEHOLDER_TYPES.get(placeholder_type, PLACEHOLDER_TYPES[PLACEHOLDER_DEFAULT_TYPE])
+    
     placed_positions = []
     
     comp = serverApi.GetEngineCompFactory()
@@ -73,10 +77,9 @@ def place_placeholders(x, y, z, dimension, furniture_name, aux):
         dx, dy, dz = rotate_offset(offset, aux)
         placeholder_pos = (x + dx, y + dy, z + dz)
         
-        if block_comp.SetBlockNew(placeholder_pos, {'name': PLACEHOLDER_BLOCK, 'aux': 0}, 0, dimension):
+        if block_comp.SetBlockNew(placeholder_pos, {'name': placeholder_block, 'aux': 0}, 0, dimension):
             placed_positions.append(placeholder_pos)
     
-    # 先计算所有占位位置，再统一写入数据
     all_placeholders = list(placed_positions)
     
     for placeholder_pos in placed_positions:
@@ -85,6 +88,7 @@ def place_placeholders(x, y, z, dimension, furniture_name, aux):
             placeholder_data['main_block'] = (x, y, z)
             placeholder_data['furniture'] = furniture_name
             placeholder_data['all_placeholders'] = all_placeholders
+            placeholder_data['placeholder_type'] = placeholder_type
     
     if placed_positions:
         main_data = get_block_entity_data(dimension, (x, y, z))
@@ -214,7 +218,7 @@ def on_try_destroy_block(args):
     x, y, z = args.get('x'), args.get('y'), args.get('z')
     dimension = args.get('dimensionId', 0)
     
-    if block_name == PLACEHOLDER_BLOCK:
+    if block_name in ALL_PLACEHOLDER_BLOCKS:
         destroy_furniture_group(x, y, z, dimension, is_placeholder=True)
     elif block_name in PLACEHOLDER_FURNITURES:
         destroy_furniture_group(x, y, z, dimension, is_placeholder=False)
@@ -224,7 +228,7 @@ def on_try_destroy_block(args):
 def on_placeholder_use(args):
     """方块使用事件"""
     block_name = args.get('blockName', '')
-    if block_name != PLACEHOLDER_BLOCK:
+    if block_name not in ALL_PLACEHOLDER_BLOCKS:
         return
     
     x, y, z = args.get('x'), args.get('y'), args.get('z')
@@ -284,7 +288,7 @@ def on_placeholder_use(args):
 def on_item_use_on_placeholder(args):
     """物品使用事件"""
     block_name = args.get('blockName', '')
-    if block_name != PLACEHOLDER_BLOCK:
+    if block_name not in ALL_PLACEHOLDER_BLOCKS:
         return
     
     item_name = args.get('itemDict', {}).get('newItemName', '')

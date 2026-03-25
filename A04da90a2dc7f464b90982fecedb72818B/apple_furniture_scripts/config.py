@@ -184,20 +184,41 @@ HAND_INTERACT_COOLDOWN = 0.2
 # 占位方块配置
 # ============================================================
 
-# 占位方块标识符
-PLACEHOLDER_BLOCK = 'swan_town:placeholder'
+# 占位方块类型定义
+# 格式: {类型名: 方块标识符}
+PLACEHOLDER_TYPES = {
+    'default': 'swan_town:placeholder',
+    'half': 'swan_town:placeholder_half',
+    # 添加更多类型:
+    # 'large': 'swan_town:placeholder_large',
+}
+
+# 默认占位方块类型
+PLACEHOLDER_DEFAULT_TYPE = 'default'
 
 # 家具占位配置
-# 格式: {家具方块名: [(相对x, 相对y, 相对z), ...]}
+# 格式: {家具方块名: {'type': 类型名, 'offsets': [(相对x, 相对y, 相对z), ...]}}
 # 相对位置基于家具方块的 aux 值（朝向）自动转换
 # aux: 0=北(-Z), 1=东(+X), 2=南(+Z), 3=西(-X)
 # 示例:
-#   'swan_town:wardrobe': [(0, 0, 1), (0, 0, 2)]  # 衣柜背后2格
-#   'swan_town:big_sofa': [(1, 0, 0)]             # 大沙发侧面1格
+#   'swan_town:wardrobe': {
+#       'type': 'default',
+#       'offsets': [(0, 0, 1), (0, 0, 2)]
+#   }
 PLACEHOLDER_CONFIG = {
     # 在此添加需要占位的家具配置
-    'swan_town:bed':[(1,0,1)]
+    'swan_town:bed': {
+        'type': 'half',
+        'offsets': [(-1,0,0),(-1,0,-1),(-1,0,-2),(0,0,-1),(0,0,-2)]
+    },
+    'swan_town:bed_single':{
+        'type': 'half',
+        'offsets': [(0,0,-1)]
+    }
 }
 
 # 所有需要占位的家具集合（自动生成）
 PLACEHOLDER_FURNITURES = set(PLACEHOLDER_CONFIG.keys())
+
+# 所有占位方块标识符集合（自动生成）
+ALL_PLACEHOLDER_BLOCKS = set(PLACEHOLDER_TYPES.values())

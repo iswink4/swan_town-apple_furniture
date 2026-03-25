@@ -240,6 +240,9 @@
         },
         "swan_town:wall_cabinet1_right_icon": {
             "textures": "textures/new/wall_cabinet1_right"
+        },
+        "swan_town:placeholder":{
+            "textures": "textures/placeholder"
         }
     },
     "texture_name": "atlas.terrain"

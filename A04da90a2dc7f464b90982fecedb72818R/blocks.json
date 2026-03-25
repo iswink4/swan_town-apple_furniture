@@ -710,6 +710,35 @@
         "sound": "metal"
     },
     "swan_town:placeholder": {
-        "sound": "stone"
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_half": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_wall_after": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_wall_front": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_wall_right": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_wall_left": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_wall_top": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
+    "swan_town:placeholder_wall_bottom": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
     }
 }
