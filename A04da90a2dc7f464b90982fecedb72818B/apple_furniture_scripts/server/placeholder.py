@@ -8,6 +8,7 @@
 - 占位方块: {'main_block': (x,y,z), 'furniture': str, 'placeholder_type': str}
 
 事件监听:
+- ServerEntityTryPlaceBlockEvent: 放置前检测空间是否足够
 - EntityPlaceBlockAfterServerEvent: 放置家具时同步放置占位方块
 - ServerPlayerTryDestroyBlockEvent: 玩家尝试破坏方块时连锁销毁
 - ServerBlockUseEvent: 空手交互转发
@@ -52,6 +53,35 @@ def safe_get(data, key, default=None):
         return value if value is not None else default
     except:
         return default
+
+
+def check_placeholder_space(x, y, z, dimension, furniture_name, aux):
+    """
+    检查占位方块位置是否有足够空间
+    
+    Returns:
+        bool: True=可放置, False=空间不足
+    """
+    if furniture_name not in PLACEHOLDER_CONFIG:
+        return True
+    
+    config = PLACEHOLDER_CONFIG[furniture_name]
+    offsets = config.get('offsets', [])
+    
+    comp = serverApi.GetEngineCompFactory()
+    block_comp = comp.CreateBlockInfo(serverApi.GetLevelId)
+    
+    for offset in offsets:
+        dx, dy, dz = rotate_offset(offset, aux)
+        check_pos = (x + dx, y + dy, z + dz)
+        
+        block_dict = block_comp.GetBlockNew(check_pos, dimension)
+        block_name = block_dict.get('name', '') if block_dict else ''
+        
+        if block_name and block_name != 'minecraft:air':
+            return False
+    
+    return True
 
 
 # ============================================================
@@ -196,6 +226,27 @@ def handle_bed_interaction(player_id, main_pos, dimension, main_x, main_y, main_
 # ============================================================
 # 事件处理
 # ============================================================
+
+@Listen(Events.ServerEntityTryPlaceBlockEvent)
+def on_try_place_block(args):
+    """方块放置前事件 - 检测占位位置是否有空间"""
+    block_name = args.get('fullName', '')
+    if block_name not in PLACEHOLDER_FURNITURES:
+        return
+    
+    x, y, z = args.get('x'), args.get('y'), args.get('z')
+    dimension = args.get('dimensionId', 0)
+    aux = args.get('auxData', 0)
+    entity_id = args.get('entityId')
+    
+    if not check_placeholder_space(x, y, z, dimension, block_name, aux):
+        args['cancel'] = True
+        
+        if entity_id:
+            comp = serverApi.GetEngineCompFactory()
+            game_comp = comp.CreateGame(serverApi.GetLevelId)
+            game_comp.SetOneTipMessage(entity_id, "空间不足！")
+
 
 @Listen(Events.EntityPlaceBlockAfterServerEvent)
 def on_block_placed(args):
