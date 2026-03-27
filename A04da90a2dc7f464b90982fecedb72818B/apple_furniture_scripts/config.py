@@ -84,6 +84,7 @@ CHAIR_LIST = [
     'swan_town:stool1',
     'swan_town:stool2',
     'swan_town:stool3',
+    'swan_town:toilet',
 ]
 
 # 坐下动画名称
@@ -214,7 +215,51 @@ PLACEHOLDER_CONFIG = {
     'swan_town:bed_single':{
         'type': 'half',
         'offsets': [(0,0,-1)]
-    }
+    },
+    'swan_town:dressing_table1':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-2,0,0)]
+    },
+    'swan_town:dressing_table2':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town:wardrobe':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,1,0,),(-1,2,0),(0,1,0),(0,2,0)]
+    },
+    'swan_town:desk1':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town:desk2':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town:desk3':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-2,0,0)]
+    },
+    'swan_town:closet2':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town:bathtub1':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town:bathtub2':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
+    'swan_town:shelf1':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town:shelf2':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
 }
 
 # 所有需要占位的家具集合（自动生成）

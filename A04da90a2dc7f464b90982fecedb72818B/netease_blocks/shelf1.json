@@ -14,28 +14,30 @@
             "netease:aabb": {
                 "clip": {
                     "max": [
-                        1,
-                        1,
-                        1
+                        2.0,
+                        2.0,
+                        1.0
                     ],
                     "min": [
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "collision": {
-                    "max": [
                         0.0,
                         0.0,
                         0.0
-                    ],
-                    "min": [
-                        0,
-                        0,
-                        0
                     ]
-                }
+                },
+                "collision": [
+                    {
+                        "max": [
+                            2,
+                            1,
+                            1
+                        ],
+                        "min": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                ]
             },
             "netease:block_entity": {
                 "movable": false,
