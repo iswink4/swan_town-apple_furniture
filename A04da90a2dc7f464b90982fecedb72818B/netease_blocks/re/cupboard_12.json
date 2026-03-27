@@ -1,56 +1,59 @@
 {
-    "format_version": "1.10.0", 
+    "format_version": "1.10.0",
     "minecraft:block": {
         "description": {
-            "category": "swan_town_apple:apple", 
-            "register_to_creative_menu": true, 
+            "category": "swan_town_apple:apple",
+            "register_to_creative_menu": true,
             "identifier": "swan_town_apple:cupboard_12"
-        }, 
+        },
         "components": {
             "netease:block_entity": {
-                "tick": false, 
+                "tick": false,
                 "movable": false
-            }, 
+            },
             "minecraft:block_light_absorption": {
                 "value": 0
-            }, 
+            },
             "netease:face_directional": {
                 "type": "direction"
-            }, 
+            },
             "minecraft:explosion_resistance": {
                 "value": 0.3
-            }, 
+            },
             "minecraft:destroy_time": {
                 "value": 0.3
-            }, 
+            },
             "netease:render_layer": {
                 "value": "alpha"
-            }, 
+            },
             "netease:aabb": {
                 "collision": {
                     "max": [
-                        1, 
-                        1, 
+                        1,
+                        1,
                         1
-                    ], 
+                    ],
                     "min": [
-                        0, 
-                        0, 
+                        0,
+                        0,
                         0
                     ]
-                }, 
+                },
                 "clip": {
                     "max": [
-                        1, 
-                        1, 
+                        1,
+                        1,
                         1
-                    ], 
+                    ],
                     "min": [
-                        0, 
-                        0, 
+                        0,
+                        0,
                         0
                     ]
                 }
+            },
+            "netease:solid": {
+                "value": false
             }
         }
     }
