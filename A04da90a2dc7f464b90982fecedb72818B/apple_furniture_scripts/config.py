@@ -151,8 +151,33 @@ BED_CLEARANCE_HEIGHT = 2
 # 水桶交互配置
 # ============================================================
 
-# 水桶交互方块列表
-WATER_TANK_BLOCKS = ['swan_town:cabinet3']
+# 水桶交互方块配置
+# 格式: {
+#     '方块名': {
+#         'enable_fill': bool,      # 是否启用空桶装水功能
+#         'enable_empty': bool,     # 是否启用水桶放水功能
+#         'fill_replace': str,      # 空桶装水时替换的目标方块（None表示不替换）
+#         'empty_replace': str,     # 水桶放水时替换的目标方块（None表示不替换）
+#     }
+# }
+WATER_TANK_BLOCKS = {
+    # 传统水槽（只装水放水，不替换方块）
+    'swan_town:cabinet3': {
+        'enable_fill': True,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': None,
+    },
+    
+    # 请在此处添加更多配置...
+    # 示例：
+    # 'swan_town_apple:bathtub_11_empty': {
+    #     'enable_fill': True,
+    #     'enable_empty': True,
+    #     'fill_replace': 'swan_town_apple:bathtub_11',
+    #     'empty_replace': 'swan_town_apple:bathtub_11_empty',
+    # },
+}
 
 # 桶交互冷却时间（秒）
 BUCKET_INTERACT_COOLDOWN = 0.3
@@ -313,6 +338,7 @@ ALL_PLACEHOLDER_BLOCKS = set(PLACEHOLDER_TYPES.values())
 # 示例: 'swan_town_apple:bathtub_11': ('swan_town_apple:bathtub_11_draining', 'swan_town_apple:bathtub_11_empty')
 DRAINAGE_BLOCKS = {
     # 请在此处添加排水方块配置
+    'swan_town_apple:sink_12':('swan_town_apple:sink_12_2','swan_town_apple:sink_12_1')
 }
 
 # 排水动画持续时间（秒）

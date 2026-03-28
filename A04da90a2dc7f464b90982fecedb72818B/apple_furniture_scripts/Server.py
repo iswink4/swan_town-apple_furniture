@@ -11,6 +11,7 @@
 - server.interact_seat: 座椅交互（椅子/沙发坐下站起）
 - server.interact_bed: 床交互（睡觉功能，含双人床同步）
 - server.interact_water: 水桶交互（空桶装水、水桶倒水）
+- server.interact_drainage: 放水交互
 - server.placeholder: 占位方块系统（大型家具多格碰撞箱）
 
 使用方法:
@@ -25,4 +26,5 @@ from .server import interact_hand
 from .server import interact_seat
 from .server import interact_bed
 from .server import interact_water
+from .server import interact_drainage
 from .server import placeholder
