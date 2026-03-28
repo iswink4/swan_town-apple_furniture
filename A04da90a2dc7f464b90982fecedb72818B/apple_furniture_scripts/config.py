@@ -303,3 +303,20 @@ PLACEHOLDER_FURNITURES = set(PLACEHOLDER_CONFIG.keys())
 
 # 所有占位方块标识符集合（自动生成）
 ALL_PLACEHOLDER_BLOCKS = set(PLACEHOLDER_TYPES.values())
+
+# ============================================================
+# 排水功能配置
+# ============================================================
+
+# 排水方块映射配置
+# 格式: {原方块: (放水中方块, 放水完成方块)}
+# 示例: 'swan_town_apple:bathtub_11': ('swan_town_apple:bathtub_11_draining', 'swan_town_apple:bathtub_11_empty')
+DRAINAGE_BLOCKS = {
+    # 请在此处添加排水方块配置
+}
+
+# 排水动画持续时间（秒）
+DRAINAGE_DURATION = 0.5
+
+# 排水功能冷却时间（秒）
+DRAINAGE_COOLDOWN = 1.0
