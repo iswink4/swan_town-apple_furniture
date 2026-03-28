@@ -1159,7 +1159,7 @@
     },
     "swan_town_apple:curtain_12": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_12_icon",
+            "block_icon": "swan_town_apple:curtain_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_12"
         },
@@ -1167,7 +1167,7 @@
     },
     "swan_town_apple:curtain_13": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_13_icon",
+            "block_icon": "swan_town_apple:curtain_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_13"
         },
@@ -1175,7 +1175,7 @@
     },
     "swan_town_apple:curtain_14": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_14_icon",
+            "block_icon": "swan_town_apple:curtain_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_14"
         },
@@ -1191,7 +1191,7 @@
     },
     "swan_town_apple:curtain_22": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_22_icon",
+            "block_icon": "swan_town_apple:curtain_21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_22"
         },
@@ -1199,7 +1199,7 @@
     },
     "swan_town_apple:curtain_23": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_23_icon",
+            "block_icon": "swan_town_apple:curtain_21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_23"
         },
@@ -1215,7 +1215,7 @@
     },
     "swan_town_apple:curtain_32": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_32_icon",
+            "block_icon": "swan_town_apple:curtain_31_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_32"
         },
@@ -1223,7 +1223,7 @@
     },
     "swan_town_apple:curtain_33": {
         "client_entity": {
-            "block_icon": "swan_town_apple:curtain_33_icon",
+            "block_icon": "swan_town_apple:curtain_31_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_33"
         },

@@ -9,7 +9,7 @@
             ], 
             "identifier": "swan_town_apple:candle_12", 
             "textures": {
-                "default": "textures/re/red_apple"
+                "default": "textures/re/red_other"
             }, 
             "materials": {
                 "default": "foundation_alphatest_nocull"

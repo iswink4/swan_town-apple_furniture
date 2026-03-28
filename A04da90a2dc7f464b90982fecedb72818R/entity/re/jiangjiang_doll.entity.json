@@ -9,7 +9,7 @@
             ], 
             "identifier": "swan_town_apple:jiangjiang_doll", 
             "textures": {
-                "default": "textures/jiangjiang"
+                "default": "textures/re/jiangjiang"
             }, 
             "materials": {
                 "default": "foundation_alphatest_nocull"

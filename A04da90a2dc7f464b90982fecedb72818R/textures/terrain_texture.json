@@ -301,6 +301,9 @@
         "swan_town_apple:candle_11_icon": {
             "textures": "textures/re/icon/candle_11"
         },
+        "swan_town_apple:candle_12_icon": {
+            "textures": "textures/re/icon/candle_12"
+        },
         "swan_town_apple:chair_11_icon": {
             "textures": "textures/re/icon/chair_11"
         },
@@ -393,6 +396,9 @@
         },
         "swan_town_apple:decoration_11_icon": {
             "textures": "textures/re/icon/decoration_11"
+        },
+        "swan_town_apple:decoration_12_icon": {
+            "textures": "textures/re/icon/decoration_12"
         },
         "swan_town_apple:decoration_13_icon": {
             "textures": "textures/re/icon/decoration_13"
@@ -627,6 +633,18 @@
         },
         "swan_town_apple:washing_machine_icon": {
             "textures": "textures/re/icon/washing_machine"
+        },
+        "swan_town_apple:curtain_11_icon": {
+            "textures": "textures/re/icon/curtain_11"
+        },
+        "swan_town_apple:curtain_21_icon": {
+            "textures": "textures/re/icon/curtain_21"
+        },
+        "swan_town_apple:curtain_31_icon": {
+            "textures": "textures/re/icon/curtain_31"
+        },
+        "swan_town_apple:jiangjiang_doll_icon": {
+            "textures": "textures/re/icon/jiangjiang_doll"
         }
     },
     "texture_name": "atlas.terrain"

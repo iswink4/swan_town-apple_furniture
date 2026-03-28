@@ -186,7 +186,8 @@ item.swan_town:books.name=苹果书堆
 tile.swan_town:books.name=苹果书堆
 
 
-
+craftingScreen.tab.swan_town_apple_re=天鹅小镇：苹果系列重置版
+craftingScreen.tab.swan_town_apple_re=天鹅小镇：苹果系列重置版
 item.swan_town_apple:bathtub_11.name=苹果浴缸11
 tile.swan_town_apple:bathtub_11.name=苹果浴缸11
 item.swan_town_apple:bathtub_12.name=苹果浴缸12
