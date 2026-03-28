@@ -74,7 +74,34 @@ BLOCK_CYCLES = {
         'swan_town_apple:sofa_12':'swan_town_apple:sofa_13',
         'swan_town_apple:sofa_13':'swan_town_apple:sofa_14',
         'swan_town_apple:sofa_14':'swan_town_apple:sofa_11',
-    }
+    },
+    # 凳子循环
+    'stool1':{
+        "swan_town_apple:stool_11":'swan_town_apple:stool_12',
+        "swan_town_apple:stool_12":'swan_town_apple:stool_13',
+        "swan_town_apple:stool_13":'swan_town_apple:stool_14',
+        "swan_town_apple:stool_14":'swan_town_apple:stool_11',
+    },
+    # 桌子循环
+    'table1':{
+        'swan_town_apple:table_11':'swan_town_apple:table_12',
+        'swan_town_apple:table_12':'swan_town_apple:table_13',
+        'swan_town_apple:table_13':'swan_town_apple:table_14',
+        'swan_town_apple:table_14':'swan_town_apple:table_11',
+    },
+    'table2':{
+        'swan_town_apple:table_21':'swan_town_apple:table_22',
+        'swan_town_apple:table_22':'swan_town_apple:table_23',
+        'swan_town_apple:table_23':'swan_town_apple:table_24',
+        'swan_town_apple:table_24':'swan_town_apple:table_21',
+    },
+    'table3':{
+        'swan_town_apple:table_31':'swan_town_apple:table_32',
+        'swan_town_apple:table_32':'swan_town_apple:table_33',
+        'swan_town_apple:table_33':'swan_town_apple:table_34',
+        'swan_town_apple:table_34':'swan_town_apple:table_31',
+    },
+
 }
 
 # 合并所有方块循环映射，便于快速查询
