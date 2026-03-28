@@ -66,6 +66,15 @@ BLOCK_CYCLES = {
         'swan_town:curtain23': 'swan_town:curtain24',
         'swan_town:curtain24': 'swan_town:curtain21',
     },
+
+    # 重制版
+    # 沙发循环
+    'sofa1':{
+        'swan_town_apple:sofa_11':'swan_town_apple:sofa_12',
+        'swan_town_apple:sofa_12':'swan_town_apple:sofa_13',
+        'swan_town_apple:sofa_13':'swan_town_apple:sofa_14',
+        'swan_town_apple:sofa_14':'swan_town_apple:sofa_11',
+    }
 }
 
 # 合并所有方块循环映射，便于快速查询
@@ -181,6 +190,18 @@ WATER_TANK_BLOCKS = {
         'fill_replace': None,
         'empty_replace': 'swan_town_apple:sink_12_1',
     },
+    'swan_town_apple:sink_11':{
+        'enable_fill': False,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': 'swan_town_apple:sink_13',
+    },
+    'swan_town_apple:sink_13':{
+        'enable_fill': True,
+        'enable_empty': False,
+        'fill_replace': 'swan_town_apple:sink_11',
+        'empty_replace': None,
+    },
     'swan_town_apple:bathtub_21':{
         'enable_fill': False,
         'enable_empty': True,
@@ -270,11 +291,18 @@ HAND_BLOCK_CYCLES = {
         'swan_town_apple:computer_11':'swan_town_apple:computer_12',
     },
     'tv1':{
+        'swan_town_apple:tv_11':'swan_town_apple:tv_12',
+        'swan_town_apple:tv_12':'swan_town_apple:tv_11',
+    },
+    'tv2':{
         'swan_town_apple:tv_21':'swan_town_apple:tv_22',
         'swan_town_apple:tv_22':'swan_town_apple:tv_21',
     },
     'sink1':{
         'swan_town_apple:sink_12_1':'swan_town_apple:sink_12'
+    },
+    'sink2':{
+        'swan_town_apple:sink_13':'swan_town_apple:sink_11'
     },
     'bathtub1':{
         'swan_town_apple:bathtub_13':'swan_town_apple:bathtub_11'
@@ -392,6 +420,7 @@ ALL_PLACEHOLDER_BLOCKS = set(PLACEHOLDER_TYPES.values())
 DRAINAGE_BLOCKS = {
     # 请在此处添加排水方块配置
     'swan_town_apple:sink_12':('swan_town_apple:sink_12_2','swan_town_apple:sink_12_1'),
+    'swan_town_apple:sink_11':('swan_town_apple:sink_13_1','swan_town_apple:sink_13'),
     'swan_town_apple:bathtub_11':('swan_town_apple:bathtub_12','swan_town_apple:bathtub_13'),
     'swan_town_apple:bathtub_21':('swan_town_apple:bathtub_22','swan_town_apple:bathtub_23'),
     'swan_town_apple:shower_13':('swan_town_apple:shower_132','swan_town_apple:shower_133'),

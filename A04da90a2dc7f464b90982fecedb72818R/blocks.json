@@ -751,7 +751,7 @@
     },
     "swan_town_apple:bathtub_12": {
         "client_entity": {
-            "block_icon": "swan_town_apple:bathtub_12_icon",
+            "block_icon": "swan_town_apple:bathtub_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_12"
         },
@@ -759,7 +759,7 @@
     },
     "swan_town_apple:bathtub_13": {
         "client_entity": {
-            "block_icon": "swan_town_apple:bathtub_13_icon",
+            "block_icon": "swan_town_apple:bathtub_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_13"
         },
@@ -775,7 +775,7 @@
     },
     "swan_town_apple:bathtub_22": {
         "client_entity": {
-            "block_icon": "swan_town_apple:bathtub_22_icon",
+            "block_icon": "swan_town_apple:bathtub_21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_22"
         },
@@ -783,7 +783,7 @@
     },
     "swan_town_apple:bathtub_23": {
         "client_entity": {
-            "block_icon": "swan_town_apple:bathtub_23_icon",
+            "block_icon": "swan_town_apple:bathtub_21_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_23"
         },
@@ -1047,7 +1047,7 @@
     },
     "swan_town_apple:computer_11": {
         "client_entity": {
-            "block_icon": "swan_town_apple:computer_11_icon",
+            "block_icon": "swan_town_apple:computer_12_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_11"
         },
@@ -1063,7 +1063,7 @@
     },
     "swan_town_apple:computer_21": {
         "client_entity": {
-            "block_icon": "swan_town_apple:computer_21_icon",
+            "block_icon": "swan_town_apple:computer_22_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_21"
         },
@@ -1599,7 +1599,7 @@
     },
     "swan_town_apple:rug_11_1": {
         "client_entity": {
-            "block_icon": "swan_town_apple:rug_11_1_icon",
+            "block_icon": "swan_town_apple:rug_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_11_1"
         },
@@ -1615,7 +1615,7 @@
     },
     "swan_town_apple:rug_12_1": {
         "client_entity": {
-            "block_icon": "swan_town_apple:rug_12_1_icon",
+            "block_icon": "swan_town_apple:rug_12_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_12_1"
         },
@@ -1631,7 +1631,7 @@
     },
     "swan_town_apple:rug_13_1": {
         "client_entity": {
-            "block_icon": "swan_town_apple:rug_13_1_icon",
+            "block_icon": "swan_town_apple:rug_13_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_13_1"
         },
@@ -1671,7 +1671,7 @@
     },
     "swan_town_apple:shower_132": {
         "client_entity": {
-            "block_icon": "swan_town_apple:shower_132_icon",
+            "block_icon": "swan_town_apple:shower_13_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_132"
         },
@@ -1679,7 +1679,7 @@
     },
     "swan_town_apple:shower_133": {
         "client_entity": {
-            "block_icon": "swan_town_apple:shower_133_icon",
+            "block_icon": "swan_town_apple:shower_13_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_133"
         },
@@ -1727,7 +1727,7 @@
     },
     "swan_town_apple:sink_12_1": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sink_12_1_icon",
+            "block_icon": "swan_town_apple:sink_12_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sink_12_1"
         },
@@ -1735,7 +1735,7 @@
     },
     "swan_town_apple:sink_12_2": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sink_12_2_icon",
+            "block_icon": "swan_town_apple:sink_12_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sink_12_2"
         },
@@ -1751,7 +1751,7 @@
     },
     "swan_town_apple:sink_13_1": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sink_13_1_icon",
+            "block_icon": "swan_town_apple:sink_13_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sink_13_1"
         },
@@ -1759,7 +1759,7 @@
     },
     "swan_town_apple:sofa_11": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sofa_11_icon",
+            "block_icon": "swan_town_apple:sink_13_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sofa_11"
         },
@@ -1767,7 +1767,7 @@
     },
     "swan_town_apple:sofa_12": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sofa_12_icon",
+            "block_icon": "swan_town_apple:sofa_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sofa_12"
         },
@@ -1775,7 +1775,7 @@
     },
     "swan_town_apple:sofa_13": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sofa_13_icon",
+            "block_icon": "swan_town_apple:sofa_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sofa_13"
         },
@@ -1783,7 +1783,7 @@
     },
     "swan_town_apple:sofa_14": {
         "client_entity": {
-            "block_icon": "swan_town_apple:sofa_14_icon",
+            "block_icon": "swan_town_apple:sofa_11_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:sofa_14"
         },
@@ -1975,7 +1975,7 @@
     },
     "swan_town_apple:tv_11": {
         "client_entity": {
-            "block_icon": "swan_town_apple:tv_11_icon",
+            "block_icon": "swan_town_apple:tv_12_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_11"
         },
@@ -1991,7 +1991,7 @@
     },
     "swan_town_apple:tv_21": {
         "client_entity": {
-            "block_icon": "swan_town_apple:tv_21_icon",
+            "block_icon": "swan_town_apple:tv_22_icon",
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_21"
         },

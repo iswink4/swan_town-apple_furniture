@@ -3,7 +3,7 @@
     "minecraft:block": {
         "description": {
             "category": "swan_town_apple:apple",
-            "register_to_creative_menu": true,
+            "register_to_creative_menu": false,
             "identifier": "swan_town_apple:computer_11"
         },
         "components": {
