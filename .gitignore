@@ -1,0 +1,21 @@
+# 项目配置文件（本地配置，不提交）
+studio.json
+work.mcscfg
+
+# Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+*.bak
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
