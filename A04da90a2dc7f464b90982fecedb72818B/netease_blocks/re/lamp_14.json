@@ -14,6 +14,9 @@
             "minecraft:block_light_absorption": {
                 "value": 0
             },
+            "minecraft:block_light_emission": {
+                "emission": 1.0
+            },
             "netease:face_directional": {
                 "type": "direction"
             },
@@ -54,6 +57,9 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:custom_tips": {
+                "value": "空手点击灯可控制开关"
             }
         }
     }

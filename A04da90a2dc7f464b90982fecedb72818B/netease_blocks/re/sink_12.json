@@ -54,6 +54,9 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:custom_tips": {
+                "value": "点击可放水排水，可用桶装水放水"
             }
         }
     }

@@ -293,6 +293,7 @@ HAND_BLOCK_CYCLES = {
         'swan_town:light3': 'swan_town:light3_off',
         'swan_town:light3_off': 'swan_town:light3',
     },
+    # 重置版配置
     'curtain1':{
         'swan_town_apple:curtain_31':'swan_town_apple:curtain_32',
         'swan_town_apple:curtain_32':'swan_town_apple:curtain_33',
@@ -339,7 +340,35 @@ HAND_BLOCK_CYCLES = {
     },
     'shower':{
         'swan_town_apple:shower_133':'swan_town_apple:shower_13'
-    }
+    },
+    'lamp1':{
+        'swan_town_apple:lamp_11':'swan_town_apple:lamp_11_off',
+        'swan_town_apple:lamp_11_off':'swan_town_apple:lamp_11'
+    },
+    'lamp2':{
+        'swan_town_apple:lamp_12':'swan_town_apple:lamp_12_off',
+        'swan_town_apple:lamp_12_off':'swan_town_apple:lamp_12'
+    },
+    'lamp3':{
+        'swan_town_apple:lamp_13':'swan_town_apple:lamp_13_off',
+        'swan_town_apple:lamp_13_off':'swan_town_apple:lamp_13'
+    },
+    'lamp4':{
+        'swan_town_apple:lamp_14':'swan_town_apple:lamp_14_off',
+        'swan_town_apple:lamp_14_off':'swan_town_apple:lamp_14'
+    },
+    'lamp5':{
+        'swan_town_apple:lamp_15':'swan_town_apple:lamp_15_off',
+        'swan_town_apple:lamp_15_off':'swan_town_apple:lamp_15'
+    },
+    'lamp6':{
+        'swan_town_apple:lamp_16':'swan_town_apple:lamp_16_off',
+        'swan_town_apple:lamp_16_off':'swan_town_apple:lamp_16'
+    },
+    'lamp7':{
+        'swan_town_apple:lamp_17':'swan_town_apple:lamp_17_off',
+        'swan_town_apple:lamp_17_off':'swan_town_apple:lamp_17'
+    },
 }
 
 # 合并所有空手方块循环映射

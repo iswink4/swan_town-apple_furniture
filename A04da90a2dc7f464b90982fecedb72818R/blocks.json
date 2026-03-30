@@ -1373,7 +1373,23 @@
         },
         "sound": "wood"
     },
+    "swan_town_apple:lamp_11_off": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_11_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_11"
+        },
+        "sound": "wood"
+    },
     "swan_town_apple:lamp_12": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_12_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_12"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_12_off": {
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_12_icon",
             "hand_model_use_client_entity": true,
@@ -1389,7 +1405,23 @@
         },
         "sound": "wood"
     },
+    "swan_town_apple:lamp_13_off": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_13_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_13"
+        },
+        "sound": "wood"
+    },
     "swan_town_apple:lamp_14": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_14_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_14"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_14_off": {
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_14_icon",
             "hand_model_use_client_entity": true,
@@ -1405,6 +1437,14 @@
         },
         "sound": "wood"
     },
+    "swan_town_apple:lamp_15_off": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_15_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_15"
+        },
+        "sound": "wood"
+    },
     "swan_town_apple:lamp_16": {
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_16_icon",
@@ -1413,7 +1453,23 @@
         },
         "sound": "wood"
     },
+    "swan_town_apple:lamp_16_off": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_16_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_16"
+        },
+        "sound": "wood"
+    },
     "swan_town_apple:lamp_17": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_17_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_17"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_17_off": {
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_17_icon",
             "hand_model_use_client_entity": true,

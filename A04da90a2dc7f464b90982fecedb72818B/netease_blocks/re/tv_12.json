@@ -54,6 +54,9 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:custom_tips": {
+                "value": "空手点击电视可开关"
             }
         }
     }

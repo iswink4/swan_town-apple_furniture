@@ -54,6 +54,9 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:custom_tips": {
+                "value": "手持任意斧子点击沙发可改变连接样式"
             }
         }
     }
