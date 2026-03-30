@@ -147,12 +147,16 @@ SEAT_HEIGHT = 0.5
 # ============================================================
 
 # 床方块列表
-BED_BLOCKS = ['swan_town:bed', 'swan_town:bed_single']
+BED_BLOCKS = ['swan_town:bed', 'swan_town:bed_single', 'swan_town_apple:bed_11', 'swan_town_apple:bed_12']
 
-# 双人床（2格宽）
+# 双人床列表（2格宽）
+DOUBLE_BEDS = ['swan_town:bed', 'swan_town_apple:bed_11']
+
+# 单人床列表
+SINGLE_BEDS = ['swan_town:bed_single', 'swan_town_apple:bed_12']
+
+# 向后兼容
 DOUBLE_BED = 'swan_town:bed'
-
-# 单人床
 SINGLE_BED = 'swan_town:bed_single'
 
 # 维度ID

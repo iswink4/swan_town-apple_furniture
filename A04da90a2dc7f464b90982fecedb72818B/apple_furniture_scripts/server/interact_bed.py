@@ -51,7 +51,7 @@
 import time
 from ..QuModLibs.Server import *
 from ..config import (
-    BED_BLOCKS, DOUBLE_BED, SINGLE_BED,
+    BED_BLOCKS, DOUBLE_BEDS, SINGLE_BEDS, DOUBLE_BED, SINGLE_BED,
     DIMENSION_NETHER, DIMENSION_END,
     HOSTILE_MOBS, NIGHT_START_TIME, SLEEP_HEIGHT_OFFSET,
     MONSTER_CHECK_RADIUS, BED_CLEARANCE_HEIGHT
@@ -428,7 +428,7 @@ def on_bed_use(args):
         return
     
     # 检查是否为双人床
-    is_double_bed = block_name == DOUBLE_BED
+    is_double_bed = block_name in DOUBLE_BEDS
     partner_id = None
     
     if is_double_bed:
