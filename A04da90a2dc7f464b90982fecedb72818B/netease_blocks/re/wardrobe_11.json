@@ -4,7 +4,8 @@
         "description": {
             "category": "swan_town_apple:apple",
             "register_to_creative_menu": true,
-            "identifier": "swan_town_apple:wardrobe_11"
+            "identifier": "swan_town_apple:wardrobe_11",
+            "base_block": "netease_container"
         },
         "components": {
             "netease:block_entity": {
@@ -54,6 +55,14 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:block_container": {
+                "custom_description": "衣柜",
+                "screen_name": "netease_container.netease_custom_container_screen",
+                "container_size": 27
+            },
+            "netease:custom_tips": {
+                "value": "点击打开存储界面"
             }
         }
     }
