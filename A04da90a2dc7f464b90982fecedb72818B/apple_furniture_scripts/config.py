@@ -121,6 +121,19 @@ CHAIR_LIST = [
     'swan_town:stool2',
     'swan_town:stool3',
     'swan_town:toilet',
+    'swan_town_apple:chair_11',
+    'swan_town_apple:chair_12',
+    'swan_town_apple:chair_13',
+    'swan_town_apple:chair_14',
+    'swan_town_apple:sofa_11',
+    'swan_town_apple:sofa_12',
+    'swan_town_apple:sofa_13',
+    'swan_town_apple:sofa_14',
+    'swan_town_apple:sofa_21',
+    'swan_town_apple:stool_11',
+    'swan_town_apple:stool_12',
+    'swan_town_apple:stool_13',
+    'swan_town_apple:stool_14',
 ]
 
 # 坐下动画名称
