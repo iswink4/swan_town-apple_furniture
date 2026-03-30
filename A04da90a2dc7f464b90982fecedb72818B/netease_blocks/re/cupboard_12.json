@@ -29,9 +29,9 @@
             "netease:aabb": {
                 "collision": {
                     "max": [
-                        1,
-                        1,
-                        1
+                        0,
+                        0,
+                        0
                     ],
                     "min": [
                         0,
@@ -48,12 +48,15 @@
                     "min": [
                         0,
                         0,
-                        0
+                        0.99
                     ]
                 }
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:custom_tips": {
+                "value": "请先放置要放在书柜中的物品再放置书柜"
             }
         }
     }

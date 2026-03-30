@@ -388,6 +388,7 @@ HAND_INTERACT_COOLDOWN = 0.2
 PLACEHOLDER_TYPES = {
     'default': 'swan_town:placeholder',
     'half': 'swan_town:placeholder_half',
+    '75':'swan_town:placeholder_75',
     # 添加更多类型:
     # 'large': 'swan_town:placeholder_large',
 }
@@ -457,6 +458,101 @@ PLACEHOLDER_CONFIG = {
     'swan_town:shelf2':{
         'type': 'default',
         'offsets': [(-1,0,0)]
+    },
+    # 重置版家具
+    'swan_town_apple:cabinet_11':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_12':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_13':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_14':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+
+    'swan_town_apple:desk_11':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:desk_12':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:desk_13':{
+        'type':'default',
+        'offsets':[(-1,0,0),(-2,0,0)]
+    },
+    'swan_town_apple:desk_14':{
+        'type':'default',
+        'offsets':[(-1,0,0),(-2,0,0)]
+    },
+
+    'swan_town_apple:bathtub_11':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bathtub_12':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bathtub_13':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bathtub_21':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
+    'swan_town_apple:bathtub_22':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
+    'swan_town_apple:bathtub_23':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
+
+    'swan_town_apple:refrigerator_11':{
+        'type': 'default',
+        'offsets': [(0,1,0),(0,2,0),(-1,0,0),(-1,1,0),(-1,2,0)]
+    },
+    'swan_town_apple:refrigerator_12':{
+        'type': 'default',
+        'offsets': [(0,1,0),(0,2,0)]
+    },
+
+    'swan_town_apple:wardrobe_11':{
+        'type': 'default',
+        'offsets': [(0,1,0),(0,2,0),(-1,0,0),(-1,1,0),(-1,2,0)]
+    },
+    'swan_town_apple:wardrobe_12':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:wardrobe_13':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+
+    'swan_town_apple:table_51':{
+        'type': 'default',
+        'offsets': [(-2,0,0)]
+    },
+
+    'swan_town_apple:bed_12':{
+        'type': '75',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bed_11':{
+        'type': '75',
+        'offsets': [(-1,0,0),(-2,0,0),(-1,0,-1),(-2,0,-1),]
     },
 }
 

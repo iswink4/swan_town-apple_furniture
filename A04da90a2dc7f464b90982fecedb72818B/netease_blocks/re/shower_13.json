@@ -29,9 +29,9 @@
             "netease:aabb": {
                 "collision": {
                     "max": [
-                        1,
-                        1,
-                        1
+                        0,
+                        0,
+                        0
                     ],
                     "min": [
                         0,

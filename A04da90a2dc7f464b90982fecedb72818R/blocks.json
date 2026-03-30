@@ -717,6 +717,10 @@
         "sound": "stone",
         "textures": "swan_town:placeholder"
     },
+    "swan_town:placeholder_75": {
+        "sound": "stone",
+        "textures": "swan_town:placeholder"
+    },
     "swan_town:placeholder_wall_after": {
         "sound": "stone",
         "textures": "swan_town:placeholder"
