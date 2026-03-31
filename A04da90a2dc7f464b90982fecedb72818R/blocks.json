@@ -2729,6 +2729,22 @@
         },
         "sound": "wood"
     },
+    "swan_town_apple:lamp_172_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_172_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_172_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_173_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_173_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_173_green"
+        },
+        "sound": "wood"
+    },
     "swan_town_apple:laundry_basket_green": {
         "client_entity": {
             "block_icon": "swan_town_apple:laundry_basket_green_icon",
