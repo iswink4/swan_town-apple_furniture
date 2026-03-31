@@ -643,6 +643,24 @@
         "swan_town_apple:curtain_31_icon": {
             "textures": "textures/re/icon/curtain_31"
         },
+        "swan_town_apple:curtain_11_green_icon": {
+            "textures": "textures/re/icon/curtain_11_green"
+        },
+        "swan_town_apple:curtain_21_green_icon": {
+            "textures": "textures/re/icon/curtain_21_green"
+        },
+        "swan_town_apple:curtain_31_green_icon": {
+            "textures": "textures/re/icon/curtain_31_green"
+        },
+        "swan_town_apple:bathtub_11_green_icon": {
+            "textures": "textures/re/icon/bathtub_11_green"
+        },
+        "swan_town_apple:bathtub_21_green_icon": {
+            "textures": "textures/re/icon/bathtub_21_green"
+        },
+        "swan_town_apple:candle_11_green_icon": {
+            "textures": "textures/re/icon/candle_11_green"
+        },
         "swan_town_apple:jiangjiang_doll_icon": {
             "textures": "textures/re/icon/jiangjiang_doll"
         },
