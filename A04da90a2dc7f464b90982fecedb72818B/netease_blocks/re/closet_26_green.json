@@ -1,0 +1,69 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "category": "swan_town_apple:apple",
+            "register_to_creative_menu": true,
+            "identifier": "swan_town_apple:closet_26_green",
+            "base_block": "netease_container"
+        },
+        "components": {
+            "netease:block_entity": {
+                "tick": false,
+                "movable": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "minecraft:explosion_resistance": {
+                "value": 0.3
+            },
+            "minecraft:destroy_time": {
+                "value": 0.3
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            },
+            "netease:aabb": {
+                "collision": {
+                    "max": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
+                },
+                "clip": {
+                    "max": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            "netease:solid": {
+                "value": false
+            },
+            "netease:block_container": {
+                "custom_description": "壁橱",
+                "screen_name": "netease_container.netease_custom_container_screen",
+                "container_size": 27
+            },
+            "netease:custom_tips": {
+                "value": "点击打开存储界面"
+            }
+        }
+    }
+}

@@ -101,6 +101,37 @@ BLOCK_CYCLES = {
         'swan_town_apple:table_33':'swan_town_apple:table_34',
         'swan_town_apple:table_34':'swan_town_apple:table_31',
     },
+    # 青苹果系列
+    'sofa1_green':{
+        'swan_town_apple:sofa_11_green':'swan_town_apple:sofa_12_green',
+        'swan_town_apple:sofa_12_green':'swan_town_apple:sofa_13_green',
+        'swan_town_apple:sofa_13_green':'swan_town_apple:sofa_14_green',
+        'swan_town_apple:sofa_14_green':'swan_town_apple:sofa_11_green',
+    },
+    'stool1_green':{
+        'swan_town_apple:stool_11_green':'swan_town_apple:stool_12_green',
+        'swan_town_apple:stool_12_green':'swan_town_apple:stool_13_green',
+        'swan_town_apple:stool_13_green':'swan_town_apple:stool_14_green',
+        'swan_town_apple:stool_14_green':'swan_town_apple:stool_11_green',
+    },
+    'table1_green':{
+        'swan_town_apple:table_11_green':'swan_town_apple:table_12_green',
+        'swan_town_apple:table_12_green':'swan_town_apple:table_13_green',
+        'swan_town_apple:table_13_green':'swan_town_apple:table_14_green',
+        'swan_town_apple:table_14_green':'swan_town_apple:table_11_green',
+    },
+    'table2_green':{
+        'swan_town_apple:table_21_green':'swan_town_apple:table_22_green',
+        'swan_town_apple:table_22_green':'swan_town_apple:table_23_green',
+        'swan_town_apple:table_23_green':'swan_town_apple:table_24_green',
+        'swan_town_apple:table_24_green':'swan_town_apple:table_21_green',
+    },
+    'table3_green':{
+        'swan_town_apple:table_31_green':'swan_town_apple:table_32_green',
+        'swan_town_apple:table_32_green':'swan_town_apple:table_33_green',
+        'swan_town_apple:table_33_green':'swan_town_apple:table_34_green',
+        'swan_town_apple:table_34_green':'swan_town_apple:table_31_green',
+    },
 
 }
 
@@ -134,6 +165,20 @@ CHAIR_LIST = [
     'swan_town_apple:stool_12',
     'swan_town_apple:stool_13',
     'swan_town_apple:stool_14',
+    # 青苹果系列
+    'swan_town_apple:chair_11_green',
+    'swan_town_apple:chair_12_green',
+    'swan_town_apple:chair_13_green',
+    'swan_town_apple:chair_14_green',
+    'swan_town_apple:sofa_11_green',
+    'swan_town_apple:sofa_12_green',
+    'swan_town_apple:sofa_13_green',
+    'swan_town_apple:sofa_14_green',
+    'swan_town_apple:sofa_21_green',
+    'swan_town_apple:stool_11_green',
+    'swan_town_apple:stool_12_green',
+    'swan_town_apple:stool_13_green',
+    'swan_town_apple:stool_14_green',
 ]
 
 # 坐下动画名称
@@ -147,13 +192,13 @@ SEAT_HEIGHT = 0.5
 # ============================================================
 
 # 床方块列表
-BED_BLOCKS = ['swan_town:bed', 'swan_town:bed_single', 'swan_town_apple:bed_11', 'swan_town_apple:bed_12']
+BED_BLOCKS = ['swan_town:bed', 'swan_town:bed_single', 'swan_town_apple:bed_11', 'swan_town_apple:bed_12', 'swan_town_apple:bed_11_green', 'swan_town_apple:bed_12_green']
 
 # 双人床列表（2格宽）
-DOUBLE_BEDS = ['swan_town:bed', 'swan_town_apple:bed_11']
+DOUBLE_BEDS = ['swan_town:bed', 'swan_town_apple:bed_11', 'swan_town_apple:bed_11_green']
 
 # 单人床列表
-SINGLE_BEDS = ['swan_town:bed_single', 'swan_town_apple:bed_12']
+SINGLE_BEDS = ['swan_town:bed_single', 'swan_town_apple:bed_12', 'swan_town_apple:bed_12_green']
 
 # 向后兼容
 DOUBLE_BED = 'swan_town:bed'
@@ -282,6 +327,67 @@ WATER_TANK_BLOCKS = {
         'fill_replace': 'swan_town_apple:shower_13',
         'empty_replace': None,
     },
+    # 青苹果系列
+    'swan_town_apple:sink_12_1_green':{
+        'enable_fill': True,
+        'enable_empty': False,
+        'fill_replace': 'swan_town_apple:sink_12_green',
+        'empty_replace': None,
+    },
+    'swan_town_apple:sink_12_green':{
+        'enable_fill': False,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': 'swan_town_apple:sink_12_1_green',
+    },
+    'swan_town_apple:sink_11_green':{
+        'enable_fill': False,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': 'swan_town_apple:sink_13_green',
+    },
+    'swan_town_apple:sink_13_green':{
+        'enable_fill': True,
+        'enable_empty': False,
+        'fill_replace': 'swan_town_apple:sink_11_green',
+        'empty_replace': None,
+    },
+    'swan_town_apple:shower_13_green':{
+        'enable_fill': False,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': 'swan_town_apple:shower_133_green',
+    },
+    'swan_town_apple:shower_133_green':{
+        'enable_fill': True,
+        'enable_empty': False,
+        'fill_replace': 'swan_town_apple:shower_13_green',
+        'empty_replace': None,
+    },
+    'swan_town_apple:bathtub_11_green':{
+        'enable_fill': False,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': 'swan_town_apple:bathtub_13_green',
+    },
+    'swan_town_apple:bathtub_13_green':{
+        'enable_fill': True,
+        'enable_empty': False,
+        'fill_replace': 'swan_town_apple:bathtub_11_green',
+        'empty_replace': None,
+    },
+    'swan_town_apple:bathtub_21_green':{
+        'enable_fill': False,
+        'enable_empty': True,
+        'fill_replace': None,
+        'empty_replace': 'swan_town_apple:bathtub_23_green',
+    },
+    'swan_town_apple:bathtub_23_green':{
+        'enable_fill': True,
+        'enable_empty': False,
+        'fill_replace': 'swan_town_apple:bathtub_21_green',
+        'empty_replace': None,
+    },
 
     # 请在此处添加更多配置...
     # 示例：
@@ -385,6 +491,82 @@ HAND_BLOCK_CYCLES = {
     'lamp7':{
         'swan_town_apple:lamp_17':'swan_town_apple:lamp_17_off',
         'swan_town_apple:lamp_17_off':'swan_town_apple:lamp_17'
+    },
+    # 青苹果系列
+    'computer1_green':{
+        'swan_town_apple:computer_22_green':'swan_town_apple:computer_21_green',
+        'swan_town_apple:computer_21_green':'swan_town_apple:computer_22_green',
+    },
+    'computer2_green':{
+        'swan_town_apple:computer_12_green':'swan_town_apple:computer_11_green',
+        'swan_town_apple:computer_11_green':'swan_town_apple:computer_12_green',
+    },
+    'tv1_green':{
+        'swan_town_apple:tv_11_green':'swan_town_apple:tv_12_green',
+        'swan_town_apple:tv_12_green':'swan_town_apple:tv_11_green',
+    },
+    'tv2_green':{
+        'swan_town_apple:tv_21_green':'swan_town_apple:tv_22_green',
+        'swan_town_apple:tv_22_green':'swan_town_apple:tv_21_green',
+    },
+    'sink1_green':{
+        'swan_town_apple:sink_12_1_green':'swan_town_apple:sink_12_green'
+    },
+    'sink2_green':{
+        'swan_town_apple:sink_13_green':'swan_town_apple:sink_11_green'
+    },
+    'shower_green':{
+        'swan_town_apple:shower_133_green':'swan_town_apple:shower_13_green'
+    },
+    'lamp1_green':{
+        'swan_town_apple:lamp_11_green':'swan_town_apple:lamp_11_off_green',
+        'swan_town_apple:lamp_11_off_green':'swan_town_apple:lamp_11_green'
+    },
+    'lamp2_green':{
+        'swan_town_apple:lamp_12_green':'swan_town_apple:lamp_12_off_green',
+        'swan_town_apple:lamp_12_off_green':'swan_town_apple:lamp_12_green'
+    },
+    'lamp3_green':{
+        'swan_town_apple:lamp_13_green':'swan_town_apple:lamp_13_off_green',
+        'swan_town_apple:lamp_13_off_green':'swan_town_apple:lamp_13_green'
+    },
+    'lamp4_green':{
+        'swan_town_apple:lamp_14_green':'swan_town_apple:lamp_14_off_green',
+        'swan_town_apple:lamp_14_off_green':'swan_town_apple:lamp_14_green'
+    },
+    'lamp5_green':{
+        'swan_town_apple:lamp_15_green':'swan_town_apple:lamp_15_off_green',
+        'swan_town_apple:lamp_15_off_green':'swan_town_apple:lamp_15_green'
+    },
+    'lamp6_green':{
+        'swan_town_apple:lamp_16_green':'swan_town_apple:lamp_16_off_green',
+        'swan_town_apple:lamp_16_off_green':'swan_town_apple:lamp_16_green'
+    },
+    'lamp7_green':{
+        'swan_town_apple:lamp_17_green':'swan_town_apple:lamp_17_off_green',
+        'swan_town_apple:lamp_17_off_green':'swan_town_apple:lamp_17_green'
+    },
+    'curtain1_green':{
+        'swan_town_apple:curtain_11_green':'swan_town_apple:curtain_12_green',
+        'swan_town_apple:curtain_12_green':'swan_town_apple:curtain_13_green',
+        'swan_town_apple:curtain_13_green':'swan_town_apple:curtain_14_green',
+        'swan_town_apple:curtain_14_green':'swan_town_apple:curtain_11_green',
+    },
+    'curtain2_green':{
+        'swan_town_apple:curtain_21_green':'swan_town_apple:curtain_22_green',
+        'swan_town_apple:curtain_22_green':'swan_town_apple:curtain_23_green',
+        'swan_town_apple:curtain_23_green':'swan_town_apple:curtain_21_green',
+    },
+    'curtain3_green':{
+        'swan_town_apple:curtain_31_green':'swan_town_apple:curtain_32_green',
+        'swan_town_apple:curtain_32_green':'swan_town_apple:curtain_33_green',
+        'swan_town_apple:curtain_33_green':'swan_town_apple:curtain_31_green',
+    },
+    'bathtub1_green':{
+        'swan_town_apple:bathtub_13_green':'swan_town_apple:bathtub_11_green'
+    },
+    'bathtub2_green':{
+        'swan_town_apple:bathtub_23_green':'swan_town_apple:bathtub_21_green'
     },
 }
 
@@ -571,6 +753,95 @@ PLACEHOLDER_CONFIG = {
         'type': '75',
         'offsets': [(-1,0,0),(-2,0,0),(-1,0,-1),(-2,0,-1),]
     },
+    # 青苹果系列
+    'swan_town_apple:bed_11_green':{
+        'type': '75',
+        'offsets': [(-1,0,0),(-2,0,0),(-1,0,-1),(-2,0,-1),]
+    },
+    'swan_town_apple:bed_12_green':{
+        'type': '75',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_11_green':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_12_green':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_13_green':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:cabinet_14_green':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:desk_11_green':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:desk_12_green':{
+        'type':'default',
+        'offsets':[(-1,0,0)]
+    },
+    'swan_town_apple:desk_13_green':{
+        'type':'default',
+        'offsets':[(-1,0,0),(-2,0,0)]
+    },
+    'swan_town_apple:desk_14_green':{
+        'type':'default',
+        'offsets':[(-1,0,0),(-2,0,0)]
+    },
+    'swan_town_apple:refrigerator_11_green':{
+        'type': 'default',
+        'offsets': [(0,1,0),(0,2,0),(-1,0,0),(-1,1,0),(-1,2,0)]
+    },
+    'swan_town_apple:refrigerator_12_green':{
+        'type': 'default',
+        'offsets': [(0,1,0),(0,2,0)]
+    },
+    'swan_town_apple:wardrobe_11_green':{
+        'type': 'default',
+        'offsets': [(0,1,0),(0,2,0),(-1,0,0),(-1,1,0),(-1,2,0)]
+    },
+    'swan_town_apple:wardrobe_12_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:wardrobe_13_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:table_51_green':{
+        'type': 'default',
+        'offsets': [(-2,0,0)]
+    },
+    'swan_town_apple:bathtub_11_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bathtub_12_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bathtub_13_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0)]
+    },
+    'swan_town_apple:bathtub_21_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
+    'swan_town_apple:bathtub_22_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
+    'swan_town_apple:bathtub_23_green':{
+        'type': 'default',
+        'offsets': [(-1,0,0),(-1,0,-1),(-2,0,0),(-2,0,-1),(0,0,-1)]
+    },
 }
 
 # 所有需要占位的家具集合（自动生成）
@@ -587,12 +858,16 @@ ALL_PLACEHOLDER_BLOCKS = set(PLACEHOLDER_TYPES.values())
 # 格式: {原方块: (放水中方块, 放水完成方块)}
 # 示例: 'swan_town_apple:bathtub_11': ('swan_town_apple:bathtub_11_draining', 'swan_town_apple:bathtub_11_empty')
 DRAINAGE_BLOCKS = {
-    # 请在此处添加排水方块配置
     'swan_town_apple:sink_12':('swan_town_apple:sink_12_2','swan_town_apple:sink_12_1'),
     'swan_town_apple:sink_11':('swan_town_apple:sink_13_1','swan_town_apple:sink_13'),
     'swan_town_apple:bathtub_11':('swan_town_apple:bathtub_12','swan_town_apple:bathtub_13'),
     'swan_town_apple:bathtub_21':('swan_town_apple:bathtub_22','swan_town_apple:bathtub_23'),
     'swan_town_apple:shower_13':('swan_town_apple:shower_132','swan_town_apple:shower_133'),
+    'swan_town_apple:sink_12_green':('swan_town_apple:sink_12_2_green','swan_town_apple:sink_12_1_green'),
+    'swan_town_apple:sink_11_green':('swan_town_apple:sink_13_1_green','swan_town_apple:sink_13_green'),
+    'swan_town_apple:shower_13_green':('swan_town_apple:shower_132_green','swan_town_apple:shower_133_green'),
+    'swan_town_apple:bathtub_11_green':('swan_town_apple:bathtub_12_green','swan_town_apple:bathtub_13_green'),
+    'swan_town_apple:bathtub_21_green':('swan_town_apple:bathtub_22_green','swan_town_apple:bathtub_23_green'),
 }   
 
 # 排水动画持续时间（秒）

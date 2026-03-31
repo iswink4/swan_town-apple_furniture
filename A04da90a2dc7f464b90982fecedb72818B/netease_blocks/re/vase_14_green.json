@@ -1,0 +1,60 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "description": {
+            "category": "swan_town_apple:apple",
+            "register_to_creative_menu": true,
+            "identifier": "swan_town_apple:vase_14_green"
+        },
+        "components": {
+            "netease:block_entity": {
+                "tick": false,
+                "movable": false
+            },
+            "minecraft:block_light_absorption": {
+                "value": 0
+            },
+            "netease:face_directional": {
+                "type": "direction"
+            },
+            "minecraft:explosion_resistance": {
+                "value": 0.3
+            },
+            "minecraft:destroy_time": {
+                "value": 0.3
+            },
+            "netease:render_layer": {
+                "value": "alpha"
+            },
+            "netease:aabb": {
+                "collision": {
+                    "max": [
+                        0.75,
+                        0.5,
+                        0.75
+                    ],
+                    "min": [
+                        0.25,
+                        0,
+                        0.25
+                    ]
+                },
+                "clip": {
+                    "max": [
+                        1,
+                        1,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
+                }
+            },
+            "netease:solid": {
+                "value": false
+            }
+        }
+    }
+}

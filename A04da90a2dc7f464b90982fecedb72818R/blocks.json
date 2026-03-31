@@ -2144,5 +2144,1373 @@
             "identifier": "swan_town_apple:washing_machine"
         },
         "sound": "wood"
+    },
+    "swan_town_apple:bed_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bed_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bed_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bed_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bed_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bed_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bookshelf_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bookshelf_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bookshelf_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bookshelf_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bookshelf_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bookshelf_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bookshelf_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bookshelf_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bookshelf_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bookshelf_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bookshelf_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bookshelf_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bookshelf_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bookshelf_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bookshelf_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cabinet_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cabinet_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cabinet_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cabinet_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cabinet_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cabinet_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cabinet_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cabinet_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cabinet_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cabinet_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cabinet_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cabinet_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cabinet_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cabinet_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cabinet_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:chair_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:chair_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:chair_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:chair_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:chair_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:chair_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:chair_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:chair_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:chair_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:chair_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:chair_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:chair_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_16_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_16_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_16_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_22_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_23_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_23_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_23_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_24_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_24_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_24_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_25_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_25_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_25_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:closet_26_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:closet_26_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:closet_26_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:coffee_table_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:coffee_table_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:coffee_table_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:coffee_table_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:coffee_table_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:coffee_table_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:computer_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:computer_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:computer_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:computer_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:computer_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:computer_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:computer_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:computer_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:computer_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:computer_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:computer_22_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:computer_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_16_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_16_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_16_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:counter_17_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:counter_17_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:counter_17_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cupboard_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cupboard_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cupboard_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:cupboard_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:cupboard_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:cupboard_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_16_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_16_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_16_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_17_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_17_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_17_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_18_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_18_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_18_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_19_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_19_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_19_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_20_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_20_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_20_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:decoration_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:decoration_22_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:decoration_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:desk_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:desk_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:desk_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:desk_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:desk_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:desk_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:desk_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:desk_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:desk_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:desk_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:desk_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:desk_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_11_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_11_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_11_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_12_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_12_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_12_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_13_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_13_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_13_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_14_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_14_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_14_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_15_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_15_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_15_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_16_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_16_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_16_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_16_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_16_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_16_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_17_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_17_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_17_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:lamp_17_off_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:lamp_17_off_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:lamp_17_off_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:laundry_basket_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:laundry_basket_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:laundry_basket_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:microwave_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:microwave_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:microwave_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:mirror_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:mirror_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:mirror_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:mirror_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:mirror_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:mirror_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:mirror_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:mirror_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:mirror_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_16_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_16_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_16_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:painting_17_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:painting_17_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:painting_17_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:plant_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:plant_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:plant_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:plant_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:plant_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:plant_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:plant_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:plant_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:plant_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:plant_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:plant_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:plant_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:plant_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:plant_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:plant_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:refrigerator_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:refrigerator_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:refrigerator_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:refrigerator_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:refrigerator_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:refrigerator_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_11_1_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_11_1_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_11_1_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_12_1_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_12_1_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_12_1_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_13_1_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_13_1_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_13_1_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:rug_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:rug_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:rug_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:shower_132_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:shower_132_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:shower_132_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:shower_133_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:shower_133_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:shower_133_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:shower_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:shower_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:shower_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:side_table_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:side_table_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:side_table_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:side_table_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:side_table_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:side_table_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:side_table_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:side_table_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:side_table_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sink_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sink_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sink_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sink_12_1_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sink_12_1_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sink_12_1_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sink_12_2_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sink_12_2_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sink_12_2_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sink_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sink_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sink_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sink_13_1_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sink_13_1_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sink_13_1_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sink_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sink_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sink_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sofa_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sofa_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sofa_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sofa_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sofa_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sofa_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sofa_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sofa_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sofa_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sofa_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sofa_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sofa_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:sofa_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:sofa_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:sofa_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:stool_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:stool_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:stool_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:stool_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:stool_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:stool_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:stool_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:stool_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:stool_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:stool_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:stool_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:stool_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:stove_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:stove_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:stove_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:succulent_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:succulent_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:succulent_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:succulent_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:succulent_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:succulent_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_22_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_23_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_23_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_23_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_24_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_24_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_24_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_31_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_31_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_31_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_32_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_32_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_32_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_33_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_33_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_33_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_34_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_34_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_34_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_41_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_41_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_41_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:table_51_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:table_51_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:table_51_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:toilet_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:toilet_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:toilet_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:tv_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:tv_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:tv_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:tv_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:tv_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:tv_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:tv_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:tv_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:tv_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:tv_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:tv_22_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:tv_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:vase_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:vase_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:vase_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:vase_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:vase_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:vase_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:vase_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:vase_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:vase_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:vase_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:vase_14_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:vase_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:vase_15_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:vase_15_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:vase_15_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:vase_16_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:vase_16_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:vase_16_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:wardrobe_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:wardrobe_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:wardrobe_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:wardrobe_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:wardrobe_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:wardrobe_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:wardrobe_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:wardrobe_13_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:wardrobe_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:washing_machine_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:washing_machine_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:washing_machine_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:candle_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:candle_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:candle_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:candle_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:candle_12_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:candle_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_14_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_14_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_23_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_23_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_31_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_31_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_31_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_32_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_31_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_32_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:curtain_33_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:curtain_31_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:curtain_33_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bathtub_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bathtub_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bathtub_11_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bathtub_12_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bathtub_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bathtub_12_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bathtub_13_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bathtub_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bathtub_13_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bathtub_21_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bathtub_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bathtub_21_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bathtub_22_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bathtub_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bathtub_22_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:bathtub_23_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:bathtub_21_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:bathtub_23_green"
+        },
+        "sound": "wood"
+    },
+    "swan_town_apple:shower_11_green": {
+        "client_entity": {
+            "block_icon": "swan_town_apple:shower_11_green_icon",
+            "hand_model_use_client_entity": true,
+            "identifier": "swan_town_apple:shower_11_green"
+        },
+        "sound": "wood"
     }
 }

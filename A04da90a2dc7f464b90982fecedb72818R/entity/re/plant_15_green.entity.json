@@ -1,0 +1,20 @@
+{
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.plant_15"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "identifier": "swan_town_apple:plant_15_green",
+            "textures": {
+                "default": "textures/re/green_apple"
+            },
+            "materials": {
+                "default": "foundation_alphatest_nocull"
+            }
+        }
+    },
+    "format_version": "1.10.0"
+}
