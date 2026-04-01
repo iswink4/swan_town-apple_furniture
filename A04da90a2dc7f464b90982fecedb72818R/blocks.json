@@ -751,7 +751,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_11"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_12": {
         "client_entity": {
@@ -759,7 +759,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_12"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_13": {
         "client_entity": {
@@ -767,7 +767,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_13"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_21": {
         "client_entity": {
@@ -775,7 +775,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_21"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_22": {
         "client_entity": {
@@ -783,7 +783,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_22"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_23": {
         "client_entity": {
@@ -791,7 +791,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_23"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bed_11": {
         "client_entity": {
@@ -895,7 +895,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:candle_11"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:candle_12": {
         "client_entity": {
@@ -903,7 +903,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:candle_12"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:chair_11": {
         "client_entity": {
@@ -1055,7 +1055,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_11"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:computer_12": {
         "client_entity": {
@@ -1063,7 +1063,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_12"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:computer_21": {
         "client_entity": {
@@ -1071,7 +1071,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_21"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:computer_22": {
         "client_entity": {
@@ -1079,7 +1079,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_22"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:counter_11": {
         "client_entity": {
@@ -1159,7 +1159,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_11"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_12": {
         "client_entity": {
@@ -1167,7 +1167,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_12"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_13": {
         "client_entity": {
@@ -1175,7 +1175,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_13"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_14": {
         "client_entity": {
@@ -1183,7 +1183,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_14"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_21": {
         "client_entity": {
@@ -1191,7 +1191,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_21"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_22": {
         "client_entity": {
@@ -1199,7 +1199,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_22"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_23": {
         "client_entity": {
@@ -1207,7 +1207,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_23"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_31": {
         "client_entity": {
@@ -1215,7 +1215,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_31"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_32": {
         "client_entity": {
@@ -1223,7 +1223,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_32"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_33": {
         "client_entity": {
@@ -1231,7 +1231,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_33"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:decoration_11": {
         "client_entity": {
@@ -1367,7 +1367,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:jiangjiang_doll"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:lamp_11": {
         "client_entity": {
@@ -1375,7 +1375,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_11"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_11_off": {
         "client_entity": {
@@ -1383,7 +1383,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_11"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_12": {
         "client_entity": {
@@ -1391,7 +1391,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_12"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_12_off": {
         "client_entity": {
@@ -1399,7 +1399,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_12"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_13": {
         "client_entity": {
@@ -1407,7 +1407,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_13"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_13_off": {
         "client_entity": {
@@ -1415,7 +1415,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_13"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_14": {
         "client_entity": {
@@ -1423,7 +1423,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_14"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_14_off": {
         "client_entity": {
@@ -1431,7 +1431,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_14"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_15": {
         "client_entity": {
@@ -1439,7 +1439,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_15"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_15_off": {
         "client_entity": {
@@ -1447,7 +1447,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_15"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_16": {
         "client_entity": {
@@ -1455,7 +1455,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_16"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_16_off": {
         "client_entity": {
@@ -1463,7 +1463,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_16"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_17": {
         "client_entity": {
@@ -1471,7 +1471,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_17"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_17_off": {
         "client_entity": {
@@ -1479,7 +1479,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_17"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_172": {
         "client_entity": {
@@ -1487,7 +1487,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_172"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_173": {
         "client_entity": {
@@ -1495,7 +1495,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_173"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:laundry_basket": {
         "client_entity": {
@@ -1503,7 +1503,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:laundry_basket"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:microwave": {
         "client_entity": {
@@ -1511,7 +1511,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:microwave"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:mirror_11": {
         "client_entity": {
@@ -1519,7 +1519,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:mirror_11"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:mirror_12": {
         "client_entity": {
@@ -1527,7 +1527,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:mirror_12"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:mirror_13": {
         "client_entity": {
@@ -1535,7 +1535,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:mirror_13"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:painting_11": {
         "client_entity": {
@@ -1599,7 +1599,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_11"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_12": {
         "client_entity": {
@@ -1607,7 +1607,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_12"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_13": {
         "client_entity": {
@@ -1615,7 +1615,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_13"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_14": {
         "client_entity": {
@@ -1623,7 +1623,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_14"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_15": {
         "client_entity": {
@@ -1631,7 +1631,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_15"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:refrigerator_11": {
         "client_entity": {
@@ -1639,7 +1639,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:refrigerator_11"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:refrigerator_12": {
         "client_entity": {
@@ -1647,7 +1647,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:refrigerator_12"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:rug_11": {
         "client_entity": {
@@ -1655,7 +1655,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_11"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_11_1": {
         "client_entity": {
@@ -1663,7 +1663,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_11_1"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_12": {
         "client_entity": {
@@ -1671,7 +1671,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_12"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_12_1": {
         "client_entity": {
@@ -1679,7 +1679,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_12_1"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_13": {
         "client_entity": {
@@ -1687,7 +1687,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_13"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_13_1": {
         "client_entity": {
@@ -1695,7 +1695,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_13_1"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_14": {
         "client_entity": {
@@ -1703,7 +1703,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_14"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:shower_11": {
         "client_entity": {
@@ -1711,7 +1711,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_11"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_12": {
         "client_entity": {
@@ -1719,7 +1719,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_12"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_13": {
         "client_entity": {
@@ -1727,7 +1727,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_13"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_132": {
         "client_entity": {
@@ -1735,7 +1735,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_132"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_133": {
         "client_entity": {
@@ -1743,7 +1743,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_133"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:side_table_11": {
         "client_entity": {
@@ -1895,7 +1895,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:stove"
         },
-        "sound": "wood"
+        "sound": "stone"
     },
     "swan_town_apple:succulent_11": {
         "client_entity": {
@@ -1903,7 +1903,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:succulent_11"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:succulent_12": {
         "client_entity": {
@@ -1911,7 +1911,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:succulent_12"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:table_11": {
         "client_entity": {
@@ -2031,7 +2031,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:toilet"
         },
-        "sound": "wood"
+        "sound": "stone"
     },
     "swan_town_apple:tv_11": {
         "client_entity": {
@@ -2039,7 +2039,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_11"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:tv_12": {
         "client_entity": {
@@ -2047,7 +2047,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_12"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:tv_21": {
         "client_entity": {
@@ -2055,7 +2055,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_21"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:tv_22": {
         "client_entity": {
@@ -2063,7 +2063,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_22"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:vase_11": {
         "client_entity": {
@@ -2071,7 +2071,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_11"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_12": {
         "client_entity": {
@@ -2079,7 +2079,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_12"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_13": {
         "client_entity": {
@@ -2087,7 +2087,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_13"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_14": {
         "client_entity": {
@@ -2095,7 +2095,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_14"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_15": {
         "client_entity": {
@@ -2103,7 +2103,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_15"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_16": {
         "client_entity": {
@@ -2111,7 +2111,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_16"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:wardrobe_11": {
         "client_entity": {
@@ -2143,7 +2143,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:washing_machine"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:bed_11_green": {
         "client_entity": {
@@ -2391,7 +2391,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_11_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:computer_12_green": {
         "client_entity": {
@@ -2399,7 +2399,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_12_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:computer_21_green": {
         "client_entity": {
@@ -2407,7 +2407,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_21_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:computer_22_green": {
         "client_entity": {
@@ -2415,7 +2415,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:computer_22_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:counter_11_green": {
         "client_entity": {
@@ -2623,7 +2623,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_11_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_11_off_green": {
         "client_entity": {
@@ -2631,7 +2631,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_11_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_12_green": {
         "client_entity": {
@@ -2639,7 +2639,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_12_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_12_off_green": {
         "client_entity": {
@@ -2647,7 +2647,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_12_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_13_green": {
         "client_entity": {
@@ -2655,7 +2655,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_13_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_13_off_green": {
         "client_entity": {
@@ -2663,7 +2663,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_13_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_14_green": {
         "client_entity": {
@@ -2671,7 +2671,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_14_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_14_off_green": {
         "client_entity": {
@@ -2679,7 +2679,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_14_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_15_green": {
         "client_entity": {
@@ -2687,7 +2687,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_15_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_15_off_green": {
         "client_entity": {
@@ -2695,7 +2695,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_15_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_16_green": {
         "client_entity": {
@@ -2703,7 +2703,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_16_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_16_off_green": {
         "client_entity": {
@@ -2711,7 +2711,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_16_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_17_green": {
         "client_entity": {
@@ -2719,7 +2719,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_17_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_17_off_green": {
         "client_entity": {
@@ -2727,7 +2727,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_17_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_172_green": {
         "client_entity": {
@@ -2735,7 +2735,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_172_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:lamp_173_green": {
         "client_entity": {
@@ -2743,7 +2743,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:lamp_173_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:laundry_basket_green": {
         "client_entity": {
@@ -2751,7 +2751,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:laundry_basket_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:microwave_green": {
         "client_entity": {
@@ -2759,7 +2759,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:microwave_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:mirror_11_green": {
         "client_entity": {
@@ -2767,7 +2767,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:mirror_11_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:mirror_12_green": {
         "client_entity": {
@@ -2775,7 +2775,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:mirror_12_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:mirror_13_green": {
         "client_entity": {
@@ -2783,7 +2783,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:mirror_13_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:painting_11_green": {
         "client_entity": {
@@ -2847,7 +2847,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_11_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_12_green": {
         "client_entity": {
@@ -2855,7 +2855,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_12_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_13_green": {
         "client_entity": {
@@ -2863,7 +2863,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_13_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_14_green": {
         "client_entity": {
@@ -2871,7 +2871,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_14_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:plant_15_green": {
         "client_entity": {
@@ -2879,7 +2879,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:plant_15_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:refrigerator_11_green": {
         "client_entity": {
@@ -2887,7 +2887,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:refrigerator_11_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:refrigerator_12_green": {
         "client_entity": {
@@ -2895,7 +2895,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:refrigerator_12_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:rug_11_1_green": {
         "client_entity": {
@@ -2903,7 +2903,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_11_1_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_11_green": {
         "client_entity": {
@@ -2911,7 +2911,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_11_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_12_1_green": {
         "client_entity": {
@@ -2919,7 +2919,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_12_1_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_12_green": {
         "client_entity": {
@@ -2927,7 +2927,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_12_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_13_1_green": {
         "client_entity": {
@@ -2935,7 +2935,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_13_1_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_13_green": {
         "client_entity": {
@@ -2943,7 +2943,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_13_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:rug_14_green": {
         "client_entity": {
@@ -2951,7 +2951,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:rug_14_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:shower_132_green": {
         "client_entity": {
@@ -2959,7 +2959,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_132_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_133_green": {
         "client_entity": {
@@ -2967,7 +2967,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_133_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_13_green": {
         "client_entity": {
@@ -2975,7 +2975,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_13_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:side_table_11_green": {
         "client_entity": {
@@ -3127,7 +3127,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:stove_green"
         },
-        "sound": "wood"
+        "sound": "stone"
     },
     "swan_town_apple:succulent_11_green": {
         "client_entity": {
@@ -3135,7 +3135,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:succulent_11_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:succulent_12_green": {
         "client_entity": {
@@ -3143,7 +3143,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:succulent_12_green"
         },
-        "sound": "wood"
+        "sound": "grass"
     },
     "swan_town_apple:table_11_green": {
         "client_entity": {
@@ -3263,7 +3263,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:toilet_green"
         },
-        "sound": "wood"
+        "sound": "stone"
     },
     "swan_town_apple:tv_11_green": {
         "client_entity": {
@@ -3271,7 +3271,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_11_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:tv_12_green": {
         "client_entity": {
@@ -3279,7 +3279,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_12_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:tv_21_green": {
         "client_entity": {
@@ -3287,7 +3287,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_21_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:tv_22_green": {
         "client_entity": {
@@ -3295,7 +3295,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:tv_22_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:vase_11_green": {
         "client_entity": {
@@ -3303,7 +3303,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_11_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_12_green": {
         "client_entity": {
@@ -3311,7 +3311,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_12_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_13_green": {
         "client_entity": {
@@ -3319,7 +3319,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_13_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_14_green": {
         "client_entity": {
@@ -3327,7 +3327,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_14_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_15_green": {
         "client_entity": {
@@ -3335,7 +3335,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_15_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:vase_16_green": {
         "client_entity": {
@@ -3343,7 +3343,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:vase_16_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:wardrobe_11_green": {
         "client_entity": {
@@ -3375,7 +3375,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:washing_machine_green"
         },
-        "sound": "wood"
+        "sound": "metal"
     },
     "swan_town_apple:candle_11_green": {
         "client_entity": {
@@ -3383,7 +3383,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:candle_11_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:candle_12_green": {
         "client_entity": {
@@ -3391,7 +3391,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:candle_12_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_11_green": {
         "client_entity": {
@@ -3399,7 +3399,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_11_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_12_green": {
         "client_entity": {
@@ -3407,7 +3407,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_12_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_13_green": {
         "client_entity": {
@@ -3415,7 +3415,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_13_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_14_green": {
         "client_entity": {
@@ -3423,7 +3423,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_14_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_21_green": {
         "client_entity": {
@@ -3431,7 +3431,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_21_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_22_green": {
         "client_entity": {
@@ -3439,7 +3439,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_22_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_23_green": {
         "client_entity": {
@@ -3447,7 +3447,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_23_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_31_green": {
         "client_entity": {
@@ -3455,7 +3455,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_31_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_32_green": {
         "client_entity": {
@@ -3463,7 +3463,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_32_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:curtain_33_green": {
         "client_entity": {
@@ -3471,7 +3471,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:curtain_33_green"
         },
-        "sound": "wood"
+        "sound": "cloth"
     },
     "swan_town_apple:bathtub_11_green": {
         "client_entity": {
@@ -3479,7 +3479,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_11_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_12_green": {
         "client_entity": {
@@ -3487,7 +3487,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_12_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_13_green": {
         "client_entity": {
@@ -3495,7 +3495,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_13_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_21_green": {
         "client_entity": {
@@ -3503,7 +3503,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_21_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_22_green": {
         "client_entity": {
@@ -3511,7 +3511,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_22_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:bathtub_23_green": {
         "client_entity": {
@@ -3519,7 +3519,7 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:bathtub_23_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     },
     "swan_town_apple:shower_11_green": {
         "client_entity": {
@@ -3527,6 +3527,6 @@
             "hand_model_use_client_entity": true,
             "identifier": "swan_town_apple:shower_11_green"
         },
-        "sound": "wood"
+        "sound": "glass"
     }
 }
