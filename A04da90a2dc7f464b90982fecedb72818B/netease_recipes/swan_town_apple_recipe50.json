@@ -1,0 +1,25 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "swan_town_apple:recipe50"
+        },
+        "ingredients": [
+            {
+                "count": 1,
+                "item": "swan_town_apple:jiangjiang_doll"
+            }
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "swan_town_apple:closet_15_green"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "unlock": {
+            "context": "AlwaysUnlocked"
+        }
+    }
+}
