@@ -976,6 +976,9 @@
         "swan_town_apple:shower_133_green_icon": {
             "textures": "textures/re/icon/shower_133_green.png"
         },
+        "swan_town_apple:shower_11_green_icon": {
+            "textures": "textures/re/icon/shower_12_green.png"
+        },
         "swan_town_apple:shower_13_green_icon": {
             "textures": "textures/re/icon/shower_13_green.png"
         },
