@@ -3528,5 +3528,41 @@
             "identifier": "swan_town_apple:shower_11_green"
         },
         "sound": "glass"
+    },
+    "swan_town_apple:block_1": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_1"
+    },
+    "swan_town_apple:block_2": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_2"
+    },
+    "swan_town_apple:block_3": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_3"
+    },
+    "swan_town_apple:block_4": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_4"
+    },
+    "swan_town_apple:block_5": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_5"
+    },
+    "swan_town_apple:block_6": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_6"
+    },
+    "swan_town_apple:block_7": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_7"
+    },
+    "swan_town_apple:block_8": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_8"
+    },
+    "swan_town_apple:block_9": {
+        "sound": "wood",
+        "textures": "swan_town_apple:block_9"
     }
 }

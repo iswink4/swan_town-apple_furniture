@@ -1,0 +1,11 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:block": {
+        "components": {},
+        "description": {
+            "category": "swan_town_apple:apple",
+            "register_to_creative_menu": true,
+            "identifier": "swan_town_apple:block_8"
+        }
+    }
+}
