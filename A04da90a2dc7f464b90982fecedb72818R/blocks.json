@@ -2629,7 +2629,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_11_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_11_off_green"
+            "identifier": "swan_town_apple:lamp_11_green"
         },
         "sound": "wood"
     },
@@ -2645,7 +2645,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_12_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_12_off_green"
+            "identifier": "swan_town_apple:lamp_12_green"
         },
         "sound": "wood"
     },
@@ -2661,7 +2661,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_13_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_13_off_green"
+            "identifier": "swan_town_apple:lamp_13_green"
         },
         "sound": "wood"
     },
@@ -2677,7 +2677,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_14_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_14_off_green"
+            "identifier": "swan_town_apple:lamp_14_green"
         },
         "sound": "wood"
     },
@@ -2693,7 +2693,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_15_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_15_off_green"
+            "identifier": "swan_town_apple:lamp_15_green"
         },
         "sound": "wood"
     },
@@ -2709,7 +2709,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_16_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_16_off_green"
+            "identifier": "swan_town_apple:lamp_16_green"
         },
         "sound": "wood"
     },
@@ -2725,7 +2725,7 @@
         "client_entity": {
             "block_icon": "swan_town_apple:lamp_17_off_green_icon",
             "hand_model_use_client_entity": true,
-            "identifier": "swan_town_apple:lamp_17_off_green"
+            "identifier": "swan_town_apple:lamp_17_green"
         },
         "sound": "wood"
     },
