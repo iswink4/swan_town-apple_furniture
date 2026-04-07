@@ -190,7 +190,7 @@ def get_sleeping_player_on_bed(x, y, z):
     return None
 
 
-def start_sleep(player_id, x, y, z, dimension, is_double_bed=False, partner_id=None):
+def start_sleep(player_id, x, y, z, dimension, is_double_bed=False, partner_id=None, aux=2):
     """
     开始睡觉流程
     
@@ -202,6 +202,7 @@ def start_sleep(player_id, x, y, z, dimension, is_double_bed=False, partner_id=N
         dimension: int - 维度ID
         is_double_bed: bool - 是否为双人床
         partner_id: str or None - 双人床另一侧玩家的ID
+        aux: int - 床的朝向数据 (0=北, 1=东, 2=南, 3=西)
     
     Returns:
         None
@@ -213,7 +214,7 @@ def start_sleep(player_id, x, y, z, dimension, is_double_bed=False, partner_id=N
         - 如果 partner_id 有效，也会通知搭档
     
     Note:
-        睡觉位置计算：床中心 + SLEEP_HEIGHT_OFFSET(0.6)
+        睡觉位置计算：床中心 + SLEEP_HEIGHT_OFFSET(0.8)
     """
     comp = serverApi.GetEngineCompFactory()
     
@@ -229,7 +230,8 @@ def start_sleep(player_id, x, y, z, dimension, is_double_bed=False, partner_id=N
         "bed_pos": (x, y, z),
         "start_time": time.time(),
         "partner_id": partner_id,
-        "is_double_bed": is_double_bed
+        "is_double_bed": is_double_bed,
+        "aux": aux
     }
     
     # 通知客户端开始睡觉（黑屏效果 + 锁定视角朝天）
@@ -244,7 +246,7 @@ def wake_up(player_id, wake_reason="manual"):
     """
     玩家起床
     
-    清除睡觉状态，通知客户端恢复视野，将玩家传送到床旁边。
+    清除睡觉状态，通知客户端恢复视野，将玩家传送到床上站立位置。
     
     Args:
         player_id: str - 玩家实体ID
@@ -261,12 +263,15 @@ def wake_up(player_id, wake_reason="manual"):
     
     Side Effects:
         - 修改 sleeping_players 全局状态（删除对应项）
-        - 传送玩家到床旁边（避免卡在床上）
+        - 传送玩家到床上站立位置
+        - 设置玩家朝向面向床尾
         - 调用 Call 通知客户端停止睡觉效果
         - 如果是双人床且搭档还在睡，搭档也会起床
     
     Note:
-        起床位置：床旁边 (x+0.5, y, z+1.5)
+        起床位置：床中心上方站立 (x+0.5, y+0.75, z+0.5)
+        玩家朝向：面向床尾方向
+        双人床：两名玩家横向偏移避免重叠
     """
     if player_id not in sleeping_players:
         return
@@ -274,6 +279,8 @@ def wake_up(player_id, wake_reason="manual"):
     data = sleeping_players[player_id]
     x, y, z = data["bed_pos"]
     partner_id = data.get("partner_id")
+    is_double_bed = data.get("is_double_bed", False)
+    aux = data.get("aux", 2)
     
     # 清除睡觉数据
     del sleeping_players[player_id]
@@ -281,14 +288,79 @@ def wake_up(player_id, wake_reason="manual"):
     # 通知客户端停止睡觉
     Call(player_id, "StopSleep")
     
-    # 将玩家传送到床旁边（避免卡在床里）
+    # ========== 计算起床位置和朝向 ==========
+    
+    # 床尾方向映射（床头朝向 → 床尾方向）
+    # aux值代表床头方向：0=北(-Z), 1=东(+X), 2=南(+Z), 3=西(-X)
+    # 床尾方向与床头相反
+    bed_tail_direction = {
+        0: (0, 0, 1),   # aux=0(床头北) → 床尾南(+Z)
+        1: (-1, 0, 0),  # aux=1(床头东) → 床尾西(-X)
+        2: (0, 0, -1),  # aux=2(床头南) → 床尾北(-Z)
+        3: (1, 0, 0)    # aux=3(床头西) → 床尾东(+X)
+    }
+    
+    # 床尾方向的yaw角度（玩家面向床尾）
+    # 假设yaw角度：0=南, 90=西, 180=北, -90=东
+    bed_tail_yaw = {
+        0: 0,     # 床尾南 → yaw=0(朝南)
+        1: 90,    # 床尾西 → yaw=90(朝西)
+        2: 180,   # 床尾北 → yaw=180(朝北)
+        3: -90    # 床尾东 → yaw=-90(朝东)
+    }
+    
+    # 床宽度方向（横向偏移方向，垂直于床尾方向）
+    bed_width_direction = {
+        0: (1, 0, 0),   # 床尾南(+Z) → 宽度方向X轴
+        1: (0, 0, 1),   # 床尾西(-X) → 宽度方向Z轴
+        2: (-1, 0, 0),  # 床尾北(-Z) → 宽度方向X轴
+        3: (0, 0, -1)   # 床尾东(+X) → 宽度方向Z轴
+    }
+    
+    # ========== 双人床横向偏移逻辑 ==========
+    
+    offset_x = 0.0
+    offset_z = 0.0
+    
+    if is_double_bed and partner_id:
+        # 检查搭档是否还在睡觉（确定谁先起床）
+        if partner_id in sleeping_players:
+            # 当前玩家是第一个起床的，使用较小偏移
+            width_dx, width_dy, width_dz = bed_width_direction.get(aux, (1, 0, 0))
+            offset_x = 0.25 * width_dx
+            offset_z = 0.25 * width_dz
+        else:
+            # 搭档已经起床了，使用较大偏移（避免重叠）
+            width_dx, width_dy, width_dz = bed_width_direction.get(aux, (1, 0, 0))
+            offset_x = -0.25 * width_dx
+            offset_z = -0.25 * width_dz
+    
+    # ========== 最终起床位置 ==========
+    
+    # Y轴：床表面（床高0.75）
+    wake_y = y + 0.75
+    
+    # X/Z：床中心 + 横向偏移
+    wake_x = x + 0.5 + offset_x
+    wake_z = z + 0.5 + offset_z
+    
+    wake_pos = (wake_x, wake_y, wake_z)
+    
+    # ========== 传送玩家并设置朝向 ==========
+    
     comp = serverApi.GetEngineCompFactory()
+    
+    # 设置位置
     pos_comp = comp.CreatePos(player_id)
-    # 传送到床的一侧
-    wake_pos = (x + 0.5, y, z + 1.5)
     pos_comp.SetFootPos(wake_pos)
     
-    # 如果有搭档，搭档也起床
+    # 设置朝向（面向床尾）
+    yaw = bed_tail_yaw.get(aux, 0)
+    rot_comp = comp.CreateRot(player_id)
+    rot_comp.SetRot((yaw, 0))
+    
+    # ========== 搭档起床逻辑 ==========
+    
     if partner_id and partner_id in sleeping_players:
         wake_up(partner_id, "partner_wake")
 
@@ -440,7 +512,7 @@ def on_bed_use(args):
             partner_id = get_sleeping_player_on_bed(other_x, other_y, other_z)
     
     # 开始睡觉
-    start_sleep(player_id, x, y, z, dimension, is_double_bed, partner_id)
+    start_sleep(player_id, x, y, z, dimension, is_double_bed, partner_id, aux)
 
 
 @Listen(Events.OnScriptTickServer)

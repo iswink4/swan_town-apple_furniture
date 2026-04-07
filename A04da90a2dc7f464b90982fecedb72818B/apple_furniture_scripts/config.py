@@ -751,7 +751,7 @@ PLACEHOLDER_CONFIG = {
     },
     'swan_town_apple:bed_11':{
         'type': '75',
-        'offsets': [(-1,0,0),(-2,0,0),(-1,0,-1),(-2,0,-1),]
+        'offsets': [(-1,0,0),(-2,0,0),(-1,0,-1),(-2,0,-1),(0,0,-1)]
     },
     # 青苹果系列
     'swan_town_apple:bed_11_green':{
