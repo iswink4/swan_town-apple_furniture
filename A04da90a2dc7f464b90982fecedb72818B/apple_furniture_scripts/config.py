@@ -194,6 +194,24 @@ SEAT_HEIGHT = 0.5
 # 床方块列表
 BED_BLOCKS = ['swan_town:bed', 'swan_town:bed_single', 'swan_town_apple:bed_11', 'swan_town_apple:bed_12', 'swan_town_apple:bed_11_green', 'swan_town_apple:bed_12_green']
 
+# 冰箱容器列表（点击占位方块时打开容器）
+REFRIGERATOR_CONTAINERS = {
+    'swan_town_apple:refrigerator_11',
+    'swan_town_apple:refrigerator_11_green',
+    'swan_town_apple:refrigerator_12',
+    'swan_town_apple:refrigerator_12_green',
+}
+
+# 衣柜容器列表（点击占位方块时打开容器）
+WARDROBE_CONTAINERS = {
+    'swan_town_apple:wardrobe_11',
+    'swan_town_apple:wardrobe_11_green',
+    'swan_town_apple:wardrobe_12',
+    'swan_town_apple:wardrobe_12_green',
+    'swan_town_apple:wardrobe_13',
+    'swan_town_apple:wardrobe_13_green',
+}
+
 # 双人床列表（2格宽）
 DOUBLE_BEDS = ['swan_town:bed', 'swan_town_apple:bed_11', 'swan_town_apple:bed_11_green']
 

@@ -17,6 +17,7 @@
 from ..QuModLibs.Server import *
 from ..config import PLACEHOLDER_TYPES, PLACEHOLDER_DEFAULT_TYPE, PLACEHOLDER_CONFIG, PLACEHOLDER_FURNITURES, ALL_PLACEHOLDER_BLOCKS
 from ..config import ALL_BLOCK_CYCLES, AXE_NAMES, ALL_HAND_BLOCK_CYCLES, CHAIR_LIST, BED_BLOCKS
+from ..config import REFRIGERATOR_CONTAINERS, WARDROBE_CONTAINERS
 from ..config import DIMENSION_NETHER, DIMENSION_END
 
 
@@ -359,6 +360,42 @@ def on_placeholder_use(args):
     
     if furniture_name in BED_BLOCKS:
         handle_bed_interaction(player_id, main_pos, dimension, main_x, main_y, main_z)
+        return
+    
+    # 冰箱容器交互
+    if furniture_name in REFRIGERATOR_CONTAINERS:
+        # 正确：传入玩家ID（官方文档要求）
+        block_comp = comp.CreateBlockInfo(player_id)
+        
+        # 使用主手物品（CARRIED=2）交互方块
+        success = block_comp.PlayerUseItemToPos(
+            (main_x, main_y, main_z),
+            2,  # ItemPosType.CARRIED（主手）
+            selected_slot,
+            1
+        )
+        
+        if not success:
+            game_comp = comp.CreateGame(serverApi.GetLevelId)
+            game_comp.SetOneTipMessage(player_id, "无法打开冰箱")
+        return
+    
+    # 衣柜容器交互
+    if furniture_name in WARDROBE_CONTAINERS:
+        # 正确：传入玩家ID
+        block_comp = comp.CreateBlockInfo(player_id)
+        
+        # 使用主手物品交互方块
+        success = block_comp.PlayerUseItemToPos(
+            (main_x, main_y, main_z),
+            2,  # ItemPosType.CARRIED
+            selected_slot,
+            1
+        )
+        
+        if not success:
+            game_comp = comp.CreateGame(serverApi.GetLevelId)
+            game_comp.SetOneTipMessage(player_id, "无法打开衣柜")
         return
 
 

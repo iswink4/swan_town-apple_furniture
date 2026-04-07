@@ -1,5 +1,6 @@
 {
     "ui_defs": [
-        "ui/container.json"
+        "ui/container.json",
+        "ui/container54.json"
     ]
 }
