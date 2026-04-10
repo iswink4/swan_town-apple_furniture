@@ -403,9 +403,13 @@ def check_sleep_conditions(x, y, z, dimension):
     time_comp = comp.CreateTime(serverApi.GetLevelId)
     weather_comp = comp.CreateWeather(serverApi.GetLevelId)
     
-    current_time = time_comp.GetTime()
+    # GetTime返回总tick数，需要取模得到当天时间
+    # Minecraft时间: 0=06:00, 6000=12:00, 12500=18:45, 18000=00:00, 23000=05:00
+    current_time = time_comp.GetTime() % 24000
     is_thunder = weather_comp.IsThunder()
-    is_night = current_time > NIGHT_START_TIME
+    
+    # 夜晚判断: 时间 >= 12500 或 时间 <= 4500 (即白天是 4500 < time < 12500)
+    is_night = current_time >= NIGHT_START_TIME or current_time <= 4500
     
     # 雷暴天气或夜晚都可以睡觉
     if not (is_thunder or is_night):
@@ -521,8 +525,8 @@ def on_sleep_tick():
     睡觉检测 - 检查是否需要跳过夜晚或起床
     
     服务端每帧触发，检查所有睡觉的玩家：
-    1. 是否睡满3秒 -> 跳过夜晚，所有玩家起床
-    2. 是否离开床 -> 自动起床
+    1. 检查是否所有玩家都睡满3秒 -> 跳过夜晚，所有玩家起床
+    2. 检查是否离开床 -> 自动起床
     
     Args:
         无（事件触发，无参数）
@@ -531,13 +535,12 @@ def on_sleep_tick():
         None
     
     Logic:
-        遍历 sleeping_players：
-        - 如果睡满3秒：设置时间为0（早晨），所有睡觉玩家起床
-        - 如果离开床超过0.5格：自动起床
+        - 多人模式：所有在线玩家必须同时睡觉才能跳过夜晚
+        - 单人模式：玩家睡满3秒即可跳过夜晚
+        - 使用 SetTimeOfDay(0) 只设置当天时间，不影响游戏天数
     
     Performance:
         O(n)，n为睡觉的玩家数量，每帧执行一次
-        一旦有玩家睡满3秒，会立即跳出循环（break）
     """
     if not sleeping_players:
         return
@@ -545,19 +548,8 @@ def on_sleep_tick():
     comp = serverApi.GetEngineCompFactory()
     now = time.time()
     
+    # 检查玩家是否移动（距离判断）
     for player_id, data in list(sleeping_players.items()):
-        # 检查是否睡满3秒
-        if now - data["start_time"] >= 3:
-            # 设置时间为早晨
-            time_comp = comp.CreateTime(serverApi.GetLevelId)
-            time_comp.SetTime(0)
-            
-            # 所有睡觉的玩家起床
-            for pid in list(sleeping_players.keys()):
-                wake_up(pid, "morning")
-            break
-        
-        # 检查玩家是否移动（距离判断）
         x, y, z = data["bed_pos"]
         sleep_pos = (x + 0.5, y + SLEEP_HEIGHT_OFFSET, z + 0.5)
         
@@ -572,6 +564,34 @@ def on_sleep_tick():
             # 如果玩家离开床超过0.5格，自动起床
             if dx*dx + dy*dy + dz*dz > 0.25:  # 0.5^2 = 0.25
                 wake_up(player_id, "move")
+    
+    # 检查是否所有睡觉的玩家都睡满3秒
+    all_sleepers_ready = all(
+        now - data["start_time"] >= 3
+        for data in sleeping_players.values()
+    )
+    
+    if not all_sleepers_ready:
+        return
+    
+    # 获取所有在线玩家
+    all_players = serverApi.GetPlayerList()
+    
+    # 检查是否所有在线玩家都在睡觉
+    all_players_sleeping = all(
+        pid in sleeping_players
+        for pid in all_players
+    )
+    
+    if all_players_sleeping:
+        # 所有玩家都在睡觉，跳过夜晚
+        # 使用 SetTimeOfDay 而非 SetTime，避免重置游戏天数
+        time_comp = comp.CreateTime(serverApi.GetLevelId)
+        time_comp.SetTimeOfDay(0)
+        
+        # 所有睡觉的玩家起床
+        for pid in list(sleeping_players.keys()):
+            wake_up(pid, "morning")
 
 
 @Listen(Events.DestroyBlockEvent)
@@ -663,3 +683,6 @@ def on_player_hurt(args):
     player_id = args['entityId']
     if player_id in sleeping_players:
         wake_up(player_id, "hurt")
+
+
+
