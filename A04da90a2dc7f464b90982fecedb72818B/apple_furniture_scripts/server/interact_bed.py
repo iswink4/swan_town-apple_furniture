@@ -234,12 +234,16 @@ def start_sleep(player_id, x, y, z, dimension, is_double_bed=False, partner_id=N
         "aux": aux
     }
     
-    # 通知客户端开始睡觉（黑屏效果 + 锁定视角朝天）
-    Call(player_id, "StartSleep")
+    # 广播通知所有客户端播放睡觉动画（传递目标玩家ID）
+    Call("*", "StartSleepAnim", player_id)
+    
+    # 只通知睡觉玩家客户端显示黑屏和锁定视角
+    Call(player_id, "StartSleepEffect")
     
     # 如果是双人床且另一侧有玩家，同步开始睡觉
     if partner_id and partner_id in sleeping_players:
-        Call(partner_id, "StartSleep")
+        Call("*", "StartSleepAnim", partner_id)
+        Call(partner_id, "StartSleepEffect")
 
 
 def wake_up(player_id, wake_reason="manual"):
@@ -285,8 +289,11 @@ def wake_up(player_id, wake_reason="manual"):
     # 清除睡觉数据
     del sleeping_players[player_id]
     
-    # 通知客户端停止睡觉
-    Call(player_id, "StopSleep")
+    # 广播通知所有客户端停止睡觉动画
+    Call("*", "StopSleepAnim", player_id)
+    
+    # 只通知睡觉玩家客户端解除黑屏和视角锁定
+    Call(player_id, "StopSleepEffect")
     
     # ========== 计算起床位置和朝向 ==========
     

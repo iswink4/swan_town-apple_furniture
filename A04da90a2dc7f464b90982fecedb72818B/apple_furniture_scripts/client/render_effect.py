@@ -4,8 +4,10 @@
 功能描述: 处理睡觉效果的渲染，包括黑屏和视角锁定
 
 服务端调用:
-- StartSleep: 开始睡觉（黑屏 + 锁定视角朝天）
-- StopSleep: 停止睡觉（恢复视野 + 解除锁定）
+- StartSleepAnim: 播放睡觉动画（广播给所有客户端）
+- StopSleepAnim: 停止睡觉动画（广播给所有客户端）
+- StartSleepEffect: 开始睡觉效果（黑屏+锁定视角，只通知睡觉玩家）
+- StopSleepEffect: 停止睡觉效果（解除黑屏和锁定，只通知睡觉玩家）
 
 外部依赖:
 - QuModLibs.Client: 客户端基础API（clientApi, CallBackKey等）
@@ -15,15 +17,19 @@
 - _is_sleeping: bool - 是否正在睡觉
 
 实现逻辑:
-1. StartSleep 被服务端调用时：
+1. StartSleepAnim 被服务端广播调用时：
+   - 为指定玩家注册并播放坐下动画（复用 render_anim）
+
+2. StopSleepAnim 被服务端广播调用时：
+   - 停止指定玩家的坐下动画
+
+3. StartSleepEffect 被服务端调用时（只通知睡觉玩家）：
    - 设置 _is_sleeping = True
-   - 注册并播放坐下动画（复用 render_anim）
    - 设置雾效实现黑屏（近处灰雾遮挡视野）
    - 锁定相机朝向天空（pitch=-90, yaw=0）
 
-2. StopSleep 被服务端调用时：
+4. StopSleepEffect 被服务端调用时（只通知睡觉玩家）：
    - 设置 _is_sleeping = False
-   - 停止坐下动画
    - 重置雾效恢复正常视野
    - 解除相机锁定
 
@@ -34,12 +40,13 @@
 - 视角锁定：强制相机朝向天空（pitch=-90表示垂直向上）
 
 注意事项:
-- 睡觉效果复用坐下动画（节省资源）
+- 睡觉动画广播给所有客户端，让其他玩家也能看到
+- 黑屏和视角锁定只对睡觉玩家生效
 - 视角锁定使用 LockCamera，全面锁定相机位置和角度
 - 起床时必须同时恢复雾效和解除锁定
 """
 from ..QuModLibs.Client import *
-from .render_anim import RegisterSitResources
+from .render_anim import RegisterSitResources, _registered_players
 
 
 # ============================================================
@@ -51,7 +58,7 @@ _is_sleeping = False
 
 
 # ============================================================
-# 视觉效果控制
+# 视觉效果控制（只对本地玩家生效）
 # ============================================================
 
 def set_sleep_blur():
@@ -172,13 +179,67 @@ def unlock_view():
 # 服务端调用的API
 # ============================================================
 
-@CallBackKey("StartSleep")
-def StartSleep():
+@CallBackKey("StartSleepAnim")
+def StartSleepAnim(target_player_id):
     """
-    开始睡觉
+    播放指定玩家的睡觉动画
     
-    由服务端通过 Call(playerId, "StartSleep") 调用。
-    触发睡觉效果：播放坐下动画、黑屏、锁定视角朝天。
+    由服务端通过 Call("*", "StartSleepAnim", targetPlayerId) 广播调用。
+    为指定玩家注册并播放坐下动画。
+    
+    Args:
+        target_player_id: str - 目标玩家实体ID（由服务端传入）
+    
+    Returns:
+        None
+    
+    Side Effects:
+        - 调用 RegisterSitResources 确保资源已注册
+        - 设置 Query 变量触发动画
+    
+    Note:
+        睡觉动画复用坐下动画（query.mod.sitting = 1.0）
+    """
+    RegisterSitResources(target_player_id)
+    comp = clientApi.GetEngineCompFactory()
+    query_comp = comp.CreateQueryVariable(target_player_id)
+    query_comp.Set("query.mod.sitting", 1.0)
+
+
+@CallBackKey("StopSleepAnim")
+def StopSleepAnim(target_player_id):
+    """
+    停止指定玩家的睡觉动画
+    
+    由服务端通过 Call("*", "StopSleepAnim", targetPlayerId) 广播调用。
+    停止指定玩家的坐下动画。
+    
+    Args:
+        target_player_id: str - 目标玩家实体ID（由服务端传入）
+    
+    Returns:
+        None
+    
+    Side Effects:
+        - 设置 Query 变量停止动画
+    
+    Note:
+        睡觉动画复用坐下动画（query.mod.sitting = 0.0）
+    """
+    if target_player_id not in _registered_players:
+        return
+    comp = clientApi.GetEngineCompFactory()
+    query_comp = comp.CreateQueryVariable(target_player_id)
+    query_comp.Set("query.mod.sitting", 0.0)
+
+
+@CallBackKey("StartSleepEffect")
+def StartSleepEffect():
+    """
+    开始睡觉视觉效果（黑屏+锁定视角）
+    
+    由服务端通过 Call(playerId, "StartSleepEffect") 调用（只通知睡觉玩家）。
+    触发黑屏效果和锁定视角朝天。
     
     Args:
         无（服务端调用，无参数）
@@ -188,24 +249,14 @@ def StartSleep():
     
     Side Effects:
         - 设置 _is_sleeping = True
-        - 注册并播放坐下动画（复用 render_anim）
         - 设置雾效实现黑屏
         - 锁定相机朝向天空
     
     Note:
-        睡觉动画复用坐下动画（query.mod.sitting = 1.0）
+        此效果只对睡觉玩家生效，不影响其他玩家视角
     """
     global _is_sleeping
     _is_sleeping = True
-    
-    # 注册资源（复用坐下动画）
-    RegisterSitResources()
-    
-    # 播放睡觉动画（复用坐下动画）
-    playerId = clientApi.GetLocalPlayerId()
-    comp = clientApi.GetEngineCompFactory()
-    query_comp = comp.CreateQueryVariable(playerId)
-    query_comp.Set("query.mod.sitting", 1.0)
     
     # 黑屏效果
     set_sleep_blur()
@@ -214,13 +265,13 @@ def StartSleep():
     lock_view_to_sky()
 
 
-@CallBackKey("StopSleep")
-def StopSleep():
+@CallBackKey("StopSleepEffect")
+def StopSleepEffect():
     """
-    停止睡觉
+    停止睡觉视觉效果（解除黑屏和锁定）
     
-    由服务端通过 Call(playerId, "StopSleep") 调用。
-    结束睡觉效果：停止动画、恢复视野、解除视角锁定。
+    由服务端通过 Call(playerId, "StopSleepEffect") 调用（只通知睡觉玩家）。
+    结束黑屏效果和解除视角锁定。
     
     Args:
         无（服务端调用，无参数）
@@ -230,18 +281,14 @@ def StopSleep():
     
     Side Effects:
         - 设置 _is_sleeping = False
-        - 停止坐下动画
         - 重置雾效恢复正常视野
         - 解除相机锁定
+    
+    Note:
+        此效果只对睡觉玩家生效
     """
     global _is_sleeping
     _is_sleeping = False
-    
-    # 停止动画
-    playerId = clientApi.GetLocalPlayerId()
-    comp = clientApi.GetEngineCompFactory()
-    query_comp = comp.CreateQueryVariable(playerId)
-    query_comp.Set("query.mod.sitting", 0.0)
     
     # 恢复视野
     restore_normal_view()

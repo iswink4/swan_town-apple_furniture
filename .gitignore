@@ -19,6 +19,7 @@ __pycache__/
 .idea/
 *.swp
 *.swo
+.mcdev.json
 
 # TODO文件
 TODO.md

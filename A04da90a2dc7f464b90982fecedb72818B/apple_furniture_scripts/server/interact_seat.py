@@ -29,8 +29,8 @@
 7. DestroyBlockEvent检测椅子被破坏，坐着的玩家自动站起
 
 跨端通信:
-- Call(playerId, "PlaySitAnim"): 通知客户端播放坐下动画
-- Call(playerId, "StopSitAnim"): 通知客户端停止动画
+- Call("*", "PlaySitAnim", targetPlayerId): 广播通知所有客户端播放指定玩家的坐下动画
+- Call("*", "StopSitAnim", targetPlayerId): 广播通知所有客户端停止指定玩家的动画
 
 注意事项:
 - 坐下位置计算：方块中心 + SEAT_HEIGHT偏移
@@ -92,8 +92,8 @@ def sit_down(player_id, x, y, z):
         "seat_pos": seat_pos    # 座位位置
     }
     
-    # 通知客户端播放坐下动画
-    Call(player_id, "PlaySitAnim")
+    # 广播通知所有客户端播放坐下动画（传递目标玩家ID）
+    Call("*", "PlaySitAnim", player_id)
 
 
 def stand_up(player_id):
@@ -121,8 +121,8 @@ def stand_up(player_id):
     # 清除坐下数据
     del sitting_players[player_id]
     
-    # 通知客户端停止动画
-    Call(player_id, "StopSitAnim")
+    # 广播通知所有客户端停止动画（传递目标玩家ID）
+    Call("*", "StopSitAnim", player_id)
 
 
 # ============================================================
