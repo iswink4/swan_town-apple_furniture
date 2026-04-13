@@ -3,7 +3,7 @@
   "header": {
     "description": "",
     "name": "天鹅小镇：苹果系列",
-    "uuid": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+    "uuid": "c0f5a4b3-9e8d-4712-bc34-5f6a7b8c9d0e",
     "version": [1, 0, 0],
     "min_engine_version": [1, 18, 0]
   },
@@ -11,13 +11,13 @@
     {
       "description": "",
       "type": "resources",
-      "uuid": "7c9e6679-7fed-11d1-80b4-00c04fd430c8",
+      "uuid": "d1a6b5c4-0f9e-4823-cd45-6a7b8c9d0e1f",
       "version": [1, 0, 0]
     }
   ],
   "dependencies": [
     {
-      "uuid": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "uuid": "a8f3e2d1-7c6b-4589-9a12-3d4e5f6a7b8c",
       "version": [1, 0, 0]
     }
   ]
