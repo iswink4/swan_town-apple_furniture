@@ -1,4 +1,5 @@
 # 项目配置文件（本地配置，不提交）
+.mcs
 studio.json
 work.mcscfg
 

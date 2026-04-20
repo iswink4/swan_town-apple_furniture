@@ -13,8 +13,27 @@
 - ServerPlayerTryDestroyBlockEvent: 玩家尝试破坏方块时连锁销毁
 - ServerBlockUseEvent: 空手交互转发
 - ItemUseOnAfterServerEvent: 斧子交互转发
+
+销毁机制:
+- 破坏占位方块: 清除其他占位后，使用 PlayerDestoryBlock 销毁主方块
+  - 完全模拟真实玩家破坏行为
+  - 工具附魔效果生效，耐久度扣除
+  - 显示破坏粒子效果
+  - 按战利品表生成掉落物
+- 破坏主方块: 连带清除所有占位方块（不生成额外掉落，由原版处理）
+- 使用 _destroying_main_blocks 全局标记防止 PlayerDestoryBlock 的事件循环
 """
 from ..QuModLibs.Server import *
+
+# ============================================================
+# 全局状态 - 防止事件循环触发
+# ============================================================
+
+# 正在销毁的家具主方块位置集合
+# 格式: {(x, y, z, dimensionId), ...}
+# 当使用 PlayerDestoryBlock 销毁主方块时，会二次触发 ServerPlayerTryDestroyBlockEvent
+# 通过此标记防止重复处理
+_destroying_main_blocks = set()
 from ..config import PLACEHOLDER_TYPES, PLACEHOLDER_DEFAULT_TYPE, PLACEHOLDER_CONFIG, PLACEHOLDER_FURNITURES, ALL_PLACEHOLDER_BLOCKS
 from ..config import ALL_BLOCK_CYCLES, AXE_NAMES, ALL_HAND_BLOCK_CYCLES, CHAIR_LIST, BED_BLOCKS
 from ..config import REFRIGERATOR_CONTAINERS, WARDROBE_CONTAINERS
@@ -273,7 +292,9 @@ def on_try_destroy_block(args):
     block_name = args.get('fullName', '')
     x, y, z = args.get('x'), args.get('y'), args.get('z')
     dimension = args.get('dimensionId', 0)
+    player_id = args.get('playerId')
     
+    # ========== 处理占位方块被破坏 ==========
     if block_name in ALL_PLACEHOLDER_BLOCKS:
         args['cancel'] = True
         
@@ -285,20 +306,37 @@ def on_try_destroy_block(args):
             
             if main_pos:
                 main_pos = tuple(main_pos)
+                main_key = (main_pos[0], main_pos[1], main_pos[2], dimension)
+                
+                # 防循环：主方块正在销毁中，让 PlayerDestoryBlock 处理掉落
+                if main_key in _destroying_main_blocks:
+                    return
+                
                 all_placeholders = [tuple(p) for p in all_placeholders]
                 
                 comp = serverApi.GetEngineCompFactory()
                 block_comp = comp.CreateBlockInfo(serverApi.GetLevelId)
                 
+                # 清除其他占位方块（跳过当前点击的和主方块位置）
                 for pos in all_placeholders:
-                    if pos != (x, y, z):
+                    if pos != (x, y, z) and pos != main_pos:
                         block_comp.SetBlockNew(pos, {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
                 
-                if furniture_name:
-                    block_comp.SpawnResourcesSilkTouched(furniture_name, main_pos, 0, dimension)
+                # 添加销毁标记
+                _destroying_main_blocks.add(main_key)
                 
-                block_comp.SetBlockNew(main_pos, {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
+                try:
+                    # 使用 PlayerDestoryBlock 销毁主方块
+                    player_block_comp = comp.CreateBlockInfo(player_id)
+                    player_block_comp.PlayerDestoryBlock(main_pos, 1, True)
+                finally:
+                    # 确保标记被移除
+                    _destroying_main_blocks.discard(main_key)
+                
+                # 清除当前点击的占位方块
                 block_comp.SetBlockNew((x, y, z), {'name': 'minecraft:air', 'aux': 0}, 0, dimension)
+    
+    # ========== 处理主方块被直接破坏 ==========
     elif block_name in PLACEHOLDER_FURNITURES:
         destroy_furniture_group(x, y, z, dimension, is_placeholder=False, spawn_loot=False)
 
