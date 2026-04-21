@@ -369,6 +369,10 @@ def on_placeholder_use(args):
     item_name = hand_item.get('newItemName', '') if hand_item else ''
     
     if item_name and item_name != 'minecraft:air':
+        # 冰箱制冰功能交由 interact_ice 处理
+        if item_name == 'minecraft:water_bucket' and furniture_name in REFRIGERATOR_CONTAINERS:
+            return
+        
         if item_name in AXE_NAMES and furniture_name in ALL_BLOCK_CYCLES:
             block_comp = comp.CreateBlockInfo(serverApi.GetLevelId)
             old_aux = block_comp.GetBlockNew(main_pos, dimension).get('aux', 0)

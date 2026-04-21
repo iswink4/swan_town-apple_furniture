@@ -22,6 +22,22 @@
    - 如果未启用：允许原版放水行为
    - 如果 empty_replace 有值，替换方块
 
+事件冲突处理:
+========================================
+ServerItemUseOnEvent 与 interact_ice.py 共用此事件：
+
+- interact_ice.py 需要最高优先级处理冰箱制冰
+- 本模块在 interact_ice.py 之后导入（见 Server.py）
+- 如果 args['ret'] 已被设置（interact_ice 已取消放水），本模块不处理
+- 处理前检查 block_name 是否在 WATER_TANK_BLOCKS 中
+
+ServerBlockUseEvent 与多个模块共用：
+- placeholder.py 优先处理占位方块转发
+- interact_hand.py 处理空手切换
+- interact_drainage.py 处理排水
+- 本模块只处理空桶点击 WATER_TANK_BLOCKS 的情况
+- 其他情况自动跳过（block_name not in WATER_TANK_BLOCKS）
+
 注意事项:
 - 使用冷却时间防止连续触发
 - 替换方块时保留aux值（朝向等）
