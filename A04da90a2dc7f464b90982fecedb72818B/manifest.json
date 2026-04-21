@@ -1,24 +1,40 @@
 {
-  "format_version": 1,
-  "header": {
-    "description": "",
-    "name": "天鹅小镇：苹果系列",
-    "uuid": "55e0d514-05d9-4ad1-94bf-cedd614c55b1",
-    "version": [1, 0, 0],
-    "min_engine_version": [1, 18, 0]
-  },
   "modules": [
     {
-      "description": "",
       "type": "data",
-      "uuid": "a78f65da-ef00-4c90-a83a-8d84a553da83",
-      "version": [1, 0, 0]
+      "uuid": "aa6aa5f6-08d2-4638-9cf0-01faa2609d60",
+      "version": [
+        1,
+        0,
+        0
+      ],
+      "description": ""
     }
   ],
+  "header": {
+    "uuid": "d444c94b-a6a1-4fdb-8d12-25db6294b37f",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "description": "",
+    "name": "天鹅小镇：苹果系列",
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "format_version": 1,
   "dependencies": [
     {
       "uuid": "032ba747-104a-4709-9d5b-7094d3d19bc1",
-      "version": [1, 0, 0]
+      "version": [
+        1,
+        0,
+        0
+      ]
     }
   ]
 }
