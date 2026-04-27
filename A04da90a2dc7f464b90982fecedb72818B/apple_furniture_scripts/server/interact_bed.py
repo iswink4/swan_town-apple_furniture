@@ -492,9 +492,14 @@ def on_bed_use(args):
     
     # 检查该床是否是玩家实际的重生点（使用引擎数据）
     actual_respawn = player_comp.GetPlayerRespawnPos()
+    respawn_pos = None
+    if actual_respawn:
+        respawn_pos = actual_respawn.get("pos")
+        if respawn_pos:
+            respawn_pos = tuple(respawn_pos)
     is_current_spawn = (
+        respawn_pos == current_pos and
         actual_respawn and
-        actual_respawn.get("pos") == current_pos and
         actual_respawn.get("dimensionId") == dimension
     )
     
@@ -557,6 +562,10 @@ def on_sleep_tick():
     
     # 检查玩家是否移动（距离判断）
     for player_id, data in list(sleeping_players.items()):
+        # 跳过刚入睡的玩家（等待位置同步）
+        if now - data["start_time"] < 0.5:
+            continue
+        
         x, y, z = data["bed_pos"]
         sleep_pos = (x + 0.5, y + SLEEP_HEIGHT_OFFSET, z + 0.5)
         
