@@ -409,9 +409,14 @@ def on_bed_use(args):
     
     # 检查该床是否是玩家实际的重生点（使用引擎数据）
     actual_respawn = player_comp.GetPlayerRespawnPos()
+    respawn_pos = None
+    if actual_respawn:
+        respawn_pos = actual_respawn.get("pos")
+        if respawn_pos:
+            respawn_pos = tuple(respawn_pos)
     is_current_spawn = (
+        respawn_pos == current_pos and
         actual_respawn and
-        actual_respawn.get("pos") == current_pos and
         actual_respawn.get("dimensionId") == dimension
     )
     
@@ -474,6 +479,10 @@ def on_sleep_tick():
     now = time.time()
     
     for player_id, data in list(sleeping_players.items()):
+        # 跳过刚入睡的玩家（等待位置同步）
+        if now - data["start_time"] < 0.5:
+            continue
+        
         # 检查是否睡满3秒
         if now - data["start_time"] >= 3:
             # 设置时间为早晨
