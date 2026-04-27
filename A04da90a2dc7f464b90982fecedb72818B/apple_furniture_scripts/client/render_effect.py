@@ -199,10 +199,10 @@ def StartSleep():
     _is_sleeping = True
     
     # 注册资源（复用坐下动画）
-    RegisterSitResources()
+    playerId = clientApi.GetLocalPlayerId()
+    RegisterSitResources(playerId)
     
     # 播放睡觉动画（复用坐下动画）
-    playerId = clientApi.GetLocalPlayerId()
     comp = clientApi.GetEngineCompFactory()
     query_comp = comp.CreateQueryVariable(playerId)
     query_comp.Set("query.mod.sitting", 1.0)
