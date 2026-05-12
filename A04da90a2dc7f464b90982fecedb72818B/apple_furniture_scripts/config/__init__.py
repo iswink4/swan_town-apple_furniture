@@ -25,6 +25,7 @@ from .constants import (
     MONSTER_CHECK_RADIUS, BED_CLEARANCE_HEIGHT,
     SIT_ANIMATION_NAME,
     HOSTILE_MOBS,
+    _SIT_ANIM_DELAY_TICKS, _SLEEP_SETTLE_TICKS,
 )
 
 # ============================================================

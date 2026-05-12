@@ -39,7 +39,7 @@
 """
 import time
 from ..QuModLibs.Server import *
-from ..config import CHAIR_LIST, SEAT_HEIGHT, AXE_NAMES, ALL_BLOCK_CYCLES
+from ..config import CHAIR_LIST, SEAT_HEIGHT, AXE_NAMES, ALL_BLOCK_CYCLES, _SIT_ANIM_DELAY_TICKS
 
 
 # ============================================================
@@ -53,6 +53,9 @@ sitting_players = {}
 # 玩家上次坐下操作时间戳，用于冷却检查
 # 格式: {playerId: timestamp}
 last_sit_time = {}
+
+# 坐下后延迟播放动画的 tick 数（等待客户端传送完成后再播动画，避免动画被重置）
+_SIT_ANIM_DELAY_TICKS = _SIT_ANIM_DELAY_TICKS
 
 
 # ============================================================
@@ -86,14 +89,12 @@ def sit_down(player_id, x, y, z):
     pos_comp = comp.CreatePos(player_id)
     pos_comp.SetFootPos(seat_pos)
     
-    # 记录玩家坐下数据
+    # 记录玩家坐下数据，anim_countdown 用于延迟播放动画
     sitting_players[player_id] = {
         "pos": (x, y, z),       # 方块位置
-        "seat_pos": seat_pos    # 座位位置
+        "seat_pos": seat_pos,   # 座位位置
+        "anim_countdown": _SIT_ANIM_DELAY_TICKS
     }
-    
-    # 广播通知所有客户端播放坐下动画（传递目标玩家ID）
-    Call("*", "PlaySitAnim", player_id)
 
 
 def stand_up(player_id):
@@ -210,6 +211,14 @@ def on_tick():
     comp = serverApi.GetEngineCompFactory()
     
     for player_id, data in list(sitting_players.items()):
+        # 处理坐下动画延迟播放
+        countdown = data.get("anim_countdown", 0)
+        if countdown > 0:
+            data["anim_countdown"] = countdown - 1
+            if data["anim_countdown"] == 0:
+                Call("*", "PlaySitAnim", player_id)
+            continue  # 传送未稳定期间跳过距离检测
+        
         pos_comp = comp.CreatePos(player_id)
         current_pos = pos_comp.GetFootPos()
         
