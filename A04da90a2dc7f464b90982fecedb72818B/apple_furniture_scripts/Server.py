@@ -13,6 +13,7 @@
 - server.interact_water: 水桶交互（空桶装水、水桶倒水）
 - server.interact_drainage: 放水交互
 - server.interact_ice: 冰箱制冰（水桶点击冰箱生成冰块）
+- server.interact_container: 存储容器交互（播放打开音效）
 - server.placeholder: 占位方块系统（大型家具多格碰撞箱）
 
 使用方法:
@@ -40,6 +41,8 @@ ServerBlockUseEvent 处理顺序:
      - 空桶点击水槽装水
   4. interact_drainage（排水功能）
      - 空手点击浴缸/水槽排水
+  5. interact_container（存储容器音效）
+     - 点击存储容器播放打开音效
 
 ItemUseOnAfterServerEvent 处理顺序:
   1. interact_axe（斧子样式切换）
@@ -63,6 +66,7 @@ from .server import interact_water
 from .server import placeholder
 from .server import interact_hand
 from .server import interact_drainage
+from .server import interact_container
 
 # 其他模块（顺序不敏感）
 from .server import interact_axe

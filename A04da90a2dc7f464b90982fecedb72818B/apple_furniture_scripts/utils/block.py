@@ -7,21 +7,23 @@
 from ..QuModLibs.Server import serverApi
 
 
-def cycle_block(block_pos, block_name, dimension, cycle_map):
+def cycle_block(block_pos, block_name, dimension, cycle_map, player_id=None, play_sound=False):
     """
-    循环切换方块类型，保留aux值
+    循环切换方块类型，保留aux值，可选播放音效
     
     Args:
         block_pos: 方块位置元组 (x, y, z)
         block_name: 当前方块名称
         dimension: 维度ID
         cycle_map: 循环映射字典（如 ALL_BLOCK_CYCLES）
+        player_id: 玩家实体ID（播放音效时需要）
+        play_sound: 是否播放click音效
     
     Returns:
         bool: True=成功切换，False=方块不在循环映射中
     
     Example:
-        cycle_block((10, 5, 20), 'swan_town:table1', 0, ALL_BLOCK_CYCLES)
+        cycle_block((10, 5, 20), 'swan_town:table1', 0, ALL_BLOCK_CYCLES, player_id, True)
     """
     if block_name not in cycle_map:
         return False
@@ -37,6 +39,12 @@ def cycle_block(block_pos, block_name, dimension, cycle_map):
         'aux': old_aux
     }
     block_comp.SetBlockNew(block_pos, new_block_dict, 0, dimension)
+    
+    # 播放click音效
+    if play_sound and player_id:
+        cmd_comp = comp.CreateCommand(serverApi.GetLevelId)
+        cmd_comp.SetCommand("playsound random.click @s ~ ~ ~ 1 1", player_id)
+    
     return True
 
 

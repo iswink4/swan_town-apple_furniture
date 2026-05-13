@@ -61,5 +61,5 @@ def on_hand_block_use(args):
     if not cooldown_check(player_id, HAND_INTERACT_COOLDOWN):
         return
     
-    # 执行方块切换（使用 utils 工具函数）
-    cycle_block(block_pos, block_name, dimension, ALL_HAND_BLOCK_CYCLES)
+    # 执行方块切换（使用 utils 工具函数，播放音效）
+    cycle_block(block_pos, block_name, dimension, ALL_HAND_BLOCK_CYCLES, player_id, True)

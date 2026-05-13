@@ -71,3 +71,8 @@ from .drainage import DRAINAGE_BLOCKS
 # 冰箱制冰配置
 # ============================================================
 from .ice_maker import ICE_MAKER_BLOCKS, ICE_BLOCK_NAME, ICE_PRODUCE_COUNT
+
+# ============================================================
+# 存储容器配置
+# ============================================================
+from .container import CONTAINER_BLOCKS
