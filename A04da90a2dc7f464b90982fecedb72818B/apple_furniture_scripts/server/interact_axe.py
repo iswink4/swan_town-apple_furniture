@@ -27,18 +27,20 @@ from ..QuModLibs.Util import QThrottle
 from ..config import AXE_NAMES, ALL_BLOCK_CYCLES
 
 
-def _cycle_block(comp, block_pos, block_name, dimension):
+def _cycle_block(comp, block_pos, block_name, dimension, player_id):
     """
     循环切换方块类型
     
     根据 ALL_BLOCK_CYCLES 映射表，将当前方块切换到下一个样式。
     切换时保留原方块的aux值（朝向、状态等）。
+    切换完成后播放click音效。
     
     Args:
         comp: 方块信息组件 (BlockInfoComponent)
         block_pos: 方块位置元组 (x, y, z)
         block_name: 当前方块名称
         dimension: 维度ID
+        player_id: 玩家实体ID
     
     Returns:
         None
@@ -53,6 +55,10 @@ def _cycle_block(comp, block_pos, block_name, dimension):
         'aux': old_aux
     }
     comp.SetBlockNew(block_pos, block_dict, 0, dimension)
+    
+    # 播放click音效
+    cmd_comp = serverApi.GetEngineCompFactory().CreateCommand(serverApi.GetLevelId)
+    cmd_comp.SetCommand("playsound random.click @s ~ ~ ~ 1 1", player_id)
 
 
 @Listen(Events.ItemUseOnAfterServerEvent)
@@ -81,8 +87,9 @@ def on_item_use(args):
     block_pos = args["x"], args["y"], args["z"]
     block_name = args["blockName"]
     dimension = args["dimensionId"]
+    player_id = args["entityId"]
     
     # 检查是否是斧子点击可循环方块
     if item_dict.get('newItemName', '') in AXE_NAMES and block_name in ALL_BLOCK_CYCLES:
         comp = serverApi.GetEngineCompFactory().CreateBlockInfo(serverApi.GetLevelId)
-        _cycle_block(comp, block_pos, block_name, dimension)
+        _cycle_block(comp, block_pos, block_name, dimension, player_id)

@@ -92,6 +92,10 @@ def on_water_tank_use(args):
         if not item_comp.SpawnItemToPlayerInv(water_bucket, player_id, -1):
             return
         item_comp.SpawnItemToPlayerInv(empty_bucket, player_id, selected_slot)
+    
+    # 播放装水音效
+    cmd_comp = serverApi.GetEngineCompFactory().CreateCommand(serverApi.GetLevelId)
+    cmd_comp.SetCommand("playsound bucket.fill_water @s ~ ~ ~ 1 1", player_id)
 
 
 @Listen(Events.ServerItemUseOnEvent)
@@ -140,3 +144,7 @@ def on_item_use_on(args):
         'count': 1
     }
     item_comp.SpawnItemToPlayerInv(empty_bucket, entity_id, selected_slot)
+    
+    # 播放倒水音效
+    cmd_comp = serverApi.GetEngineCompFactory().CreateCommand(serverApi.GetLevelId)
+    cmd_comp.SetCommand("playsound bucket.empty_water @s ~ ~ ~ 1 1", entity_id)
