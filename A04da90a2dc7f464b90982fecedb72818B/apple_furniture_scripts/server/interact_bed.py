@@ -13,7 +13,7 @@
 外部依赖:
 - QuModLibs.Server: 服务端基础API
 - config: BED_BLOCKS（床方块列表）, DOUBLE_BED（双人床）, SINGLE_BED（单人床）,
-          DIMENSION_*（维度常量）, HOSTILE_MOBS（敌对生物列表）, NIGHT_START_TIME,
+           DIMENSION_*（维度常量）, HOSTILE_MOBS（敌对生物列表）, NIGHT_START_TIME, NIGHT_END_TIME,
           SLEEP_HEIGHT_OFFSET, MONSTER_CHECK_RADIUS, BED_CLEARANCE_HEIGHT
 
 全局状态:
@@ -53,7 +53,7 @@ from ..QuModLibs.Server import *
 from ..config import (
     BED_BLOCKS, DOUBLE_BED, SINGLE_BED,
     DIMENSION_NETHER, DIMENSION_END,
-    HOSTILE_MOBS, NIGHT_START_TIME, SLEEP_HEIGHT_OFFSET,
+    HOSTILE_MOBS, NIGHT_START_TIME, NIGHT_END_TIME, SLEEP_HEIGHT_OFFSET,
     MONSTER_CHECK_RADIUS, BED_CLEARANCE_HEIGHT
 )
 
@@ -311,11 +311,10 @@ def check_sleep_conditions(x, y, z, dimension):
     Check List:
         1. 床上方空间是否充足
         2. 周围是否有敌对生物
-        3. 是否为夜晚或雷暴天气
+        3. 时间是否在夜晚范围内 (12542 ~ 23459) 或雷暴天气
     
     Note:
-        夜晚定义：时间 > NIGHT_START_TIME (12500 = 18:45)
-        雷暴天气也可以睡觉
+        夜晚时间范围：12542 ~ 23459
     """
     comp = serverApi.GetEngineCompFactory()
     
@@ -331,9 +330,13 @@ def check_sleep_conditions(x, y, z, dimension):
     time_comp = comp.CreateTime(serverApi.GetLevelId)
     weather_comp = comp.CreateWeather(serverApi.GetLevelId)
     
-    current_time = time_comp.GetTime()
+    # GetTime返回总tick数，需要取模得到当天时间
+    # Minecraft时间: 0=06:00, 6000=12:00, 12542≈18:45, 18000=00:00, 23459≈05:01
+    current_time = time_comp.GetTime() % 24000
     is_thunder = weather_comp.IsThunder()
-    is_night = current_time > NIGHT_START_TIME
+    
+    # 夜晚判断: 12542 <= current_time <= 23459 (即白天是 23459 < time < 12542)
+    is_night = NIGHT_START_TIME <= current_time <= NIGHT_END_TIME
     
     # 雷暴天气或夜晚都可以睡觉
     if not (is_thunder or is_night):
@@ -464,9 +467,9 @@ def on_sleep_tick():
         None
     
     Logic:
-        遍历 sleeping_players：
-        - 如果睡满3秒：设置时间为0（早晨），所有睡觉玩家起床
-        - 如果离开床超过0.5格：自动起床
+        - 多人模式：所有在线玩家必须同时睡觉才能跳过夜晚
+        - 单人模式：玩家睡满3秒即可跳过夜晚
+        - 使用 GetTime() + SetTime() 跳至下一天日出，正确增加游戏天数
     
     Performance:
         O(n)，n为睡觉的玩家数量，每帧执行一次
@@ -485,9 +488,17 @@ def on_sleep_tick():
         
         # 检查是否睡满3秒
         if now - data["start_time"] >= 3:
-            # 设置时间为早晨
+            # 跳过夜晚到第二天日出
+            # 使用 GetTime() + SetTime() 正确增加游戏天数
             time_comp = comp.CreateTime(serverApi.GetLevelId)
-            time_comp.SetTime(0)
+            current_total = time_comp.GetTime()
+            current_day = current_total // 24000
+            next_morning = (current_day + 1) * 24000
+            time_comp.SetTime(next_morning)
+            
+            # 清除天气（模拟原版床跳过夜晚的行为）
+            cmd_comp = comp.CreateCommand(serverApi.GetLevelId)
+            cmd_comp.SetCommand('weather clear')
             
             # 所有睡觉的玩家起床
             for pid in list(sleeping_players.keys()):

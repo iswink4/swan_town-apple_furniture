@@ -138,8 +138,9 @@ HOSTILE_MOBS = [
     'minecraft:wither_skeleton',
 ]
 
-# 夜晚开始时间（12500 = 18:45）
-NIGHT_START_TIME = 12500
+# 夜晚时间范围
+NIGHT_START_TIME = 12542  # 约 18:45
+NIGHT_END_TIME = 23459    # 约 05:01
 
 # 睡觉传送高度偏移
 SLEEP_HEIGHT_OFFSET = 0.6
