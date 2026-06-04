@@ -53,7 +53,7 @@ from ..QuModLibs.Server import *
 from ..config import (
     BED_BLOCKS, DOUBLE_BEDS, SINGLE_BEDS, DOUBLE_BED, SINGLE_BED,
     DIMENSION_NETHER, DIMENSION_END,
-    HOSTILE_MOBS, NIGHT_START_TIME, SLEEP_HEIGHT_OFFSET,
+    HOSTILE_MOBS, NIGHT_START_TIME, NIGHT_END_TIME, SLEEP_HEIGHT_OFFSET,
     MONSTER_CHECK_RADIUS, BED_CLEARANCE_HEIGHT
 )
 
@@ -390,11 +390,9 @@ def check_sleep_conditions(x, y, z, dimension):
     Check List:
         1. 床上方空间是否充足
         2. 周围是否有敌对生物
-        3. 是否为夜晚或雷暴天气
-    
+        3. 时间是否在夜晚范围内 (12542 ~ 23459) 或雷暴天气
     Note:
-        夜晚定义：时间 > NIGHT_START_TIME (12500 = 18:45)
-        雷暴天气也可以睡觉
+        夜晚时间范围：12542 ~ 23459
     """
     comp = serverApi.GetEngineCompFactory()
     
@@ -411,12 +409,12 @@ def check_sleep_conditions(x, y, z, dimension):
     weather_comp = comp.CreateWeather(serverApi.GetLevelId)
     
     # GetTime返回总tick数，需要取模得到当天时间
-    # Minecraft时间: 0=06:00, 6000=12:00, 12500=18:45, 18000=00:00, 23000=05:00
+    # Minecraft时间: 0=06:00, 6000=12:00, 12542≈18:45, 18000=00:00, 23459≈05:01
     current_time = time_comp.GetTime() % 24000
     is_thunder = weather_comp.IsThunder()
     
-    # 夜晚判断: 时间 >= 12500 或 时间 <= 4500 (即白天是 4500 < time < 12500)
-    is_night = current_time >= NIGHT_START_TIME or current_time <= 4500
+    # 夜晚判断: 12542 <= current_time <= 23459 (即白天是 23459 < time < 12542)
+    is_night = NIGHT_START_TIME <= current_time <= NIGHT_END_TIME
     
     # 雷暴天气或夜晚都可以睡觉
     if not (is_thunder or is_night):
@@ -549,7 +547,7 @@ def on_sleep_tick():
     Logic:
         - 多人模式：所有在线玩家必须同时睡觉才能跳过夜晚
         - 单人模式：玩家睡满3秒即可跳过夜晚
-        - 使用 SetTimeOfDay(0) 只设置当天时间，不影响游戏天数
+        - 使用 GetTime() + SetTime() 跳至下一天日出，正确增加游戏天数
     
     Performance:
         O(n)，n为睡觉的玩家数量，每帧执行一次
@@ -600,10 +598,17 @@ def on_sleep_tick():
     )
     
     if all_players_sleeping:
-        # 所有玩家都在睡觉，跳过夜晚
-        # 使用 SetTimeOfDay 而非 SetTime，避免重置游戏天数
+        # 所有玩家都在睡觉，跳过夜晚到第二天日出
+        # 使用 GetTime() + SetTime() 正确增加游戏天数
         time_comp = comp.CreateTime(serverApi.GetLevelId)
-        time_comp.SetTimeOfDay(0)
+        current_total = time_comp.GetTime()
+        current_day = current_total // 24000
+        next_morning = (current_day + 1) * 24000
+        time_comp.SetTime(next_morning)
+        
+        # 用指令清除天气（模拟原版床跳过夜晚的行为）
+        cmd_comp = comp.CreateCommand(serverApi.GetLevelId)
+        cmd_comp.SetCommand('weather clear')
         
         # 所有睡觉的玩家起床
         for pid in list(sleeping_players.keys()):
@@ -699,6 +704,4 @@ def on_player_hurt(args):
     player_id = args['entityId']
     if player_id in sleeping_players:
         wake_up(player_id, "hurt")
-
-
 
