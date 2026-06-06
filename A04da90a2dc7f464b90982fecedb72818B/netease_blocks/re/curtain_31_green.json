@@ -57,6 +57,9 @@
             },
             "netease:custom_tips": {
                 "value": "空手点击窗帘可改变样式"
+            },
+            "netease:connection": {
+                "blocks": []
             }
         }
     }
