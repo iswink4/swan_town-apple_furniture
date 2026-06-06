@@ -7,7 +7,7 @@
         },
         "components": {
             "minecraft:destroy_time": {
-                "value": 0.3
+                "value": 0.75
             },
             "minecraft:explosion_resistance": {
                 "value": 0.3
@@ -17,12 +17,28 @@
             },
             "netease:aabb": {
                 "collision": {
-                    "max": [0.05, 1, 1],
-                    "min": [0, 0, 0]
+                    "max": [
+                        0.05,
+                        1,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
                 },
                 "clip": {
-                    "max": [0.05, 1, 1],
-                    "min": [0, 0, 0]
+                    "max": [
+                        0.05,
+                        1,
+                        1
+                    ],
+                    "min": [
+                        0,
+                        0,
+                        0
+                    ]
                 }
             },
             "netease:block_entity": {

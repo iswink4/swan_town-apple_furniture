@@ -9,7 +9,7 @@
                 "emission": 1.0
             },
             "minecraft:destroy_time": {
-                "value": 0.3
+                "value": 0.75
             },
             "minecraft:explosion_resistance": {
                 "value": 0.3

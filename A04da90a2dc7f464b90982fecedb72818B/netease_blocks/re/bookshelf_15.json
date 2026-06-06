@@ -21,7 +21,7 @@
                 "value": 0.3
             },
             "minecraft:destroy_time": {
-                "value": 0.3
+                "value": 0.75
             },
             "netease:render_layer": {
                 "value": "alpha"
@@ -45,7 +45,7 @@
                         2,
                         1
                     ],
-                    "min": [ 
+                    "min": [
                         0,
                         0,
                         0.99
@@ -56,8 +56,8 @@
                 "value": false
             },
             "netease:custom_tips": {
-            "value": "请先放置要放在书柜中的物品再放置书柜,书柜的碰撞箱统一在右下角位置"
-        }
+                "value": "请先放置要放在书柜中的物品再放置书柜,书柜的碰撞箱统一在右下角位置"
+            }
         }
     }
 }
