@@ -56,6 +56,9 @@
             },
             "netease:solid": {
                 "value": false
+            },
+            "netease:connection": {
+                "blocks": []
             }
         },
         "description": {
